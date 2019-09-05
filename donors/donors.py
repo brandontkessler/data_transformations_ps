@@ -8,12 +8,15 @@ class Donors:
     data.
 
     Args:
-        path        path to the data files (ex. '../../data/donor/')
-        dtype       (optional) dtype provided to pandas for quicker data load
-        start_yr    (optional) the starting year of file data (default='08')
+        path        path to the data files
+                    default: '../../data/donor/'
+        dtype       dtype provided to pandas for quicker data load
+                    default: dtype provided by .helpers.donor_dtype
+        start_yr    the starting year of file data
+                    default: '08'
     '''
 
-    def __init__(self, path, dtype=donor_dtype, file_yr='08'):
+    def __init__(self, path='../../data/donor/', dtype=donor_dtype, file_yr='08'):
         self._path = path
         self._dtype = dtype
         self._file = f'donors_fy{file_yr}-present.csv'
