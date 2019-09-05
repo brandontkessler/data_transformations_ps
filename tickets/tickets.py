@@ -49,13 +49,64 @@ class Tickets:
         return self
 
 
+    def filter_series(self, series=['Classics']):
+        '''Filters to only include series provided
+
+        Args:
+        series          Iterable consisting of the names of the series' to include
+                        default: ['Classics']
+        '''
+
+        options = ['Classics', 'Pops','Family', 'Summer', 'Specials', 
+                   'Connections', 'Organ', 'Chamber']
+        
+        self.data['series'] = self.data.season_desc.transform(lambda x: x.split(" ")[-1])
+
+        for s in series:
+            if s not in options:
+                raise Exception(f'The series, {s}, is not an option. Only include: {options}')
+            
+        self.data = self.data[self.data['series'].isin(series)].reset_index(drop=True)
+
+        return self
+
+
     def drop_bad_ids(self):
         self.data = self.data[~self.data['summary_cust_id'].isin(helpers.bad_ids)].reset_index(drop=True)
         return self
 
 
-    def drop_unsold(self):
+    def drop_na_rows(self):
         self.data = self.data[pd.notnull(self.data['summary_cust_id'])].reset_index(drop=True)
+        return self
+    
+
+    def drop_unsold(self):
+        mask = self.data.paid_amt > 0
+        self.data = self.data[mask].reset_index(drop=True)
+        return self
+
+    
+    def add_dow(self):
+        self.data['dow'] = self.data.perf_dt.transform(lambda x: x.strftime("%A"))
+        return self
+
+
+    def remove_opera(self, 
+                     opera_dates=['2019-02-21', '2019-02-23', '2019-02-26', 
+                                  '2019-05-16', '2019-05-17', '2019-05-18']):
+        '''Removes dates of opera
+
+        Args:
+        opera_dates         iterable of dates of the opera in the form of 'yyyy-mm-dd'
+                            default: ['2019-02-21', '2019-02-23', '2019-02-26', 
+                                    '2019-05-16', '2019-05-17', '2019-05-18']
+        
+        '''
+        self.data['tmp'] = self.data.perf_dt.map(lambda x: x.strftime('%Y-%m-%d'))
+        self.data = self.data.loc[~self.data.tmp.isin(opera_dates)].reset_index(drop=True)
+        self.data.drop(columns=['tmp'], inplace=True)
+
         return self
 
 
