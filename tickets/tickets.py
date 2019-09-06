@@ -1,4 +1,5 @@
 from collections import namedtuple
+import itertools
 
 import pandas as pd
 
@@ -89,6 +90,37 @@ class Tickets:
     
     def add_dow(self):
         self.data['dow'] = self.data.perf_dt.transform(lambda x: x.strftime("%A"))
+        return self
+
+
+    def transform_price_type_group(self):
+        mapper = {
+            'Subscription': 'Subscription',
+            'Single ': 'Single',
+            'Flex': 'Subscription',
+            'Discount': 'Single',
+            'Comp': 'Comp'
+        }
+
+        self.data['price_type_group'] = self.data['price_type_group'].map(mapper)
+
+        return self
+    
+    def add_concert_numbers_clx(self):
+        '''Adds the appropriate concert number for each date of concert
+
+        Returns:
+        self
+        '''
+        concert_dates = {dt for dt in self.data.perf_dt}
+        concert_numbers = list(itertools.chain.from_iterable([[i]*3 for i in range(1,13)]))
+        
+        if len(concert_dates) == len(concert_numbers):
+            concert_mapper = dict(zip(sorted(concert_dates), concert_numbers))
+        else:
+            raise Exception('Concert numbers must be for one fiscal year and classics only')
+
+        self.data['concert_number'] = self.data['perf_dt'].map(concert_mapper)
         return self
 
 
