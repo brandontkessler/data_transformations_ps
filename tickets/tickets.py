@@ -199,25 +199,34 @@ class Tickets:
         return tickets_sold
 
 
-    def three_attendances(self):
+    def three_attendances(self, current_subs):
         '''Get a list of all non-subscribers that have 3 ticket purchases
 
         Classics/Pops only
         '''
-        df_copy = tix.data.copy()
-
-        # Get unique subscription list
-        mask_subscribers = df_copy.price_type_group == 'Subscription'
-        unique_subs = set(df_copy.loc[mask]['summary_cust_id'])
+        df_copy = self.data.copy()
 
         # Remove subscribers from df
-        mask_non_subs = ~df_copy.summary_cust_id.isin(unique_subs)
+        mask_non_subs = ~df_copy.customer_no.isin(current_subs)
         df_copy = df_copy.loc[mask_non_subs]
 
         df_copy = df_copy[['summary_cust_id', 'perf_dt', 'fy']].reset_index(drop=True)
+        df_copy = df_copy.drop_duplicates()
 
-        pass
+        ## GENERAL (THREE CONCERTS TOTAL ALL YEARS)
+        three_general = df_copy.groupby('summary_cust_id').agg('count').reset_index()
+        general_mask = three_general.fy >= 3
+        three_general = three_general.loc[general_mask]
 
+        ## THIS YEAR (THREE CONCERTS PURCHASED IN THIS YEAR ONLY)
+        three_cur = df_copy.loc[df_copy.fy == max(self.fys)]
+        three_cur = three_cur.groupby('summary_cust_id').agg('count').reset_index()
+        cur_mask = three_cur.fy >= 3
+        three_cur = three_cur.loc[cur_mask]
+
+        ThreeConcerts = namedtuple('ThreeConcerts', ['all_fys', 'current_fy'])
+
+        return ThreeConcerts._make([len(three_general), len(three_cur)])
 
     def __repr__(self):
         return f"Tickets(fys='{self.fys}')"
