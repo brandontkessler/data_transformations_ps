@@ -12,7 +12,7 @@ class Donors:
                     default: '../../data/donor/'
         dtype       dtype provided to pandas for quicker data load
                     default: dtype provided by .helpers.donor_dtype
-        start_yr    the starting year of file data
+        file_yr     the starting year of file data
                     default: '08'
     '''
 
@@ -24,18 +24,18 @@ class Donors:
         self.data = pd.read_csv(path + self._file,
                                 encoding='ISO-8859-1',
                                 dtype=self._dtype)
-    
+
 
     def parse_campaign_fy(self):
         '''parses the campaign year into a new column called 'fy'
-        
+
         Returns:
         self
         '''
 
         fy = self.data.campaign.str[6:8]
         self.data['fy'] = fy
-        
+
         filter_mask = {fy: False for fy in self.data['fy'].drop_duplicates()}
         for fy, boolean in filter_mask.items():
             try:
@@ -43,7 +43,7 @@ class Donors:
                 filter_mask[fy] = True
             except:
                 continue
-        
+
         self.data['keep'] = self.data['fy'].map(filter_mask)        # map the filter mask
         self.data = self.data.loc[self.data['keep']].reset_index(drop=True)
         self.data.drop(columns=['keep'], inplace=True)              # drop keeps col
@@ -67,13 +67,13 @@ class Donors:
         self.data = self.data.loc[mask]
 
         return self
-    
+
 
     def filter_by_list(self, filter_list, column_name, keep_in_list=True):
         '''filters data by a provided list and column name
         note: data must have been run through 'parse_campaign_fy' method to add fy column
 
-        Args: 
+        Args:
         filter_list             A list of boolean vals to filter on
         column_name             Identify which column to filter on
         keep_in_list            If True, keep rows that match values in list
@@ -84,7 +84,7 @@ class Donors:
         '''
 
         mask = self.data[column_name].isin(filter_list)
-        
+
         if keep_in_list:
             self.data = self.data.loc[mask].reset_index(drop=True)
         else:
@@ -113,11 +113,11 @@ class Donors:
         return list(set(box['summary_cust_id']))
 
 
-    def agg_by_amount_per_yr(self, threshold=None, greater_than_thresh=True, 
+    def agg_by_amount_per_yr(self, threshold=None, greater_than_thresh=True,
                              equal_to_thresh=True, **kwargs):
         '''Aggregates data by summary_cust_id
 
-        Args: 
+        Args:
         threshold               amount at which to filter on (ex. 10000)
                                 default: None
         greater_than_thresh     filter above or below threshold
@@ -126,8 +126,8 @@ class Donors:
                                 default: True
         **kwargs                additional columns to include in agg
                                 ex. cont_dt=['max', 'min']
-                                
-        
+
+
         Example:
         Given a threshold of 10000, greater_than_thresh=False and equal_to_thresh=True,\
             data will be filtered less than or equal to 10000
@@ -165,10 +165,8 @@ class Donors:
                 mask = self.data.gift_plus_pledge < threshold
             else:
                 raise Exception('There is an error with the operator')
-            
+
             self.data = self.data.loc[mask].reset_index(drop=True)
             return self
 
         return self
-
-

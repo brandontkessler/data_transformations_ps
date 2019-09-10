@@ -21,7 +21,7 @@ class Tickets:
         convert_dates   converts the dates for 'perf_dt' and 'order_dt' to
                         datetime objects.
         drop_bad_ids    removes all rows with 'summary_cust_id' matching
-                        ids that should not be included. These come from the 
+                        ids that should not be included. These come from the
                         bad_ids list provided by 'helpers.bad_ids'
         drop_unsold     removes all rows that don't include a sale.
         remove_outliers excludes paid amounts <$5, >$500 (per ticket) by
@@ -58,15 +58,15 @@ class Tickets:
                         default: ['Classics']
         '''
 
-        options = ['Classics', 'Pops','Family', 'Summer', 'Specials', 
+        options = ['Classics', 'Pops','Family', 'Summer', 'Specials',
                    'Connections', 'Organ', 'Chamber']
-        
+
         self.data['series'] = self.data.season_desc.transform(lambda x: x.split(" ")[-1])
 
         for s in series:
             if s not in options:
                 raise Exception(f'The series, {s}, is not an option. Only include: {options}')
-            
+
         self.data = self.data[self.data['series'].isin(series)].reset_index(drop=True)
 
         return self
@@ -80,14 +80,14 @@ class Tickets:
     def drop_na_rows(self):
         self.data = self.data[pd.notnull(self.data['summary_cust_id'])].reset_index(drop=True)
         return self
-    
+
 
     def drop_unsold(self):
         mask = self.data.paid_amt > 0
         self.data = self.data[mask].reset_index(drop=True)
         return self
 
-    
+
     def add_dow(self):
         self.data['dow'] = self.data.perf_dt.transform(lambda x: x.strftime("%A"))
         return self
@@ -105,7 +105,7 @@ class Tickets:
         self.data['price_type_group'] = self.data['price_type_group'].map(mapper)
 
         return self
-    
+
     def add_concert_numbers_clx(self):
         '''Adds the appropriate concert number for each date of concert
 
@@ -114,7 +114,7 @@ class Tickets:
         '''
         concert_dates = {dt for dt in self.data.perf_dt}
         concert_numbers = list(itertools.chain.from_iterable([[i]*3 for i in range(1,13)]))
-        
+
         if len(concert_dates) == len(concert_numbers):
             concert_mapper = dict(zip(sorted(concert_dates), concert_numbers))
         else:
@@ -124,16 +124,16 @@ class Tickets:
         return self
 
 
-    def remove_opera(self, 
-                     opera_dates=['2019-02-21', '2019-02-23', '2019-02-26', 
+    def remove_opera(self,
+                     opera_dates=['2019-02-21', '2019-02-23', '2019-02-26',
                                   '2019-05-16', '2019-05-17', '2019-05-18']):
         '''Removes dates of opera
 
         Args:
         opera_dates         iterable of dates of the opera in the form of 'yyyy-mm-dd'
-                            default: ['2019-02-21', '2019-02-23', '2019-02-26', 
+                            default: ['2019-02-21', '2019-02-23', '2019-02-26',
                                     '2019-05-16', '2019-05-17', '2019-05-18']
-        
+
         '''
         self.data['tmp'] = self.data.perf_dt.map(lambda x: x.strftime('%Y-%m-%d'))
         self.data = self.data.loc[~self.data.tmp.isin(opera_dates)].reset_index(drop=True)
@@ -157,10 +157,10 @@ class Tickets:
         sub_count   count of unique summary_cust_ids with subscription purchase
         '''
         sub_categories = ['Subscription', 'Flex']
-        
+
         if fy:
             filtered_data = self.data.loc[self.data.price_type_group.isin(sub_categories) & (self.data.fy == fy)]
-        else: 
+        else:
             filtered_data = self.data.loc[self.data.price_type_group.isin(sub_categories)]
 
         sub_list = filtered_data.summary_cust_id.unique()
@@ -180,7 +180,7 @@ class Tickets:
         date_end        ending date of date range
 
         Returns:
-        tickets_sold    total number of tickets sold (excluding comps) within 
+        tickets_sold    total number of tickets sold (excluding comps) within
                         the provided date range
         '''
         try:
@@ -197,6 +197,26 @@ class Tickets:
         tickets_sold = len(filtered)
 
         return tickets_sold
+
+
+    def three_attendances(self):
+        '''Get a list of all non-subscribers that have 3 ticket purchases
+
+        Classics/Pops only
+        '''
+        df_copy = tix.data.copy()
+
+        # Get unique subscription list
+        mask_subscribers = df_copy.price_type_group == 'Subscription'
+        unique_subs = set(df_copy.loc[mask]['summary_cust_id'])
+
+        # Remove subscribers from df
+        mask_non_subs = ~df_copy.summary_cust_id.isin(unique_subs)
+        df_copy = df_copy.loc[mask_non_subs]
+
+        df_copy = df_copy[['summary_cust_id', 'perf_dt', 'fy']].reset_index(drop=True)
+
+        pass
 
 
     def __repr__(self):
