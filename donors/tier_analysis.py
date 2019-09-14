@@ -4,22 +4,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from .donors import Donors
-from .helpers import donor_dtype, tier_mapper
+from . import Donors
+from ..helper import donor_dtype, donor_tier_mapper
 
 class TierAnalysis(Donors):
     '''
     A simplified process of calculating donor tier plots
 
     Args:
-        path        path to the data files
-                    default: '../../data/donor/'
-        dtype       dtype provided to pandas for quicker data load
-                    default: dtype provided by .helpers.donor_dtype
-        file_yr     the starting year of file data
-                    default: '08'
-        fy          fiscal year used for analysis
-                    default: 20
+        path -- path to the data files
+                default: '../../data/donor/'
+        dtype -- dtype provided to pandas for quicker data load
+                 default: dtype provided by .helpers.donor_dtype
+        file_yr -- the starting year of file data
+                   default: '08'
+        fy -- fiscal year used for analysis
+              default: 20
     '''
 
     def __init__(self, path='../../data/donor/', dtype=donor_dtype,
@@ -27,19 +27,21 @@ class TierAnalysis(Donors):
         super().__init__(path, dtype, file_yr)
         self.fy = fy
 
-        self.parse_campaign_fy()
-
         cols = ['summary_cust_id', 'fy', 'gift_plus_pledge']
 
         cur_mask = self.data.fy == self.fy
         py_mask = self.data.fy ==  (self.fy - 1)
 
+        self._total_donors_py = len(self.data.loc[py_mask])
+
         self.data = self.data.loc[cur_mask | py_mask][cols]
         self.data = self.data.groupby(['summary_cust_id','fy']).sum().reset_index()
         self.data.columns = ['customer_id','fy', 'transaction_amount']
 
+        self.tier_info = self._do_tier_analysis()
 
-    def do_tier_analysis(self, mapper=False):
+
+    def _do_tier_analysis(self, mapper=False):
         """This function will calculate the number of retained customers across a\
         given time frame and within provided ranges (ex. annual giving levels\
         between $10,000 and $50,000).
@@ -51,13 +53,13 @@ class TierAnalysis(Donors):
             3: fy
         tier -- results for a specific tier instead of across all tiers (default 'all')
         mapper -- dictionary to map donor levels against. Provided mapper used if False. (default False)
-                  default: tier_mapper
+                  default: donor_tier_mapper
 
         """
         df = self.data.copy()
 
         if not mapper:
-            mapper = tier_mapper
+            mapper = donor_tier_mapper
 
         df = df[df.transaction_amount >= 1].reset_index(drop=True)
 
@@ -152,3 +154,27 @@ class TierAnalysis(Donors):
 
         # Show plot
         plt.show()
+
+
+    def aggregate_retention(self):
+        agg_tiers = self.tier_counts.groupby('classification').agg({
+            'count': 'sum'
+        }).reset_index()
+
+        lost_to_date = self._total_donors_py - sum(agg_tiers['count'])
+
+        py_data = pd.DataFrame({
+            'classification': [
+                'lost to date',
+                'total retained to date',
+                'prior year donors'
+            ],
+            'count': [
+                lost_to_date,
+                self._total_donors_py - lost_to_date,
+                self._total_donors_py
+            ]
+        })
+
+        agg = agg_tiers.append(py_data).reset_index(drop=True)
+        return agg

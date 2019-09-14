@@ -1,5 +1,32 @@
-import math
 import numpy as np
+
+ticketing_dtype = {
+    'perf_code': object,
+    'perf_no': np.int64,
+    'perf_dt': object,
+    'zone_no': np.int64,
+    'zone_desc': object,
+    'section': object,
+    'row': object,
+    'seat': np.int64,
+    'home_price': np.float64,
+    'paid_amt': np.float64,
+    'fee_amt': np.float64,
+    'seat_status': np.int64,
+    'seat_status_desc': object,
+    'customer_no': np.float64,
+    'order_no': np.float64,
+    'order_dt': object,
+    'price_type_group_id': np.float64,
+    'price_type_group': object,
+    'pd_up': object,
+    'season': np.int64,
+    'season_desc': object,
+    'summary_cust_id': np.float64,
+    'summary_cust_name': object,
+    'attended': object
+}
+
 
 donor_dtype = {
     'trn_count': np.dtype('int64'),
@@ -85,20 +112,4 @@ donor_dtype = {
     'sym100_flag': np.dtype('int64'),
     'ps_tribute': np.dtype('O'),
     'ps_honorarium': np.dtype('O')
-}
-
-
-tier_mapper = {
-    '1': (1.0, 99.99),
-    '2': (100.0, 299.99),
-    '3': (300.0, 499.99),
-    '4': (500.0, 999.99),
-    '5': (1000.0, 2499.99),
-    '6': (2500.0, 4999.99),
-    '7': (5000.0, 9999.99),
-    '8': (10000.0, 19999.99),
-    '9': (20000.0, 29999.99),
-    '10': (30000.0, 49999.99),
-    '11': (50000.0, 99999.99),
-    '12': (100000.0, math.inf)
 }
