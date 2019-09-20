@@ -71,6 +71,7 @@ class Donors:
         '''
         data = self._check_data(data)
         mask = data.fy.isin(fys)
+        data = data.loc[mask]
 
         return self._inplace(inplace, data)
 
@@ -175,7 +176,7 @@ class Donors:
         return self._inplace(inplace, data)
 
 
-    def high_cap_prospects(self):
+    def high_cap_prospects(self, fys):
         '''Categorizes prospects that are not already donors
 
         Capacity Ratings:
@@ -190,7 +191,7 @@ class Donors:
         mask = attribute_data.key_value.map(lambda e: e[:3] in high_capacity_group)
         high_cap = attribute_data.loc[mask].reset_index(drop=True)
 
-        two_yr_donors = self.filter_fys(fys=[19,20], inplace=False)
+        two_yr_donors = self.filter_fys(fys=fys, inplace=False)
         unique_donors = set(two_yr_donors.customer_no)
 
         mask_existing_donors = ~high_cap.customer_no.isin(unique_donors)
