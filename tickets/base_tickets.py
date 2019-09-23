@@ -46,6 +46,8 @@ class _BaseTickets:
         if drop_internal_ids:
             data = self._drop_internal_ids(data)
 
+        data['price_zone'] = self._get_price_zones(data['zone_desc'])
+
         return data
 
     def _import_data(self, fy):
@@ -86,6 +88,24 @@ class _BaseTickets:
 
     def _drop_group_sales_ids(self, data):
         data = data[~data['summary_cust_id'].isin(group_sales_ids)].reset_index(drop=True)
+        return data
+
+    def _map_zones(self, zone):
+        if zone[:5] == 'Price':
+            return zone[:7]
+        elif 'Box' in zone:
+            return 'Price B'
+        elif 'Accessible' in zone:
+            return zone[11:]
+        elif 'Pit' in zone:
+            return 'Pit'
+        elif zone == 'General Admission':
+            return 'General Admission'
+        else:
+            raise TypeError(f'No matching price zone for {zone}')
+
+    def _get_price_zones(self, data):
+        data = data.map(self._map_zones)
         return data
 
     # --------------------- utility methods ------------------

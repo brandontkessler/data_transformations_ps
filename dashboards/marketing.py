@@ -74,10 +74,12 @@ def sub_builder(fy):
     return kpis
 
 
-def single_builder(fy):
+def single_builder(fy, to_date):
     '''Builds single ticket dashboard KPIs
     '''
     SINGLE_GOAL = 2754275
+    TICKETMASTER_REV = 178420.5
+    TICKETMASTER_TIX = 4703
 
     tix = Tickets(fys=[num for num in range(fy-3,fy+1)])
 
@@ -100,12 +102,15 @@ def single_builder(fy):
     new_to_file, retained_new = tix.new_to_file(fy=fy, data=tix.data.copy())
 
     kpis = {
-        '%_to_goal': round(revenue_td / SINGLE_GOAL * 100, 1),
-        'tickets sold': tix_sold_td,
+        '%_to_goal': round((revenue_td + TICKETMASTER_REV) / SINGLE_GOAL * 100, 1),
+        'tickets sold': tix_sold_td + TICKETMASTER_TIX,
         'households': households_td,
         'new_to_file': len(new_to_file),
         'retained_new_to_file': len(retained_new),
         'three_concerts_current_and_py': three_concerts_cy_and_py
     }
+
+    # Build plots
+    tix.plot_singles_by_zone(to_date=to_date, fys=[fy])
 
     return kpis

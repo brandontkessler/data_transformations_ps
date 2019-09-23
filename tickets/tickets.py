@@ -257,3 +257,41 @@ class Tickets(_BaseTickets):
 
         # Show plot
         plt.show()
+
+
+    def plot_singles_by_zone(self, to_date, series=['Classics'],
+                         fys=None):
+        to_date = self._date_convert(to_date)
+
+        data = self.data.copy()
+
+        data = self.filter_series(data=data, series=series)
+        data = self.drop_subs(data=data)
+        data = self.keep_paid(data=data)
+        data = self.filter_perf_dt(to_date=to_date, data=data)
+
+        if fys:
+            data = self.filter_fys(fys=fys, data=data)
+
+        data = data.groupby('price_zone').agg({'paid_amt': 'count'}).reset_index()
+        data = data.loc[~data.price_zone.isin(['Price B', 'Price P'])]
+
+        # Plot setup
+        fig, ax = plt.subplots(figsize=(15,10))
+        sns.set(style="ticks")
+
+        # Create the plot
+        ax = sns.barplot(x="price_zone", y="paid_amt", data=data)
+
+        # titles
+        ax.set_title(f"Single Tickets Sold by Price Zone {series}", fontsize=30)
+
+        # axes
+        ax.tick_params(axis='both', labelsize=16)
+        ax.set_xlabel('Price Zone', fontsize=20)
+        ax.set_ylabel('Total Single Tickets Sold to Date', fontsize=20)
+
+        plt.xticks(rotation=0)
+
+        # Show plot
+        plt.show()
