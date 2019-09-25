@@ -1,4 +1,4 @@
-from .. import Subscriptions, Tickets
+from .. import Subscriptions, Tickets, ModeOfSale
 
 def mktg_builder(fy, to_date):
     MARKETING_GOAL = 3250389 + 2754275
@@ -74,12 +74,15 @@ def sub_builder(fy):
     return kpis
 
 
-def single_builder(fy, to_date):
+def single_builder(qtr, fy, to_date):
     '''Builds single ticket dashboard KPIs
     '''
     SINGLE_GOAL = 2754275
     TICKETMASTER_REV = 178420.5
     TICKETMASTER_TIX = 4703
+
+    mos = ModeOfSale(qtr, fy)
+    mos.filter_seasons(['Classics', 'Pops', 'Summer', 'Specials', 'Family'])
 
     tix = Tickets(fys=[num for num in range(fy-3,fy+1)])
 
@@ -112,5 +115,7 @@ def single_builder(fy, to_date):
 
     # Build plots
     tix.plot_singles_by_zone(to_date=to_date, fys=[fy])
+    tix.plot_singles_by_zone(to_date=to_date, fys=[fy], series=['Pops'])
+    mos.pie_plot()
 
     return kpis

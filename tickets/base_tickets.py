@@ -1,5 +1,4 @@
 import pandas as pd
-
 from ..helper import internal_ids, ticketing_dtype,  group_sales_ids
 
 
@@ -38,7 +37,8 @@ class _BaseTickets:
 
     # --------------------- constructor methods ------------------
     def _build_dataset(self, drop_nan, drop_internal_ids):
-        data_gen = (self._import_data(fy) for fy in self._fys)
+
+        data_gen = map(self._import_data, self._fys)
         data = pd.concat(data_gen, ignore_index=True)
 
         if drop_nan:
