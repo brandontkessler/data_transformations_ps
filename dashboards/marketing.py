@@ -95,14 +95,16 @@ def single_builder(qtr, fy, to_date):
     )
 
     data = tix.data.copy()
-
     data = tix.filter_fys(fys=[fy], data=data)
     data = tix.drop_sub_sales(data=data)
 
     revenue_td, tix_sold_td = data.aggregate({'paid_amt': ['sum', 'count']}).paid_amt
     households_td = len(set(data.summary_cust_id))
 
-    new_to_file, retained_new = tix.new_to_file(fy=fy, data=tix.data.copy())
+    tix.drop_subs(inplace=True)
+    tix.filter_series(series=['Classics', 'Pops', 'Summer'], inplace=True)
+
+    new_to_file, retained_new = tix.new_to_file(fy=fy)
 
     kpis = {
         '%_to_goal': round((revenue_td + TICKETMASTER_REV) / SINGLE_GOAL * 100, 1),

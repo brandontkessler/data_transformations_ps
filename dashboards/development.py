@@ -1,12 +1,12 @@
 from .. import TierAnalysis, Donors, Tickets
 
-def dev_builder(fy):
+def dev_builder(fy, file_yr):
     '''FY is fiscal year of dashboard (ex. for fiscal year 20, fy=20)'''
     fys = [fy-1, fy]
 
     # Importing and transforming data from other classes
     tiers = TierAnalysis()
-    donors = Donors()
+    donors = Donors(file_yr=file_yr)
     tix = Tickets(fys=fys)
 
     # Aggregate tiers for analysis

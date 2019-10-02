@@ -99,6 +99,14 @@ class Donors:
         return self._inplace(inplace, data)
 
 
+    def individual_giving(self, data=None, inplace=False):
+        data = self._check_data(data)
+        mask = data.campaign.str.contains('Government|Foundation|Corporate', regex=True)
+        data = data.loc[~mask].reset_index(drop=True)
+
+        return self._inplace(inplace, data)
+
+
     def box_circle_list(self, fy=None):
         '''Given the current dataframe, isolate a list of box circle members
 

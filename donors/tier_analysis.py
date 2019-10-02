@@ -34,8 +34,12 @@ class TierAnalysis(Donors):
 
         self._total_donors_py = len(self.data.loc[py_mask])
 
-        self.data = self.data.loc[cur_mask | py_mask][cols]
+
+        self.data = self.data.loc[cur_mask | py_mask]
+        self.individual_giving(inplace=True)
+        self.data = self.data[cols]
         self.data = self.data.groupby(['summary_cust_id','fy']).sum().reset_index()
+
         self.data.columns = ['customer_id','fy', 'transaction_amount']
 
         self.tier_info = self._do_tier_analysis()

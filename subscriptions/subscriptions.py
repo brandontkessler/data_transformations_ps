@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 from ..helper import pkg_definitions
 
@@ -49,4 +50,4 @@ class Subscriptions:
         data = self.data.copy()
         data['seats_per_pkg'] = data['pkg_desc'].map(definitions)
         data['total_seats_sold'] = data['seats_per_pkg'] * data['num_seats']
-        return round(sum(data['total_seats_sold']) / self.total_pkgs, 1)
+        return round(np.sum(data['total_seats_sold']) / self.total_pkgs, 1)

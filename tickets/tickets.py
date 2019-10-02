@@ -196,11 +196,12 @@ class Tickets(_BaseTickets):
         data = self.drop_subs(data=data)
         data = self.keep_paid(data=data)
 
-        data = data[['summary_cust_id', 'perf_dt', 'fy']].reset_index(drop=True)
+        data = data[['summary_cust_id', 'perf_dt']].reset_index(drop=True)
         data = data.drop_duplicates()
 
         data = data.groupby('summary_cust_id').agg('count').reset_index()
-        data = data.loc[data.fy >= min_lim]
+
+        data = data.loc[data.perf_dt >= min_lim]
 
         return len(data)
 

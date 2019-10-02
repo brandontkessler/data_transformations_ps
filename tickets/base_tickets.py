@@ -99,8 +99,12 @@ class _BaseTickets:
             return zone[11:]
         elif 'Pit' in zone:
             return 'Pit'
-        elif zone == 'General Admission':
-            return 'General Admission'
+        elif zone in [
+                'General Admission', 'Accessibility', 'Balcony Center',
+                'Balcony Left', 'Balcony Right', 'Orchestra', 'Parterre Center',
+                'Parterre Left', 'Parterre Right', 'Stage View'
+            ]:
+            return zone
         else:
             raise TypeError(f'No matching price zone for {zone}')
 

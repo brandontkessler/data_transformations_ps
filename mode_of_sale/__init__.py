@@ -35,6 +35,19 @@ class ModeOfSale:
         data['season'] = [season.split(' ')[2] for season in data['season']]
         data['ordered'] = data['ps_num_ord'] + data['cs_num_ord']
         data['paid'] = data['ps_tot_paid_amt'] + data['cs_tot_paid_amt']
+        data = self._fix_mos_desc(data)
+        return data
+
+    def _fix_mos_desc(self, data):
+        mapper = {
+            'OC Box Office': 'OC Box Office',
+            'OC Donor Relations': 'OC Box Office',
+            'OC House': 'OC Box Office',
+            'OC Mobile': 'OC Box Office'
+        }
+
+        data['mos_desc'] = data['mos_desc'].replace(mapper)
+        data['mos_desc'] = data['mos_desc'].replace({'OC': 'SCFTA'}, regex=True)
         return data
 
     # ---------------------- filters ------------------------------
@@ -53,6 +66,7 @@ class ModeOfSale:
         '''
         data = self._data.copy()
         data = data.groupby('mos_desc').agg({'ordered': 'sum'}).reset_index()
+        data = data.loc[data['mos_desc'] != 'PS Subscription']
 
         labels = data.mos_desc
         sizes = data.ordered
