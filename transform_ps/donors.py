@@ -1,8 +1,10 @@
 import pandas as pd
 
-from ..helper import donor_dtype
+from .base_donors import _DonorBase
+from .decorators import check_data, inplace
 
-class Donors:
+
+class Donors(_DonorBase):
     '''
     A simplified process of importing and transforming Pacific Symphony donor
     data.
@@ -15,53 +17,10 @@ class Donors:
         file_yr -- the starting year of file data
                    default: '08'
     '''
-
-    def __init__(self, path='../../data/donor/', dtype=donor_dtype, file_yr='08'):
-        self._path = path
-        self.data = self._import_data(path=path, file_yr=file_yr, dtype=dtype)
-
-    # ---------------------- constructor methods --------------
-    def _import_data(self, path, file_yr, dtype):
-        file = f"donors_fy{file_yr}-present.csv"
-        data = pd.read_csv(path + file, encoding='ISO-8859-1', dtype=dtype)
-        data = self._parse_campaign_fy(data)
-        return data
-
-    def _parse_campaign_fy(self, data):
-        '''parses the campaign year into a new column called "fy"'''
-        fy = data['campaign'].str[6:8]
-        data['fy'] = fy
-
-        fy_mapper = {fy: False for fy in data['fy'].drop_duplicates()}
-        for fy, boolean in fy_mapper.items():
-            try:
-                int(fy[0])
-                fy_mapper[fy] = True
-            except:
-                continue
-
-        mask = data['fy'].map(fy_mapper) # map the fys
-        data = data.loc[mask].reset_index(drop=True)
-        data = data.astype({'fy': 'int64'}) # convert to int
-
-        return data
-
-    # ----------------- utility -------------------
-    def _inplace(self, inplace, data):
-        if inplace:
-            self.data = data
-        else:
-            return data
-
-    def _check_data(self, data):
-        if data is None:
-            data = self.data
-        return data
-
-
-
-    # ---------------- filters ---------------------
-    def filter_fys(self, fys, data=None, inplace=False):
+    # ---------------- common filters ---------------------
+    @check_data
+    @inplace
+    def filter_fys(self, fys, *, data=None, inplace=False):
         '''filters out fiscal years from data frame
 
         Args:
@@ -69,15 +28,16 @@ class Donors:
                Example: [18, 19]
 
         '''
-        data = self._check_data(data)
         mask = data.fy.isin(fys)
         data = data.loc[mask]
 
-        return self._inplace(inplace, data)
+        return data
 
 
+    @check_data
+    @inplace
     def filter_by_list(self, filter_list, column_name, keep_in_list=True,
-                       data=None, inplace=False):
+                       *, data=None, inplace=False):
         '''filters data by a provided list and column name
         note: data must have been run through 'parse_campaign_fy' method to add fy column
 
@@ -88,7 +48,6 @@ class Donors:
                         default: True
 
         '''
-        data = self._check_data(data)
         mask = data[column_name].isin(filter_list)
 
         if keep_in_list:
@@ -96,15 +55,17 @@ class Donors:
 
         data = data.loc[mask].reset_index(drop=True)
 
-        return self._inplace(inplace, data)
+        return data
 
 
-    def individual_giving(self, data=None, inplace=False):
-        data = self._check_data(data)
+    #  ---------- rare usage filters ---------------
+    @check_data
+    @inplace
+    def individual_giving(self, *, data=None, inplace=False):
         mask = data.campaign.str.contains('Government|Foundation|Corporate', regex=True)
         data = data.loc[~mask].reset_index(drop=True)
 
-        return self._inplace(inplace, data)
+        return data
 
 
     def box_circle_list(self, fy=None):
@@ -121,13 +82,14 @@ class Donors:
             fy_mask = tmp.fy == fy
             tmp = tmp.loc[fy_mask]
 
-        mask = ['Box Circle' in i for i in tmp.campaign]
+        mask = ['Box Circle' in campaign for campaign in tmp.campaign]
         box = tmp.loc[mask][['summary_cust_id']]
 
         return list(set(box['summary_cust_id']))
 
-
-    def agg_by_amount_per_yr(self, threshold=None, greater_than_thresh=True,
+    @check_data
+    @inplace
+    def agg_by_amount_per_yr(self, *, threshold=None, greater_than_thresh=True,
                              equal_to_thresh=True, data=None, inplace=False,
                              **kwargs):
         '''Aggregates data by summary_cust_id
@@ -151,7 +113,6 @@ class Donors:
         for key, val in kwargs.items():
             aggregator[key] = val
 
-        data = self._check_data(data)
         data = data.groupby(['summary_cust_id', 'fy']).agg(aggregator).reset_index()
 
         if greater_than_thresh and equal_to_thresh:
@@ -179,9 +140,9 @@ class Donors:
                 raise Exception('There is an error with the operator')
 
             data = data.loc[mask].reset_index(drop=True)
-            return self._inplace(inplace, data)
+            return data
 
-        return self._inplace(inplace, data)
+        return data
 
 
     def high_cap_prospects(self, fys):

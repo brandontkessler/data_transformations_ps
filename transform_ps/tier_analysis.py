@@ -4,8 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from . import Donors
-from ..helper import donor_dtype, donor_tier_mapper
+from .donors import Donors
+from .helpers import donor_dtype
+from .helpers import donor_tier_mapper
+
 
 class TierAnalysis(Donors):
     '''

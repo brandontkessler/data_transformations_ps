@@ -1,0 +1,48 @@
+﻿ParameterValues,,,,,,,,,,,,,,,,,,,,,,,
+"Season: PS 2018 Summer, PS 18-19 Classics, PS 18-19 Pops, PS 18-19 Specials, PS 18-19 Connections, PS 18-19 Chamber, PS 18-19 Family, PS 18-19 Organ",,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+perf_code,perf_no,perf_dt,zone_no,zone_desc,section,row,seat,home_price,paid_amt,fee_amt,seat_status,seat_status_desc,customer_no,order_no,order_dt,price_type_group_id,price_type_group,pd_up,season,season_desc,summary_cust_id,summary_cust_name,attended
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 6,F,15,18.5,18.5,,13,Sold,3011662,6516065,5/9/2018 13:59,1,Subscription,PD ,588,PS 2018 Summer,3011662,Avrum Kaufman and Larisa Canter Household,
+PS102718,17567,10/27/2018 20:00,4160,Price 1 Orchestra Terrace Left,ORCH T,T,1,96.5,96.5,,13,Sold,121281,6232820,3/5/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,121281,Donald and Jean Taub Household,Attended
+PS011019,17653,1/10/2019 20:00,4174,Price 2 Promenade Circle,PROM,D,405,67.5,30,,13,Sold,3245876,6695490,10/9/2018 15:40,8,Flex,PD ,590,PS 18-19 Classics,3245876,Ms. Freddi Pakier,Attended
+PS022319,17691,2/23/2019 20:00,4190,Price 2 Grand Tier,GRAND,A,541,86,99,,13,Sold,3383826,6896466,12/18/2018 15:16,3,Single ,PD ,590,PS 18-19 Classics,3383826,Jesika Go,Attended
+PS021519,17741,2/15/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,Z,101,0,0,,13,Sold,3141490,7007296,2/15/2019 12:47,4,Comp,PD ,594,PS 18-19 Pops,3141490,Symphony Shop,Attended
+PS060919,17909,6/9/2019 15:00,4882,Price 1 Orchestra Terr Center,ORCH T,ZZ,117,0,0,,13,Sold,3093865,7185012,6/4/2019 17:38,4,Comp,PD ,598,PS 18-19 Connections,3093865,Ms. Louise M. Jacobs,Attended
+PS102718A,18047,10/27/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,W,23,36,,,0,Available,,0,,,,AVL,607,PS 18-19 Family,,,
+PS102718A,18047,10/27/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,Z,115,36,,,0,Available,,0,,,,AVL,607,PS 18-19 Family,,,
+PS102718A,18047,10/27/2018 10:00,2130,Price 3 Prom Circle,PROM,D,413,26,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS102718A,18047,10/27/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,V,38,36,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS102718A,18047,10/27/2018 10:00,2130,Price 3 Prom Circle,PROM,D,426,26,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS041319N,18100,4/13/2019 11:30,2124,Price 1 Orch,ORCH,N,114,36,36,,13,Sold,0,7117076,4/13/2019 11:28,3,Single ,PD ,607,PS 18-19 Family,0,,Attended
+PS041319N,18100,4/13/2019 11:30,2124,Price 1 Orch,ORCH,N,113,36,36,,13,Sold,0,7117076,4/13/2019 11:28,3,Single ,PD ,607,PS 18-19 Family,0,,Attended
+PS041319N,18100,4/13/2019 11:30,2133,Price 4 Grand Tier,GRAND,G,504,12,12,,13,Sold,0,7117079,4/13/2019 11:30,3,Single ,PD ,607,PS 18-19 Family,0,,Attended
+PS041319N,18100,4/13/2019 11:30,2133,Price 4 Grand Tier,GRAND,G,503,12,12,,13,Sold,0,7117079,4/13/2019 11:30,3,Single ,PD ,607,PS 18-19 Family,0,,Attended
+PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,430,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
+PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,439,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,
+PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,425,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
+PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,421,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
+PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,437,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
+PS031719,18799,3/17/2019 15:00,2624,Price 2 Grand Tier,GRAND,A,512,0,0,,13,Sold,3093484,7069692,3/15/2019 16:10,4,Comp,PD ,623,PS 18-19 Organ,3093484,The Center For Autism And Neurodevelopment Disr,
+PS031719,18799,3/17/2019 15:00,2624,Price 2 Grand Tier,GRAND,A,521,0,0,,13,Sold,3093484,7069692,3/15/2019 16:10,4,Comp,PD ,623,PS 18-19 Organ,3093484,The Center For Autism And Neurodevelopment Disr,Attended
+PS031719,18799,3/17/2019 15:00,2618,Price 1 Orch D - R,ORCH,L,120,10,10,,13,Sold,3157435,7060838,3/12/2019 10:44,3,Single ,PD ,623,PS 18-19 Organ,3157435,Duyen Tong Household,Attended
+PS031719,18799,3/17/2019 15:00,2621,Price 2 Orch Terr Right,ORCH T,U,42,0,0,,13,Sold,3159435,7032708,2/28/2019 12:48,4,Comp,PD ,623,PS 18-19 Organ,3159435,Mr. Michael Brodie,Attended
+PS031719,18799,3/17/2019 15:00,2621,Price 2 Orch Terr Right,ORCH T,U,40,0,0,,13,Sold,3159435,7032708,2/28/2019 12:48,4,Comp,PD ,623,PS 18-19 Organ,3159435,Mr. Michael Brodie,Attended
+PS031719,18799,3/17/2019 15:00,2620,Price 2 Orch Terr Left,ORCH T,W,1,23.5,25,,13,Sold,3165286,6716990,10/23/2018 11:02,1,Subscription,PD ,623,PS 18-19 Organ,3165286,Leslie Pratt,Attended
+PS031719,18799,3/17/2019 15:00,2630,Price 4 Orch A - C,ORCH,C,120,10,10,,13,Sold,3166134,6550874,6/20/2018 0:00,1,Subscription,PD ,623,PS 18-19 Organ,3166134,Mr. Jerome Haggart,
+PS031719,18799,3/17/2019 15:00,2616,Price B Box Circle,BOX CRC,B23,3,25,25,,13,Sold,3487104,6944658,1/17/2019 22:35,3,Single ,PD ,623,PS 18-19 Organ,3487104,Donna Pribyl,Attended
+PS031719,18799,3/17/2019 15:00,2625,Price 3 Dress Circle,DRESS,A,344,15,15,,13,Sold,3487530,6949908,1/20/2019 17:55,3,Single ,PD ,623,PS 18-19 Organ,3487530,Jamie Miller,Attended
+PS031719,18799,3/17/2019 15:00,2625,Price 3 Dress Circle,DRESS,A,345,15,15,,13,Sold,3487530,6949908,1/20/2019 17:55,3,Single ,PD ,623,PS 18-19 Organ,3487530,Jamie Miller,Attended
+PS031719,18799,3/17/2019 15:00,2637,Price 4 - Accessibility,ORCH,A,131,5,5,,13,Sold,3487748,6950842,1/21/2019 14:56,3,Single ,PD ,623,PS 18-19 Organ,3487748,Jennifer Hom,Attended
+PS031719,18799,3/17/2019 15:00,2637,Price 4 - Accessibility,ORCH,A,132,5,5,,13,Sold,3487748,6950842,1/21/2019 14:56,3,Single ,PD ,623,PS 18-19 Organ,3487748,Jennifer Hom,Attended
+PS050519,18802,5/5/2019 19:00,2616,Price B Box Circle,BOX CRC,B19,2,50,,,0,Available,,,,,,AVL,623,PS 18-19 Organ,,,
+PS050519,18802,5/5/2019 19:00,2620,Price 2 Orch Terr Left,ORCH T,W,1,25,,,0,Available,,0,,,,AVL,623,PS 18-19 Organ,,,
+PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,ZZ,108,35,,,0,Available,,0,,,,AVL,623,PS 18-19 Organ,,,
+PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,W,107,0,0,,13,Sold,955085,7145449,5/5/2019 18:34,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,
+PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,V,112,0,0,,13,Sold,955085,7145449,5/5/2019 18:34,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,Attended
+PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,W,110,0,0,,13,Sold,955085,7145449,5/5/2019 18:34,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,Attended
+PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,V,115,0,0,,13,Sold,955085,7145449,5/5/2019 18:34,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,
+PS050519,18802,5/5/2019 19:00,2618,Price 1 Orch D - R,ORCH,J,101,0,0,,13,Sold,955085,7145480,5/5/2019 18:47,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,Attended
+PS050519,18802,5/5/2019 19:00,2631,Price 4 Orch AA - CC,ORCH,BB,122,10,10,,13,Sold,3352737,7031309,2/27/2019 21:27,3,Single ,PD ,623,PS 18-19 Organ,3352737,Mr. Mike D. Palombo,Attended
+PS050519,18802,5/5/2019 19:00,2631,Price 4 Orch AA - CC,ORCH,BB,124,10,10,,13,Sold,3352737,7031309,2/27/2019 21:27,3,Single ,PD ,623,PS 18-19 Organ,3352737,Mr. Mike D. Palombo,Attended
+PS050519,18802,5/5/2019 19:00,2631,Price 4 Orch AA - CC,ORCH,BB,125,10,10,,13,Sold,3352737,7031309,2/27/2019 21:27,3,Single ,PD ,623,PS 18-19 Organ,3352737,Mr. Mike D. Palombo,
+PS050519,18802,5/5/2019 19:00,2618,Price 1 Orch D - R,ORCH,H,102,28,28,,13,Sold,3352943,7139045,5/1/2019 9:25,3,Single ,PD ,623,PS 18-19 Organ,3352943,Ms. Barbara H. MacMullin,Attended

@@ -5,14 +5,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from . import _BaseTickets
-from ..helper import price_type_group_mapper
+from .base_tickets import _BaseTickets
+from .helpers import price_type_group_mapper
+from .decorators import check_data, check_series, inplace
 
 class Tickets(_BaseTickets):
-
     # ---------------------- filter methods -----------------
-    def filter_series(self, data=None, series=['Classics', 'Pops', 'Summer'],
-                      inplace=False):
+    @check_series
+    @check_data
+    @inplace
+    def filter_series(self, *, series=['Classics', 'Pops', 'Summer'],
+                      data=None, inplace=False):
         '''Filters to only include series provided
 
         Args:
@@ -22,24 +25,21 @@ class Tickets(_BaseTickets):
                   Default: ['Classics', 'Pops', 'Summer']
         inplace -- Overwrites existing data if True
                    default: False
-
         '''
-        data = self._check_data(data) # Check if dataframe provided
-        self._check_series(series) # Check if series are valid
         result = data[data['series'].isin(series)].reset_index(drop=True)
-        return self._inplace(inplace, result)
+        return result
 
 
-    def keep_paid(self, data=None, inplace=False):
-        data = self._check_data(data) # Check if dataframe provided
+    @check_data
+    @inplace
+    def keep_paid(self, *, data=None, inplace=False):
         result = data[data.paid_amt > 0].reset_index(drop=True)
-        return self._inplace(inplace, result)
+        return result
 
 
-    def drop_subs(self, data=None, inplace=False):
-        data = self._check_data(data)
-        data = self.transform_price_type_group(data=data)
-
+    @check_data
+    @inplace
+    def drop_subs(self, *, data=None, inplace=False):
         current_subs = data.loc[
             (data['price_type_group'] == 'Subscription') |\
             (data['price_type_group'] == 'Flex')
@@ -47,38 +47,44 @@ class Tickets(_BaseTickets):
         current_subs = set(current_subs['summary_cust_id'])
 
         result = data.loc[~data['summary_cust_id'].isin(current_subs)]
-        return self._inplace(inplace, result)
+        return result
 
-    def drop_sub_sales(self, data=None, inplace=False):
-        data = self._check_data(data)
-        data = self.transform_price_type_group(data=data)
 
+    @check_data
+    @inplace
+    def drop_sub_sales(self, *, data=None, inplace=False):
         mask = (data['price_type_group'] == 'Subscription') |\
                (data['price_type_group'] == 'Flex')
 
         result = data.loc[~mask]
-        return self._inplace(inplace, result)
+        return result
 
 
-    def filter_fys(self, fys, data=None, inplace=False):
-        data = self._check_data(data)
+    @check_data
+    @inplace
+    def filter_fys(self, fys, *, data=None, inplace=False):
         result = data.loc[data.fy.isin(fys)]
-        return self._inplace(inplace, result)
+        return result
 
-    def filter_perf_dt(self, to_date, data=None, inplace=False):
-        data = self._check_data(data)
+
+    @check_data
+    @inplace
+    def filter_perf_dt(self, to_date, *, data=None, inplace=False):
         result = data.loc[data['perf_dt'] <= to_date]
-        return self._inplace(inplace, result)
+        return result
+
 
     # -------------------------- mutations -----------------------------
-    def transform_price_type_group(self, mapper=price_type_group_mapper,
-                                   data=None, inplace=False):
-        data = self._check_data(data)
-        # data['price_type_group'] = data['price_type_group'].map(mapper)
-        return self._inplace(inplace, data)
+    @check_data
+    @inplace
+    def transform_price_type_group(self, *, data=None, inplace=False):
+        data['price_type_group'] = data['price_type_group'].map(price_type_group_mapper)
+        return data
 
-    def add_concert_number(self, data=None, inplace=False):
-        data = self._check_data(data)
+
+    @check_data
+    @inplace
+    def add_concert_number(self, *, data=None, inplace=False):
         data['performance'] = data['perf_dt'].map(self._concert_mapper)
         data = data[pd.notnull(data['performance'])].reset_index(drop=True)
 
@@ -89,7 +95,7 @@ class Tickets(_BaseTickets):
         # map numbered to performances
         data['perf_number'] = data['performance'].map(numbered)
 
-        return self._inplace(inplace, data)
+        return data
 
     # ------------------------- summary info -----------------------
     def total_subs(self, fy=None):
@@ -145,7 +151,8 @@ class Tickets(_BaseTickets):
         return len(filtered)
 
 
-    def new_to_file(self, fy, paid_only=True, data=None):
+    @check_data
+    def new_to_file(self, fy, paid_only=True, *, data=None):
         '''Calculates total tickets sold within a provided date range
 
         Args:
@@ -154,8 +161,6 @@ class Tickets(_BaseTickets):
         Returns:
         list of customer id numbers
         '''
-        data = self._check_data(data)
-
         if paid_only:
             data = self.keep_paid()
 
@@ -176,7 +181,8 @@ class Tickets(_BaseTickets):
         return new_to_file, retained_new
 
 
-    def minimum_purchases(self, min_lim=3, series=['Classics', 'Pops'], fys=None):
+    @check_series
+    def minimum_purchases(self, *, min_lim=3, series=['Classics', 'Pops'], fys=None):
         '''All non-subscribers that have purchased the min_lim amount or more
 
         Args:
@@ -206,6 +212,7 @@ class Tickets(_BaseTickets):
         return len(data)
 
 
+    @check_series
     def returning_singles_plt(self, to_date, series=['Classics', 'Pops', 'Summer'],
                           fys=None):
         '''Plots flow throughout the year of single ticket buyers
@@ -260,6 +267,7 @@ class Tickets(_BaseTickets):
         plt.show()
 
 
+    @check_series
     def plot_singles_by_zone(self, to_date, series=['Classics'],
                          fys=None):
         to_date = self._date_convert(to_date)

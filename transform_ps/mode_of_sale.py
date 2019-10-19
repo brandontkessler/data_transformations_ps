@@ -10,10 +10,7 @@ class ModeOfSale:
 
     '''
 
-    def __init__(self,
-                 qtr,
-                 fy,
-                 path='../../data/mode_of_sale/'):
+    def __init__(self, qtr, fy, path='../../data/mode_of_sale/'):
         self._qtr = self._check_qtr(qtr)
         self._fy = self._check_fy(fy)
         self._path = path

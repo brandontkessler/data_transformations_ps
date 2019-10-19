@@ -1,6 +1,6 @@
 import pandas as pd
-from ..helper import internal_ids, ticketing_dtype,  group_sales_ids
 
+from .helpers import ticketing_dtype, group_sales_ids, internal_ids
 
 class _BaseTickets:
     '''Base Class for working with PS ticketing data
@@ -16,13 +16,15 @@ class _BaseTickets:
     CAPACITY = 1750
     DTYPE = ticketing_dtype
 
+    DEFAULT_PATH = '../../data/ticket/'
+
     def __init__(self,
                  fys,
-                 path='../../data/ticket/',
+                 path=None,
                  drop_nan=True,
                  drop_internal_ids=True):
         self._fys = fys
-        self._path = path
+        self._path = path or self.DEFAULT_PATH
         self._concert_mapper = self._get_concert_mapper()
 
         self.data = self._build_dataset(drop_nan=drop_nan,
@@ -34,6 +36,9 @@ class _BaseTickets:
 
     def __repr__(self):
         return f"Tickets(fys='{self._fys}')"
+
+    def __str__(self):
+        return f'{self.data.columns}'
 
     # --------------------- constructor methods ------------------
     def _build_dataset(self, drop_nan, drop_internal_ids):
@@ -97,38 +102,9 @@ class _BaseTickets:
             return 'Price B'
         elif 'Accessible' in zone:
             return zone[11:]
-        elif 'Pit' in zone:
-            return 'Pit'
-        elif zone in [
-                'General Admission', 'Accessibility', 'Balcony Center',
-                'Balcony Left', 'Balcony Right', 'Orchestra', 'Parterre Center',
-                'Parterre Left', 'Parterre Right', 'Stage View'
-            ]:
-            return zone
         else:
-            raise TypeError(f'No matching price zone for {zone}')
+            return zone
 
     def _get_price_zones(self, data):
         data = data.map(self._map_zones)
-        return data
-
-    # --------------------- utility methods ------------------
-    def _inplace(self, inplace, data):
-        if inplace:
-            self.data = data
-        else:
-            return data
-
-    def _check_series(self, series):
-        options = ['Classics', 'Pops','Family', 'Summer', 'Specials',
-                   'Connections', 'Organ', 'Chamber']
-
-        check = all([s in options for s in series])
-        msg = f'Series must only include: {options}'
-        if not check:
-            raise ValueError(msg)
-
-    def _check_data(self, data):
-        if data is None:
-            data = self.data
         return data

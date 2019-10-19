@@ -1,4 +1,5 @@
 import numpy as np
+import math
 
 ticketing_dtype = {
     'perf_code': object,
@@ -26,7 +27,6 @@ ticketing_dtype = {
     'summary_cust_name': object,
     'attended': object
 }
-
 
 donor_dtype = {
     'trn_count': np.dtype('int64'),
@@ -112,4 +112,81 @@ donor_dtype = {
     'sym100_flag': np.dtype('int64'),
     'ps_tribute': np.dtype('O'),
     'ps_honorarium': np.dtype('O')
+}
+
+
+# Known group sales IDs
+group_sales_ids = [
+    44417
+]
+
+
+# Known internal IDs
+internal_ids = [
+    0,                 # Unknown IDs
+    2700674,           # Terry Dwyer
+    955085,            # PSO Comps
+    3141490,           # Symphony Shop
+    91013,             # PSO Orchestra Members
+    118401,            # PSO Prez - JF
+    91006,             # PSO Artist Comps
+    3328612,           # Development Guest
+    925728,            # Kurt Mortenson (Internal)
+    2010347,           # Goldstar
+    2437127,           # Lorraine Caukin (Internal)
+    2515897,           # Gregory Pierre Cox (internal)
+    3080718,           # Gary Good
+    91015,             # PSO Press
+    120696             # Carl St. Clair
+]
+
+
+price_type_group_mapper = {
+    'Subscription': 'Subscription',
+    'Single ': 'Single',
+    'Flex': 'Subscription',
+    'Discount': 'Single',
+    'Comp': 'Comp'
+}
+
+# Sub package definitions
+pkg_definitions = {
+    'PS 2019 Summer': 3,
+    '19-20 Connections': 4,
+    'Pops Fri 7': 7,
+    'Pops Sat 7': 7,
+    'Clx Thu 12': 12,
+    'Clx Sat 12': 12,
+    'Clx Fri 12': 12,
+    '19-20 Family 10:00am': 5,
+    'Clx Sat Romantic 6': 6,
+    'PS 19-20 Pops CYO 4': 4,
+    '19-20 Family 11:30am': 5,
+    'Clx Thu Romantic 6': 6,
+    'Clx Fri Romantic 6': 6,
+    '19-20 Cafe Ludwig': 3,
+    'Clx Thu Escapes 6': 6,
+    'PS 19-20 Flex 4A': 4,
+    'Clx Sat Escapes 6': 6,
+    'PS 19-20 Flex 4B Lux': 4,
+    'PS 19-20 Pedals and Pipes': 3,
+    'Clx Fri Escapes 6': 6,
+    'PS 19-20 Flex 3A': 3,
+    'PS 19-20 Classics CYO 6': 6
+}
+
+
+donor_tier_mapper = {
+    '1': (1.0, 99.99),
+    '2': (100.0, 299.99),
+    '3': (300.0, 499.99),
+    '4': (500.0, 999.99),
+    '5': (1000.0, 2499.99),
+    '6': (2500.0, 4999.99),
+    '7': (5000.0, 9999.99),
+    '8': (10000.0, 19999.99),
+    '9': (20000.0, 29999.99),
+    '10': (30000.0, 49999.99),
+    '11': (50000.0, 99999.99),
+    '12': (100000.0, math.inf)
 }

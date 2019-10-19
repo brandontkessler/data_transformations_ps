@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from ..helper import pkg_definitions
+from .helpers import pkg_definitions
 
 class Subscriptions:
     '''A class to simplify the process of managing subscription data.
@@ -25,7 +25,14 @@ class Subscriptions:
     def _data_import(self, fy, path):
         data = pd.read_csv(path + f'fy{fy}.csv', encoding='ISO-8859-1')
         data['fy'] = fy
+        data['order_dt'] = self._date_convert(data['order_dt'])
         return data
+
+    def _date_convert(self, obj):
+        if isinstance(obj, pd.Series):
+            return pd.to_datetime(obj).reset_index(drop=True)
+        return pd.to_datetime(obj)
+
 
     def _get_total_pkgs(self):
         return sum(self.data['num_seats'])
