@@ -38,25 +38,30 @@ class TestPSData(unittest.TestCase):
         self.ticket = PSData(Ticket)
         self.donor = PSData(Donor)
         self.subscriber = PSData(Subscriber)
+        self.mode_of_sale = PSData(ModeOfSale)
         self.fp_ticket = os.path.join(THIS_DIR, 'test_data/ticket/')
         self.fp_donor = os.path.join(THIS_DIR, 'test_data/donor/')
         self.fp_subscriber = os.path.join(THIS_DIR, 'test_data/sub/')
+        self.fp_mode_of_sale = os.path.join(THIS_DIR, 'test_data/mode_of_sale/')
 
     def tearDown(self):
         pass
 
     def test_get_data(self):
-        tdata19 = self.ticket.get_data(fys=19, path=self.fp_ticket)
-        self.assertEqual(len(tdata19), 44)
+        self.ticket.get_data(fys=19, path=self.fp_ticket)
+        self.assertEqual(len(self.ticket.raw), 44)
 
-        tdata_all = self.ticket.get_data(fys=[20, 19], path=self.fp_ticket)
-        self.assertEqual(len(tdata_all), 111)
+        self.ticket.get_data(fys=[20, 19], path=self.fp_ticket)
+        self.assertEqual(len(self.ticket.raw), 111)
 
-        ddata = self.donor.get_data(fys=13, path=self.fp_donor)
-        self.assertEqual(len(ddata), 128)
+        self.donor.get_data(fys=13, path=self.fp_donor)
+        self.assertEqual(len(self.donor.raw), 128)
 
-        sdata20 = self.subscriber.get_data(fys=20, path=self.fp_subscriber)
-        self.assertEqual(len(sdata20), 30)
+        self.subscriber.get_data(fys=20, path=self.fp_subscriber)
+        self.assertEqual(len(self.subscriber.raw), 30)
 
-        sdata = self.subscriber.get_data(fys=[19, 20], path=self.fp_subscriber)
-        self.assertEqual(len(sdata), 88)
+        self.subscriber.get_data(fys=[19, 20], path=self.fp_subscriber)
+        self.assertEqual(len(self.subscriber.raw), 88)
+
+        self.mode_of_sale.get_data(fys=20, path=self.fp_mode_of_sale, qtr=1)
+        self.assertEqual(len(self.mode_of_sale.raw), 26)
