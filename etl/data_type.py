@@ -1,6 +1,7 @@
 from .exception import UnexpectedDataType
 from .data_import import ImportData
 from .data_prep import PrepDataFactory
+from .analysis import TierAnalysis
 
 class DataFactory:
     '''Factory used to create the data type necessary for analysis'''
@@ -69,6 +70,7 @@ class Ticket:
 class Donor:
     def __init__(self):
         self._type = 'donor'
+        self.tier_analysis = TierAnalysis()
 
 class Subscriber:
     def __init__(self):
