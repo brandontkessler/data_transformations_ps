@@ -9,7 +9,8 @@ class PrepDataFactory:
             'ticket': PrepTicketData,
             'donor': PrepDonorData,
             'subscriber': PrepSubscriberData,
-            'mode_of_sale': PrepModeOfSaleData
+            'mode_of_sale': PrepModeOfSaleData,
+            'attribute': PrepAttributeData
         }
 
     def get_preparer(self, type):
@@ -132,4 +133,9 @@ class PrepModeOfSaleData:
 
         data['mos_desc'] = data['mos_desc'].replace(mapper)
         data['mos_desc'] = data['mos_desc'].replace({'OC': 'SCFTA'}, regex=True)
+        return data
+
+class PrepAttributeData:
+    def prepare_data(self, dataframe, full):
+        data = dataframe.copy()
         return data

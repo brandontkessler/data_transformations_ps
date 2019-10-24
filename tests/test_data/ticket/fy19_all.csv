@@ -2,47 +2,803 @@
 "Season: PS 2018 Summer, PS 18-19 Classics, PS 18-19 Pops, PS 18-19 Specials, PS 18-19 Connections, PS 18-19 Chamber, PS 18-19 Family, PS 18-19 Organ",,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,
 perf_code,perf_no,perf_dt,zone_no,zone_desc,section,row,seat,home_price,paid_amt,fee_amt,seat_status,seat_status_desc,customer_no,order_no,order_dt,price_type_group_id,price_type_group,pd_up,season,season_desc,summary_cust_id,summary_cust_name,attended
-PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 6,F,15,18.5,18.5,,13,Sold,3011662,6516065,5/9/2018 13:59,1,Subscription,PD ,588,PS 2018 Summer,3011662,Avrum Kaufman and Larisa Canter Household,
-PS102718,17567,10/27/2018 20:00,4160,Price 1 Orchestra Terrace Left,ORCH T,T,1,96.5,96.5,,13,Sold,121281,6232820,3/5/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,121281,Donald and Jean Taub Household,Attended
-PS011019,17653,1/10/2019 20:00,4174,Price 2 Promenade Circle,PROM,D,405,67.5,30,,13,Sold,3245876,6695490,10/9/2018 15:40,8,Flex,PD ,590,PS 18-19 Classics,3245876,Ms. Freddi Pakier,Attended
-PS022319,17691,2/23/2019 20:00,4190,Price 2 Grand Tier,GRAND,A,541,86,99,,13,Sold,3383826,6896466,12/18/2018 15:16,3,Single ,PD ,590,PS 18-19 Classics,3383826,Jesika Go,Attended
-PS021519,17741,2/15/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,Z,101,0,0,,13,Sold,3141490,7007296,2/15/2019 12:47,4,Comp,PD ,594,PS 18-19 Pops,3141490,Symphony Shop,Attended
-PS060919,17909,6/9/2019 15:00,4882,Price 1 Orchestra Terr Center,ORCH T,ZZ,117,0,0,,13,Sold,3093865,7185012,6/4/2019 17:38,4,Comp,PD ,598,PS 18-19 Connections,3093865,Ms. Louise M. Jacobs,Attended
-PS102718A,18047,10/27/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,W,23,36,,,0,Available,,0,,,,AVL,607,PS 18-19 Family,,,
-PS102718A,18047,10/27/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,Z,115,36,,,0,Available,,0,,,,AVL,607,PS 18-19 Family,,,
-PS102718A,18047,10/27/2018 10:00,2130,Price 3 Prom Circle,PROM,D,413,26,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
-PS102718A,18047,10/27/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,V,38,36,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
-PS102718A,18047,10/27/2018 10:00,2130,Price 3 Prom Circle,PROM,D,426,26,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
-PS041319N,18100,4/13/2019 11:30,2124,Price 1 Orch,ORCH,N,114,36,36,,13,Sold,0,7117076,4/13/2019 11:28,3,Single ,PD ,607,PS 18-19 Family,0,,Attended
-PS041319N,18100,4/13/2019 11:30,2124,Price 1 Orch,ORCH,N,113,36,36,,13,Sold,0,7117076,4/13/2019 11:28,3,Single ,PD ,607,PS 18-19 Family,0,,Attended
-PS041319N,18100,4/13/2019 11:30,2133,Price 4 Grand Tier,GRAND,G,504,12,12,,13,Sold,0,7117079,4/13/2019 11:30,3,Single ,PD ,607,PS 18-19 Family,0,,Attended
-PS041319N,18100,4/13/2019 11:30,2133,Price 4 Grand Tier,GRAND,G,503,12,12,,13,Sold,0,7117079,4/13/2019 11:30,3,Single ,PD ,607,PS 18-19 Family,0,,Attended
-PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,430,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
-PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,439,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,
-PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,425,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
-PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,421,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
-PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,437,0,0,,13,Sold,3009379,7061752,3/12/2019 15:37,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
-PS031719,18799,3/17/2019 15:00,2624,Price 2 Grand Tier,GRAND,A,512,0,0,,13,Sold,3093484,7069692,3/15/2019 16:10,4,Comp,PD ,623,PS 18-19 Organ,3093484,The Center For Autism And Neurodevelopment Disr,
-PS031719,18799,3/17/2019 15:00,2624,Price 2 Grand Tier,GRAND,A,521,0,0,,13,Sold,3093484,7069692,3/15/2019 16:10,4,Comp,PD ,623,PS 18-19 Organ,3093484,The Center For Autism And Neurodevelopment Disr,Attended
-PS031719,18799,3/17/2019 15:00,2618,Price 1 Orch D - R,ORCH,L,120,10,10,,13,Sold,3157435,7060838,3/12/2019 10:44,3,Single ,PD ,623,PS 18-19 Organ,3157435,Duyen Tong Household,Attended
-PS031719,18799,3/17/2019 15:00,2621,Price 2 Orch Terr Right,ORCH T,U,42,0,0,,13,Sold,3159435,7032708,2/28/2019 12:48,4,Comp,PD ,623,PS 18-19 Organ,3159435,Mr. Michael Brodie,Attended
-PS031719,18799,3/17/2019 15:00,2621,Price 2 Orch Terr Right,ORCH T,U,40,0,0,,13,Sold,3159435,7032708,2/28/2019 12:48,4,Comp,PD ,623,PS 18-19 Organ,3159435,Mr. Michael Brodie,Attended
-PS031719,18799,3/17/2019 15:00,2620,Price 2 Orch Terr Left,ORCH T,W,1,23.5,25,,13,Sold,3165286,6716990,10/23/2018 11:02,1,Subscription,PD ,623,PS 18-19 Organ,3165286,Leslie Pratt,Attended
-PS031719,18799,3/17/2019 15:00,2630,Price 4 Orch A - C,ORCH,C,120,10,10,,13,Sold,3166134,6550874,6/20/2018 0:00,1,Subscription,PD ,623,PS 18-19 Organ,3166134,Mr. Jerome Haggart,
-PS031719,18799,3/17/2019 15:00,2616,Price B Box Circle,BOX CRC,B23,3,25,25,,13,Sold,3487104,6944658,1/17/2019 22:35,3,Single ,PD ,623,PS 18-19 Organ,3487104,Donna Pribyl,Attended
-PS031719,18799,3/17/2019 15:00,2625,Price 3 Dress Circle,DRESS,A,344,15,15,,13,Sold,3487530,6949908,1/20/2019 17:55,3,Single ,PD ,623,PS 18-19 Organ,3487530,Jamie Miller,Attended
-PS031719,18799,3/17/2019 15:00,2625,Price 3 Dress Circle,DRESS,A,345,15,15,,13,Sold,3487530,6949908,1/20/2019 17:55,3,Single ,PD ,623,PS 18-19 Organ,3487530,Jamie Miller,Attended
-PS031719,18799,3/17/2019 15:00,2637,Price 4 - Accessibility,ORCH,A,131,5,5,,13,Sold,3487748,6950842,1/21/2019 14:56,3,Single ,PD ,623,PS 18-19 Organ,3487748,Jennifer Hom,Attended
-PS031719,18799,3/17/2019 15:00,2637,Price 4 - Accessibility,ORCH,A,132,5,5,,13,Sold,3487748,6950842,1/21/2019 14:56,3,Single ,PD ,623,PS 18-19 Organ,3487748,Jennifer Hom,Attended
-PS050519,18802,5/5/2019 19:00,2616,Price B Box Circle,BOX CRC,B19,2,50,,,0,Available,,,,,,AVL,623,PS 18-19 Organ,,,
-PS050519,18802,5/5/2019 19:00,2620,Price 2 Orch Terr Left,ORCH T,W,1,25,,,0,Available,,0,,,,AVL,623,PS 18-19 Organ,,,
-PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,ZZ,108,35,,,0,Available,,0,,,,AVL,623,PS 18-19 Organ,,,
-PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,W,107,0,0,,13,Sold,955085,7145449,5/5/2019 18:34,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,
-PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,V,112,0,0,,13,Sold,955085,7145449,5/5/2019 18:34,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,Attended
-PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,W,110,0,0,,13,Sold,955085,7145449,5/5/2019 18:34,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,Attended
-PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,V,115,0,0,,13,Sold,955085,7145449,5/5/2019 18:34,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,
-PS050519,18802,5/5/2019 19:00,2618,Price 1 Orch D - R,ORCH,J,101,0,0,,13,Sold,955085,7145480,5/5/2019 18:47,4,Comp,PD ,623,PS 18-19 Organ,955085,Pso Comps,Attended
-PS050519,18802,5/5/2019 19:00,2631,Price 4 Orch AA - CC,ORCH,BB,122,10,10,,13,Sold,3352737,7031309,2/27/2019 21:27,3,Single ,PD ,623,PS 18-19 Organ,3352737,Mr. Mike D. Palombo,Attended
-PS050519,18802,5/5/2019 19:00,2631,Price 4 Orch AA - CC,ORCH,BB,124,10,10,,13,Sold,3352737,7031309,2/27/2019 21:27,3,Single ,PD ,623,PS 18-19 Organ,3352737,Mr. Mike D. Palombo,Attended
-PS050519,18802,5/5/2019 19:00,2631,Price 4 Orch AA - CC,ORCH,BB,125,10,10,,13,Sold,3352737,7031309,2/27/2019 21:27,3,Single ,PD ,623,PS 18-19 Organ,3352737,Mr. Mike D. Palombo,
-PS050519,18802,5/5/2019 19:00,2618,Price 1 Orch D - R,ORCH,H,102,28,28,,13,Sold,3352943,7139045,5/1/2019 9:25,3,Single ,PD ,623,PS 18-19 Organ,3352943,Ms. Barbara H. MacMullin,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,M,61,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS041319,17701,4/13/2019 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,Z,127,33.25,33.25,,13,Sold,2784840,6599114,8/3/2018 9:22,1,Subscription,PD ,590,PS 18-19 Classics,2784840,Ms. Patricia Allen Shanahan,Attended
+PS020919N,18094,2/9/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,U,22,28.8,28.8,,13,Sold,3430871,6630898,8/28/2018 10:41,1,Subscription,PD ,607,PS 18-19 Family,3430871,Mrs. Jie Yu,Attended
+PS031619,17744,3/16/2019 20:00,3692,Price 1 Orchestra,ORCH,J,113,110.5,110.5,,13,Sold,82342,6406910,5/7/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,82342,"Brobeck, West, Borges, Rosa, & Douville",Attended
+PS020919A,18091,2/9/2019 10:00,2126,Price 2 Dress Circle,DRESS,A,335,24.8,24.8,,13,Sold,3428603,6612367,8/15/2018 20:17,1,Subscription,PD ,607,PS 18-19 Family,3428603,Mrs. Emily Gombos,Attended
+PS120818A,18082,12/8/2018 10:00,2124,Price 1 Orch,ORCH,G,110,28.8,28.8,,13,Sold,3212335,6413874,5/14/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,3212335,Leann Lundberg Household,Attended
+PS120618,17645,12/6/2018 20:00,4185,Price 5 Promenade Circle,PROM,C,401,25,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 6,T,24,0,0,,13,Sold,2005858,6612108,8/15/2018 14:05,4,Comp,PD ,588,PS 2018 Summer,2005858,Huntington Beach Band,
+PS081818,17442,8/18/2018 20:00,6527,Price 5,Sec 7,L,37,25,25,,13,Sold,3068050,6600850,8/4/2018 16:52,3,Single ,PD ,588,PS 2018 Summer,3068050,Ploghaus,
+PS060719,17718,6/7/2019 20:00,4169,Price 4 Accessible Orchestra,ORCH,A,103,40,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS102718A,18047,10/27/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,U,29,36,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 4,X,25,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS021619,17742,2/16/2019 20:00,3702,Price 3 Dress Choral Terr,DRESS,CT,7,59.25,88,,13,Sold,3489899,6972520,2/3/2019 16:20,3,Single ,PD ,594,PS 18-19 Pops,3489899,Bryan S. Kim,Attended
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 7,B,4,28,28,,13,Sold,111273,6109755,2/23/2018 0:00,1,Subscription,PD ,588,PS 2018 Summer,111273,Ms. Tana Friend,
+PS022619,17690,2/26/2019 20:00,4179,Price 3 Orchestra Terr Left,ORCH T,W,15,66,71,,13,Sold,3188418,6733597,11/1/2018 20:01,3,Single ,PD ,590,PS 18-19 Classics,3188418,Ms. Debra Johnston,Attended
+PS032119,17694,3/21/2019 20:00,4164,Price 1 Grand Tier,GRAND,B,531,25,25,,13,Sold,3481999,6900597,12/20/2018 13:12,3,Single ,PD ,590,PS 18-19 Classics,3481999,Centennial High School  Orchestra,
+PS102518,17565,10/25/2018 20:00,4184,Price 5 Orchestra,ORCH,A,127,25,25,,13,Sold,401619,6232869,3/20/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,401619,Frank and Amy Umansky Household,Attended
+PS020919N,18094,2/9/2019 11:30,2133,Price 4 Grand Tier,GRAND,D,521,0,0,,13,Sold,3133262,6976259,2/5/2019 19:15,4,Comp,PD ,607,PS 18-19 Family,3133262,Santa Ana Unified School District,Attended
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 2,Q,34,50,50,,13,Sold,2850506,6215500,1/13/2018 13:45,1,Subscription,PD ,588,PS 2018 Summer,2850506,April and Dan Cregg Household,
+PS070418,17439,7/4/2018 20:00,6527,Price 5,Sec 5,H,14,25,,,4,Held,,0,,,,AVL,588,PS 2018 Summer,,,
+PS011219,17655,1/12/2019 20:00,4158,Price 1 Orchestra,ORCH,R,109,67.5,67.5,,13,Sold,394651,6584975,7/20/2018 16:18,8,Flex,PD ,590,PS 18-19 Classics,394651,John and Margaret Thomas Household,Attended
+PS120918,17892,12/9/2018 15:00,4184,Price 5 Orchestra,ORCH,A,121,17.5,17.5,,13,Sold,2640622,6424715,3/21/2018 15:24,3,Single ,PD ,597,PS 18-19 Specials,2640622,James and Lois Farr Household,Attended
+PS041319N,18100,4/13/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,W,120,36,36,,13,Sold,3500135,7075773,3/18/2019 17:34,3,Single ,PD ,607,PS 18-19 Family,3500135,Jason Thibodeau,Attended
+PS090818,17445,9/8/2018 20:00,6527,Price 5,Sec 3,W,34,25,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS051619,17709,5/16/2019 20:00,4173,Price 2 Orchestra Terr Right,ORCH T,T,2,86,86,,13,Sold,3165360,7011107,2/17/2019 10:45,3,Single ,PD ,590,PS 18-19 Classics,3165360,Patricia Vitarelli,Attended
+PS121418,17739,12/14/2018 20:00,3694,Price 1 Accessible Orchestra,ORCH,B,101,110.5,110.5,,13,Sold,251259,6406701,5/7/2018 17:08,1,Subscription,PD ,594,PS 18-19 Pops,251259,Ms. Kristin K. Jackson,Attended
+PS032119,17694,3/21/2019 20:00,4188,Price 3 Accessible Dress Side,DRESS,B7,4,67.5,30,,13,Sold,2819013,6699014,10/11/2018 10:41,8,Flex,PD ,590,PS 18-19 Classics,2819013,Mr. Robert Kaminski,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,N,16,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS120818,17650,12/8/2018 20:00,4164,Price 1 Grand Tier,GRAND,G,512,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS060919,17909,6/9/2019 15:00,4897,Price 2 Orchestra Terr Right,ORCH T,U,38,69,81,,13,Sold,3504078,7118410,4/14/2019 13:21,3,Single ,PD ,598,PS 18-19 Connections,3504078,Mr. James T. Jones,Attended
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 3,Q,10,0,0,,13,Sold,955085,6613255,8/16/2018 16:40,4,Comp,PD ,588,PS 2018 Summer,955085,Pso Comps,
+PS020319,17908,2/3/2019 15:00,4883,Price 1 Orchestra Terr Left,ORCH T,T,13,0,0,,13,Sold,2868472,6514103,5/8/2018 12:47,4,Comp,PD ,598,PS 18-19 Connections,2868472,Timothy Chervenak Household,Attended
+PS081818,17442,8/18/2018 20:00,6528,Accessible Price 3,Sec 3,B,4,37,37,,13,Sold,3072455,6110065,11/14/2017 0:00,1,Subscription,PD ,588,PS 2018 Summer,3072455,Stephen and Janet Rasch Household,
+PS020119,17670,2/1/2019 20:00,4164,Price 1 Grand Tier,GRAND,B,512,116,25,,13,Sold,2010347,6969703,2/1/2019 15:27,3,Single ,PD ,590,PS 18-19 Classics,2010347,Goldstar Events,Attended
+PS051719,17713,5/17/2019 20:00,4161,Price 1 Dress Circle,DRESS,A,331,0,0,,13,Sold,2808731,7153979,5/10/2019 17:44,4,Comp,PD ,590,PS 18-19 Classics,2808731,Working Wardrobes,Attended
+PS110918,17737,11/9/2018 20:00,3686,Price B Box Circle,BOX CRC,B 7,1,0,0,,13,Sold,3361604,6749121,11/9/2018 16:03,4,Comp,PD ,594,PS 18-19 Pops,3361604,Veteran Tickets Foundation,
+PS102718A,18047,10/27/2018 10:00,2124,Price 1 Orch,ORCH,J,116,36,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS041219,17700,4/12/2019 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,Y,123,40,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS081818,17442,8/18/2018 20:00,6523,Price 1,Sec 6,B,16,99,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS042719,17746,4/27/2019 20:00,3686,Price B Box Circle,BOX CRC,B28,3,195,195,,13,Sold,121791,6406947,5/1/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,121791,W. and Beverly Ulmer Household,Attended
+PS032419,18115,3/24/2019 19:00,3692,Price 1 Orchestra,ORCH,L,122,86,137,,13,Sold,3491080,6986568,2/10/2019 20:09,3,Single ,PD ,597,PS 18-19 Specials,3491080,Houshang Habibi,Attended
+PS102718,17567,10/27/2018 20:00,4184,Price 5 Orchestra,ORCH,CC,107,25,25,,13,Sold,112871,6232812,3/8/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,112871,Fusao and Mami Higashi Household,Attended
+PS011019,17653,1/10/2019 20:00,4161,Price 1 Dress Circle,DRESS,C,316,10,10,,13,Sold,3485117,6927071,1/8/2019 16:32,3,Single ,PD ,590,PS 18-19 Classics,3485117,Mr. Haoyue Wang,Attended
+PS120818A,18082,12/8/2018 10:00,2128,Price 3 Choral T Behind Stage,CHORAL,D,211,46,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 5,R,32,0,0,,13,Sold,2852603,6623284,8/23/2018 17:32,4,Comp,PD ,588,PS 2018 Summer,2852603,TACA,
+PS092918,17552,9/29/2018 20:00,4158,Price 1 Orchestra,ORCH,G,105,97.5,97.5,,13,Sold,3387571,6635783,8/31/2018 15:22,1,Subscription,PD ,590,PS 18-19 Classics,3387571,Mr. Mike Kilpatrick,Attended
+PS020319,17908,2/3/2019 15:00,4896,Price 3 Orchestra,ORCH,C,101,39.75,39.75,,13,Sold,2894131,6382523,3/5/2018 17:45,1,Subscription,PD ,598,PS 18-19 Connections,2894131,Daniel Rescia,
+PS120818N,18083,12/8/2018 11:30,2125,Price 1 Orch Terrace,ORCH T,ZZ,113,56,56,,13,Sold,3315008,6616852,8/19/2018 21:48,3,Single ,PD ,607,PS 18-19 Family,3315008,Mrs. Andi Chi,Attended
+PS020319,17908,2/3/2019 15:00,4882,Price 1 Orchestra Terr Center,ORCH T,Z,102,0,0,,13,Sold,3141490,6967973,1/31/2019 15:11,4,Comp,PD ,598,PS 18-19 Connections,3141490,Symphony Shop,Attended
+PS051619,17709,5/16/2019 20:00,4158,Price 1 Orchestra,ORCH,E,105,96.5,96.5,,13,Sold,3068769,6233556,3/22/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3068769,Alan and Anne Block Household,Attended
+PS092718,17550,9/27/2018 20:00,4185,Price 5 Promenade Circle,PROM,D,435,25,37,,13,Sold,2658678,6658254,9/22/2018 15:16,3,Single ,PD ,590,PS 18-19 Classics,2658678,Ms. Mary Thomas,Attended
+PS120718,17649,12/7/2018 20:00,4180,Price 3 Promenade Circle,PROM,B,417,75,33,,13,Sold,3196549,6852005,11/26/2018 10:35,8,Flex,PD ,590,PS 18-19 Classics,3196549,Joel and Sharon Perlmuter Household,
+PS042619,17745,4/26/2019 20:00,3690,Price P Orchestra,ORCH,BB,129,67.5,67.5,,13,Sold,2846005,6610404,8/13/2018 16:25,8,Flex,PD ,594,PS 18-19 Pops,2846005,Karen Larsen and Mark Eubanks Household,Attended
+PS060919,17909,6/9/2019 15:00,4877,Price B Box Circle,BOX CRC,B14,1,84.75,84.75,,13,Sold,2701568,6255757,3/9/2018 0:00,1,Subscription,PD ,598,PS 18-19 Connections,2701568,Ms. Diana Lewelling,Attended
+PS120918,17892,12/9/2018 15:00,4193,Price 4 Orchestra Terr Center,ORCH T,X,126,28,28,,13,Sold,375741,6422436,3/20/2018 17:14,3,Single ,PD ,597,PS 18-19 Specials,375741,Maria Skalmowski Household,
+PS022319,17691,2/23/2019 20:00,4195,Price 2 Dress Circle,DRESS,A,307,71.5,71.5,,13,Sold,2381947,6233692,3/15/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2381947,Gordon & Christine Mc Laren,Attended
+PS050519,18802,5/5/2019 19:00,2619,Price 1 Orch Terr Center,ORCH T,Y,128,35,,,0,Available,,0,,,,AVL,623,PS 18-19 Organ,,,
+PS093018,17905,9/30/2018 15:00,4903,Price 4 Accessible Orchestra,ORCH,B,132,22,22,,13,Sold,190788,6255667,3/23/2018 0:00,1,Subscription,PD ,598,PS 18-19 Connections,190788,Ms. Josephine DiStefano,Attended
+PS081818,17442,8/18/2018 20:00,6527,Price 5,Sec 3,W,42,25,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,D,12,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS081818,17442,8/18/2018 20:00,6525,Price 3,Sec 7,U,16,0,0,,13,Sold,230012,6110215,3/22/2018 0:00,4,Comp,PD ,588,PS 2018 Summer,230012,Mr. Billy C. Hall,
+PS111518,17639,11/15/2018 20:00,4162,Price 1 Dress Circle Side,DRESS,B10,3,96.5,96.5,,13,Sold,2429411,6233306,4/2/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2429411,Richard and Carolyn Williams Household,Attended
+PS032219,17695,3/22/2019 20:00,4190,Price 2 Grand Tier,GRAND,F,502,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 4,G,14,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS042619,17745,4/26/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,V,117,110.5,110.5,,13,Sold,2868445,6406848,5/9/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2868445,Charles and Dianne Jones Household,
+PS121518,17740,12/15/2018 20:00,3705,Price 4 Promenade Chorale Terr,PROM,CT,13,45,45,,13,Sold,3338619,6716722,10/23/2018 8:45,3,Single ,PD ,594,PS 18-19 Pops,3338619,Dave Trattner,
+PS013119,17669,1/31/2019 20:00,4176,Price 4 Dress Chorale Terr,DRESS,CT,17,33.25,33.25,,13,Sold,156729,6233081,2/27/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,156729,Michael and Maria Buhbe Household,Attended
+PS013119,17669,1/31/2019 20:00,4170,Price 5 Accessible Orchestra,ORCH,A,129,25,25,,13,Sold,3335679,6431803,3/24/2018 15:36,1,Subscription,PD ,590,PS 18-19 Classics,3335679,G. and Susan Fouts Household,Attended
+PS022319,17691,2/23/2019 20:00,4166,Price 1 Accessible Box Circle,BOX CRC,B 8,2,116,131,,13,Sold,3483714,6920120,1/4/2019 13:34,3,Single ,PD ,590,PS 18-19 Classics,3483714,Ms. Denise Garcia,Attended
+PS042619,17745,4/26/2019 20:00,3702,Price 3 Dress Choral Terr,DRESS,CT,2,79,89,,13,Sold,3344140,7119885,4/15/2019 18:06,3,Single ,PD ,594,PS 18-19 Pops,3344140,Ms. Claudia Amici,
+PS011219,17655,1/12/2019 20:00,4184,Price 5 Orchestra,ORCH,A,128,20,20,,13,Sold,2868752,6233447,4/9/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2868752,Jutta Thorne Household,Attended
+PS121418,17739,12/14/2018 20:00,3693,Price 1 Orchestra Terrace,ORCH T,Y,124,0,0,,13,Sold,3141490,6887935,12/14/2018 12:24,4,Comp,PD ,594,PS 18-19 Pops,3141490,Symphony Shop,
+PS031619,17744,3/16/2019 20:00,3692,Price 1 Orchestra,ORCH,N,107,110.5,143,,13,Sold,3482838,6906981,12/23/2018 13:06,3,Single ,PD ,594,PS 18-19 Pops,3482838,Mrs. Kylie Larkin,
+PS041119,17699,4/11/2019 20:00,4192,Price 3 Grand Tier,GRAND,D,537,66,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,G,28,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS022119,17689,2/21/2019 20:00,4164,Price 1 Grand Tier,GRAND,E,505,25,25,,13,Sold,2508568,6979660,2/7/2019 15:57,3,Single ,PD ,590,PS 18-19 Classics,2508568,Ms. Laura Rutherford,Attended
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,T,3,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS032319,17696,3/23/2019 20:00,4156,Price B Box Circle,BOX CRC,B30,5,0,0,,13,Sold,3432963,7085474,3/22/2019 15:45,4,Comp,PD ,590,PS 18-19 Classics,3432963,Dennis Kim,Attended
+PS020119,17670,2/1/2019 20:00,4161,Price 1 Dress Circle,DRESS,A,318,96.5,96.5,,13,Sold,3280531,6937583,1/14/2019 12:09,1,Subscription,PD ,590,PS 18-19 Classics,3280531,Ms. Cathrine Castaldi,Attended
+PS021519,17741,2/15/2019 20:00,3714,Price 2 Grand Tier,GRAND,E,512,75,33,,13,Sold,224076,6715993,10/22/2018 16:41,8,Flex,PD ,594,PS 18-19 Pops,224076,Mrs. Mary Grainger,Attended
+PS092718,17550,9/27/2018 20:00,4171,Price 2 Orchestra,ORCH,P,112,73.5,73.5,,13,Sold,3263369,6667625,9/26/2018 19:28,1,Subscription,PD ,590,PS 18-19 Classics,3263369,Giulio and Cheryl Ongaro Household,Attended
+PS041319,17701,4/13/2019 20:00,4190,Price 2 Grand Tier,GRAND,B,509,0,0,,13,Sold,3009379,7116139,4/12/2019 17:33,4,Comp,PD ,590,PS 18-19 Classics,3009379,Oc Rescue Mission,Attended
+PS092818,17551,9/28/2018 20:00,4184,Price 5 Orchestra,ORCH,A,128,25,25,,13,Sold,3064239,6232749,3/15/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3064239,Mr. John A. Mattson,Attended
+PS101218,17735,10/12/2018 20:00,3695,Price 2 Orchestra Terr Left,ORCH T,V,41,85,85,,13,Sold,3156117,6406877,4/2/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,3156117,Ms. Mary Hoffman,Attended
+PS060619,17717,6/6/2019 20:00,4195,Price 2 Dress Circle,DRESS,B,346,64.5,64.5,,13,Sold,2885840,6616260,8/19/2018 13:55,3,Single ,PD ,590,PS 18-19 Classics,2885840,James and Karen Keithley Household,
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 1,O,11,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS041319A,18097,4/13/2019 10:00,2130,Price 3 Prom Circle,PROM,B,433,20.8,20.8,,13,Sold,2732063,6725595,10/29/2018 11:06,1,Subscription,PD ,607,PS 18-19 Family,2732063,Keri and Roy Comer Household,Attended
+PS013119,17669,1/31/2019 20:00,4161,Price 1 Dress Circle,DRESS,C,316,10,10,,13,Sold,2618102,6967778,1/31/2019 13:36,3,Single ,PD ,590,PS 18-19 Classics,2618102,Kathleen Mangusing,Attended
+PS121418,17739,12/14/2018 20:00,3717,Price 3 Promenade Circle,PROM,C,430,30,30,,13,Sold,2988478,6583638,7/18/2018 21:10,8,Flex,PD ,594,PS 18-19 Pops,2733501,Donald and Pamela Iapello Household,Attended
+PS051819,17714,5/18/2019 20:00,4195,Price 2 Dress Circle,DRESS,C,308,0,0,,13,Sold,3432963,7162126,5/16/2019 16:28,4,Comp,PD ,590,PS 18-19 Classics,3432963,Dennis Kim,Attended
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 5,H,6,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 2,V,47,59,59,,13,Sold,3068111,6558580,6/15/2018 11:11,3,Single ,PD ,588,PS 2018 Summer,3068111,Al and Katherine Estrada Household,
+PS051919,17986,5/19/2019 15:00,1178,Price 1 Main Floor,Floor,111,2,80,80,,13,Sold,150629,6461031,5/29/2018 0:00,1,Subscription,PD ,601,PS 18-19 Chamber,150629,Robert and Linda Boyd Household,Attended
+PS090818,17445,9/8/2018 20:00,6523,Price 1,Sec 6,A,15,49.5,49.5,,13,Sold,3198729,6618750,8/21/2018 10:53,3,Single ,PD ,588,PS 2018 Summer,3198729,Nasrin and Hamid Hooshvar Household,
+PS041119,17699,4/11/2019 20:00,4184,Price 5 Orchestra,ORCH,CC,114,20,20,,13,Sold,3256115,6233254,3/2/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3256115,Ms. Sara Ellison,Attended
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 1,S,20,33,33,,13,Sold,3424656,6576785,7/9/2018 10:57,3,Single ,PD ,588,PS 2018 Summer,3424656,Ms. Aimee Johnson,
+PS022119,17689,2/21/2019 20:00,4158,Price 1 Orchestra,ORCH,J,116,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS050419,17706,5/4/2019 20:00,4158,Price 1 Orchestra,ORCH,J,106,96.5,96.5,,13,Sold,2632369,6232907,3/20/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2632369,Dr. Janis M. Pasquali,Attended
+PS070418,17439,7/4/2018 20:00,6525,Price 3,Sec 5,U,7,22,22,,13,Sold,2010347,6573402,7/2/2018 14:29,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS110918,17737,11/9/2018 20:00,3704,Price 4 Promenade Side,PROM,AA,40,45,41,,13,Sold,0,6749711,11/9/2018 19:10,3,Single ,PD ,594,PS 18-19 Pops,0,,Attended
+PS041619,18189,4/16/2019 20:00,4190,Price 2 Grand Tier,GRAND,D,531,86,25,,13,Sold,2970436,7114211,4/11/2019 15:37,3,Single ,PD ,597,PS 18-19 Specials,2406117,No Info No Info and Refused Info Refused Info Household,Attended
+PS013119,17669,1/31/2019 20:00,4184,Price 5 Orchestra,ORCH,BB,107,25,25,,13,Sold,168654,6233085,2/27/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,168654,Christ and Isle-Lore Chialtas Household,
+PS121518,17740,12/15/2018 20:00,3717,Price 3 Promenade Circle,PROM,D,424,59.25,59.25,,13,Sold,2466543,6407055,4/13/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2466543,Dale and Stephanie Evans Household,
+PS111518,17639,11/15/2018 20:00,4156,Price B Box Circle,BOX CRC,B 9,3,196,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 1,A,75,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS041319N,18100,4/13/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,V,109,36,36,,13,Sold,2805232,7005936,2/14/2019 16:53,3,Single ,PD ,607,PS 18-19 Family,2805232,SCFTA Development Staff Ticketing & Donation Account,Attended
+PS081818,17442,8/18/2018 20:00,6527,Price 5,Sec 1,Y,50,25,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS111518,17639,11/15/2018 20:00,4197,Price 4 Promenade Circle,PROM,B,429,40,44,,13,Sold,2760828,6817340,11/13/2018 12:35,3,Single ,PD ,590,PS 18-19 Classics,2760828,Mrs. Tracy Bodenmann,Attended
+PS032319,17696,3/23/2019 20:00,4161,Price 1 Dress Circle,DRESS,B,311,10,10,,13,Sold,2731453,7079172,3/20/2019 9:18,3,Single ,PD ,590,PS 18-19 Classics,2731453,Amanda and Amanda Yang Household,Attended
+PS041319N,18100,4/13/2019 11:30,2138,Price 3 Accessible,DRESS,B8,4,26,26,,13,Sold,3485807,7100954,4/3/2019 10:59,3,Single ,PD ,607,PS 18-19 Family,3485807,Mrs. Juliane Mohn,Attended
+PS021619,17742,2/16/2019 20:00,3714,Price 2 Grand Tier,GRAND,E,515,67.5,30,,13,Sold,3159059,6588913,7/25/2018 10:36,8,Flex,PD ,594,PS 18-19 Pops,3159059,Woody Hwang And Lisa Shen Household,Attended
+PS022319,17691,2/23/2019 20:00,4182,Price 4 Orchestra Terrace,ORCH T,W,14,33.25,33.25,,13,Sold,3042991,6678846,10/1/2018 16:00,1,Subscription,PD ,590,PS 18-19 Classics,3042991,Ms. Irene B. Haydik,Attended
+PS120818,17650,12/8/2018 20:00,4158,Price 1 Orchestra,ORCH,M,113,116,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS041219,17700,4/12/2019 20:00,4190,Price 2 Grand Tier,GRAND,B,511,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS070418,17439,7/4/2018 20:00,6522,Boxes,Bx6,1,4,125,125,,13,Sold,423261,6109849,3/22/2018 0:00,1,Subscription,PD ,588,PS 2018 Summer,423261,Jane Fujishige Yada Household,
+PS032419,18115,3/24/2019 19:00,3714,Price 2 Grand Tier,GRAND,F,510,64,95,,13,Sold,2763314,7030377,2/27/2019 12:46,3,Single ,PD ,597,PS 18-19 Specials,2763314,Mr. and Mrs. Farzam Afshar,Attended
+PS042719,17746,4/27/2019 20:00,3704,Price 4 Promenade Side,PROM,AA,24,35,35,,13,Sold,3414069,6479223,4/16/2018 14:58,1,Subscription,PD ,594,PS 18-19 Pops,3414069,Mr. Jon P. Allen,Attended
+PS060719,17718,6/7/2019 20:00,4195,Price 2 Dress Circle,DRESS,C,305,86,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS020219,17671,2/2/2019 20:00,4174,Price 2 Promenade Circle,PROM,A,414,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,J,63,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS031719,18799,3/17/2019 15:00,2619,Price 1 Orch Terr Center,ORCH T,U,113,17.5,17.5,,13,Sold,3420909,6926128,1/8/2019 9:00,3,Single ,PD ,623,PS 18-19 Organ,3420909,Mrs. Maria Melendres,Attended
+PS060119,17748,6/1/2019 20:00,3707,Price 4 Grand Tier,GRAND,B,513,36,36,,13,Sold,3013811,6661601,9/25/2018 16:35,3,Single ,PD ,594,PS 18-19 Pops,3013811,World Projects,Attended
+PS092718,17550,9/27/2018 20:00,4164,Price 1 Grand Tier,GRAND,F,511,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS090818,17445,9/8/2018 20:00,6527,Price 5,Sec 5,J,30,25,,,4,Held,,0,,,,AVL,588,PS 2018 Summer,,,
+PS041219,17700,4/12/2019 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,Z,120,33.25,33.25,,13,Sold,2367140,6233167,4/13/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2367140,Donald and Betsy Tarbell Household,
+PS070418,17439,7/4/2018 20:00,6523,Price 1,Sec 2,J,26,84,84,,13,Sold,83222,6109702,11/20/2017 0:00,1,Subscription,PD ,588,PS 2018 Summer,83222,Daniel and Charlotta Butler Household,
+PS053119,17747,5/31/2019 20:00,3692,Price 1 Orchestra,ORCH,P,101,139,155,,13,Sold,298910,7179775,5/31/2019 10:58,3,Single ,PD ,594,PS 18-19 Pops,298910,William and Elizabeth McClellan Household,Attended
+PS121518,17740,12/15/2018 20:00,3697,Price 2 Dress Circle,DRESS,A,303,109,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS121818,18796,12/18/2018 19:30,2618,Price 1 Orch D - R,ORCH,D,115,37,37,,13,Sold,3187908,6620130,8/22/2018 9:16,3,Single ,PD ,623,PS 18-19 Organ,3187908,Tom Emberson Household,Attended
+PS120718,17649,12/7/2018 20:00,4158,Price 1 Orchestra,ORCH,Q,102,96.5,96.5,,13,Sold,335954,6232651,3/27/2018 11:19,1,Subscription,PD ,590,PS 18-19 Classics,335954,Michael Brandman and Pamela Cosby Brandman Household,Attended
+PS060619,17717,6/6/2019 20:00,4158,Price 1 Orchestra,ORCH,L,107,96.5,96.5,,13,Sold,3448129,6233308,4/4/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3448129,Sam and Lyndie Ersan Household,Attended
+PS020919A,18091,2/9/2019 10:00,2124,Price 1 Orch,ORCH,C,117,36,36,,13,Sold,3286182,6617077,8/20/2018 8:22,3,Single ,PD ,607,PS 18-19 Family,3286182,David Chang,Attended
+PS060819,17719,6/8/2019 20:00,4168,Price 3 Accessible Orchestra,ORCH T,ZZ,124,55,55,,13,Sold,284063,6233378,2/26/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3486260,Logan and Anita Lockabey Household,Attended
+PS041319,17701,4/13/2019 20:00,4168,Price 3 Accessible Orchestra,ORCH T,ZZ,123,66,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS020119,17670,2/1/2019 20:00,4174,Price 2 Promenade Circle,PROM,B,410,75,27.5,,13,Sold,3313230,6954745,1/23/2019 10:24,8,Flex,PD ,590,PS 18-19 Classics,3313230,Mr. Fred Whipple,Attended
+PS042619,17745,4/26/2019 20:00,3697,Price 2 Dress Circle,DRESS,B,346,92,92,,13,Sold,3175936,6859795,11/29/2018 10:24,8,Flex,PD ,594,PS 18-19 Pops,3175936,Daria Mix,Attended
+PS050419,17706,5/4/2019 20:00,4184,Price 5 Orchestra,ORCH,BB,103,25,25,,13,Sold,2585595,6232905,3/6/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2585595,Wendy Lupul,Attended
+PS120818N,18083,12/8/2018 11:30,2129,Price 3 Dress CT Behind Stage,DRESS,CT,9,46,46,,13,Sold,3293522,6694521,10/9/2018 8:12,3,Single ,PD ,607,PS 18-19 Family,3293522,Michelle Gunagan-Fiore,Attended
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 1,B,14,50,50,,13,Sold,2003393,6826728,11/16/2018 14:22,3,Single ,PD ,597,PS 18-19 Specials,2003393,Mr. Thomas Alley,
+PS070418,17439,7/4/2018 20:00,6524,Price 2,Sec 6,P,27,10,10,,13,Sold,3219085,6569719,6/26/2018 10:27,3,Single ,PD ,588,PS 2018 Summer,3219085,Mr. Tyler E. Ravelli,
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 6,L,11,44,,,4,Held,,0,,,,AVL,588,PS 2018 Summer,,,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 1,L,43,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS013119,17669,1/31/2019 20:00,4161,Price 1 Dress Circle,DRESS,C,318,0,0,,13,Sold,91013,6964630,1/29/2019 12:38,4,Comp,PD ,590,PS 18-19 Classics,91013,Pso - Orchestra Members,
+PS042619,17745,4/26/2019 20:00,3715,Price 3 Orchestra Terr Left,ORCH T,U,17,59.25,59.25,,13,Sold,3199164,6618778,8/21/2018 11:09,3,Single ,PD ,594,PS 18-19 Pops,3199164,Michael and Linda Arias Household,Attended
+PS121418,17739,12/14/2018 20:00,3693,Price 1 Orchestra Terrace,ORCH T,T,115,104.25,104.25,,13,Sold,3103040,6613948,8/17/2018 12:32,3,Single ,PD ,594,PS 18-19 Pops,3103040,Ms. Patricia M. Sheiner,Attended
+PS120918,17892,12/9/2018 15:00,4160,Price 1 Orchestra Terrace Left,ORCH T,T,15,116,139,,13,Sold,2872579,6838637,11/21/2018 12:16,3,Single ,PD ,597,PS 18-19 Specials,2872579,Ms. Natalia Ashley,Attended
+PS092718,17550,9/27/2018 20:00,4185,Price 5 Promenade Circle,PROM,A,405,25,34,,13,Sold,2482369,6645931,9/10/2018 21:13,3,Single ,PD ,590,PS 18-19 Classics,2482369,Mr. Jonathan Reddekopp,Attended
+PS081818,17442,8/18/2018 20:00,6522,Boxes,Bx6,1,2,125,125,,13,Sold,423261,6109849,3/22/2018 0:00,1,Subscription,PD ,588,PS 2018 Summer,423261,Jane Fujishige Yada Household,
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,A,61,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 1,S,15,28,28,,13,Sold,3205410,6483923,4/19/2018 14:46,1,Subscription,PD ,588,PS 2018 Summer,3205410,Kimiko Taoyama and Yumiko Ikeda Household,
+PS021619,17742,2/16/2019 20:00,3696,Price 2 Orchestra Terr Right,ORCH T,V,6,92,92,,13,Sold,254317,6543685,5/29/2018 15:18,8,Flex,PD ,594,PS 18-19 Pops,254317,Alan and Gretchen Johnson Household,Attended
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 4,U,11,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS021519,17741,2/15/2019 20:00,3715,Price 3 Orchestra Terr Left,ORCH T,Y,11,79,81,,13,Sold,3393305,6753887,11/12/2018 6:44,3,Single ,PD ,594,PS 18-19 Pops,3393305,Mr. Henry Situ,Attended
+PS020919N,18094,2/9/2019 11:30,2130,Price 3 Prom Circle,PROM,C,434,0,0,,13,Sold,2852603,6976231,2/5/2019 19:03,4,Comp,PD ,607,PS 18-19 Family,2852603,TACA,Attended
+PS102718N,18078,10/27/2018 11:30,2131,Price 4 Prom Circle Side,PROM,AA,21,12,12,,13,Sold,3428996,6614925,8/18/2018 10:29,1,Subscription,PD ,607,PS 18-19 Family,3428996,Ms. Dan Yu,Attended
+PS070418,17439,7/4/2018 20:00,6524,Price 2,Sec 6,Z,39,59,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS120818,17650,12/8/2018 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,V,105,116,25,,13,Sold,2010347,6876483,12/7/2018 17:21,3,Single ,PD ,590,PS 18-19 Classics,2010347,Goldstar Events,Attended
+PS020919A,18091,2/9/2019 10:00,2123,Price B Box Circle,BOX CRC,B18,3,36.8,36.8,,13,Sold,3441240,6725271,10/29/2018 7:44,1,Subscription,PD ,607,PS 18-19 Family,3441240,Mrs. Jaime Bargiel,
+PS050319,17705,5/3/2019 20:00,4174,Price 2 Promenade Circle,PROM,B,408,67.5,30,,13,Sold,2491828,6582718,7/17/2018 17:34,8,Flex,PD ,590,PS 18-19 Classics,2491828,Mr. Chun-Chieh J. Tseng,Attended
+PS031519,17743,3/15/2019 20:00,3692,Price 1 Orchestra,ORCH,M,111,110.5,110.5,,13,Sold,3425389,6710592,10/18/2018 16:36,1,Subscription,PD ,594,PS 18-19 Pops,3425389,Mr. Randy F. Lee,Attended
+PS022619,17690,2/26/2019 20:00,4160,Price 1 Orchestra Terrace Left,ORCH T,V,39,96.5,96.5,,13,Sold,239795,6232628,3/28/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,239795,Ms. Kristen Heston,Attended
+PS111718,17642,11/17/2018 20:00,4184,Price 5 Orchestra,ORCH,C,131,25,25,,13,Sold,383232,6233689,2/23/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,383232,Gary and Marjorie Staton Household,Attended
+PS120618,17645,12/6/2018 20:00,4162,Price 1 Dress Circle Side,DRESS,B2,1,96.5,96.5,,13,Sold,2003532,6233161,3/7/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2003532,Jim and Jane Driscoll Household,Attended
+PS031619,17744,3/16/2019 20:00,3690,Price P Orchestra,ORCH,BB,108,157,157,,13,Sold,357787,6407011,4/19/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,357787,Stanley and Barbara Rubin Household,Attended
+PS051619,17709,5/16/2019 20:00,4195,Price 2 Dress Circle,DRESS,C,341,0,0,,13,Sold,3361604,7161936,5/16/2019 15:23,4,Comp,PD ,590,PS 18-19 Classics,3361604,Veteran Tickets Foundation,Attended
+PS011219A,18087,1/12/2019 10:00,2124,Price 1 Orch,ORCH,A,108,18,18,,13,Sold,3190766,6845213,11/23/2018 20:58,3,Single ,PD ,607,PS 18-19 Family,3190764,Takeshi and Miwa Kimura Household,Attended
+PS050319,17705,5/3/2019 20:00,4158,Price 1 Orchestra,ORCH,Q,108,0,0,,13,Sold,3274710,7093268,3/28/2019 9:56,4,Comp,PD ,590,PS 18-19 Classics,3274710,Ms. Cindy Chen,Attended
+PS102718N,18078,10/27/2018 11:30,2126,Price 2 Dress Circle,DRESS,B,343,31,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS041219,17700,4/12/2019 20:00,4195,Price 2 Dress Circle,DRESS,C,303,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS022119,17689,2/21/2019 20:00,4197,Price 4 Promenade Circle,PROM,C,429,40,52,,13,Sold,3368720,6900375,12/20/2018 11:33,3,Single ,PD ,590,PS 18-19 Classics,3368720,Mrs. Helene Labib,Attended
+PS041119,17699,4/11/2019 20:00,4164,Price 1 Grand Tier,GRAND,G,509,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS111518,17639,11/15/2018 20:00,4179,Price 3 Orchestra Terr Left,ORCH T,V,31,55,55,,13,Sold,116180,6233056,2/23/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,116180,James Woody and Kathleen McMurray Household,Attended
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,K,43,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS092918,17552,9/29/2018 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,Z,118,58,58,,13,Sold,3347652,6514350,5/8/2018 15:08,8,Flex,PD ,590,PS 18-19 Classics,3347652,Mr. Brett L. Eddington,Attended
+PS102518,17565,10/25/2018 20:00,4182,Price 4 Orchestra Terrace,ORCH T,V,32,40,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS120818,17650,12/8/2018 20:00,4195,Price 2 Dress Circle,DRESS,C,306,0,0,,13,Sold,3261316,6868789,12/3/2018 18:43,4,Comp,PD ,590,PS 18-19 Classics,3261316,Academy Of Music For The Blind,
+PS041319N,18100,4/13/2019 11:30,2124,Price 1 Orch,ORCH,C,126,28.8,28.8,,13,Sold,3423728,6413982,4/12/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,3423728,Jose and Olivia Beltran Household,Attended
+PS021619,17742,2/16/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,Z,112,139,139,,13,Sold,282979,6695533,10/9/2018 16:01,3,Single ,PD ,594,PS 18-19 Pops,282979,Ms. Susan Linn,Attended
+PS111518,17639,11/15/2018 20:00,4158,Price 1 Orchestra,ORCH,H,108,0,0,,13,Sold,241807,6822792,11/15/2018 14:53,4,Comp,PD ,590,PS 18-19 Classics,241807,Mr. Frank Brambile,Attended
+PS020219,17671,2/2/2019 20:00,4156,Price B Box Circle,BOX CRC,B14,3,0,0,,13,Sold,3328612,6962967,1/28/2019 11:31,4,Comp,PD ,590,PS 18-19 Classics,3328612,PS VIP Development Guest,
+PS011219N,18088,1/12/2019 11:30,2130,Price 3 Prom Circle,PROM,B,434,26,26,,13,Sold,3144893,6879467,12/9/2018 18:21,3,Single ,PD ,607,PS 18-19 Family,3144893,Monica McCrea-Steele,Attended
+PS081818,17442,8/18/2018 20:00,6525,Price 3,Sec 5,X,24,44,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS050319,17705,5/3/2019 20:00,4184,Price 5 Orchestra,ORCH,CC,126,12.5,12.5,,13,Sold,353168,6842863,11/23/2018 10:03,3,Single ,PD ,590,PS 18-19 Classics,353168,Mr. Tyler J. Robinson,Attended
+PS011219,17655,1/12/2019 20:00,4171,Price 2 Orchestra,ORCH,J,120,86,91,,13,Sold,3376423,6919045,1/3/2019 17:41,3,Single ,PD ,590,PS 18-19 Classics,3376423,Ms. Darlene Bigos,Attended
+PS102718N,18078,10/27/2018 11:30,2139,Price 4 Accessible,PROM,AA,44,15,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS121818,18796,12/18/2018 19:30,2619,Price 1 Orch Terr Center,ORCH T,U,117,50,63,,13,Sold,3114892,6878733,12/9/2018 11:01,3,Single ,PD ,623,PS 18-19 Organ,3304245,Julie and William Brockhaus Household,Attended
+PS032119,17694,3/21/2019 20:00,4178,Price 3 Orchestra,ORCH,B,118,55,55,,13,Sold,2699990,6233313,3/23/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2699990,Larry and Margit Olson Household,Attended
+PS110918,17737,11/9/2018 20:00,3700,Price 2 Dress Circle Side,DRESS,B12,2,0,0,,13,Sold,3361604,6749121,11/9/2018 16:03,4,Comp,PD ,594,PS 18-19 Pops,3361604,Veteran Tickets Foundation,
+PS120818A,18082,12/8/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,Y,113,56,56,,13,Sold,3429103,6615625,8/19/2018 8:48,3,Single ,PD ,607,PS 18-19 Family,3429103,Dr. Tina Jussal,Attended
+PS120818N,18083,12/8/2018 11:30,2125,Price 1 Orch Terrace,ORCH T,Y,4,44.75,44.75,,13,Sold,3341195,6609732,8/13/2018 7:39,3,Single ,PD ,607,PS 18-19 Family,3341195,Mrs. Loni Yaeger,Attended
+PS032319,17696,3/23/2019 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,Z,4,25,25,,13,Sold,3112237,6233735,3/27/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3112237,James And Betty Molter Household,Attended
+PS020219,17671,2/2/2019 20:00,4178,Price 3 Orchestra,ORCH,C,103,55,55,,13,Sold,3146029,6232984,3/15/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3146029,Robert And Kim Davis Household,Attended
+PS051719,17713,5/17/2019 20:00,4174,Price 2 Promenade Circle,PROM,B,405,75,33,,13,Sold,3439290,6707576,10/16/2018 14:54,8,Flex,PD ,590,PS 18-19 Classics,3439290,Jevonne Glaser,Attended
+PS041319A,18097,4/13/2019 10:00,2123,Price B Box Circle,BOX CRC,B27,1,36.8,36.8,,13,Sold,3413601,6474517,4/13/2018 11:55,1,Subscription,PD ,607,PS 18-19 Family,3413601,Ms. Hali Lieb,Attended
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 2,S,14,59,59,,13,Sold,3288235,6480419,4/17/2018 12:23,3,Single ,PD ,588,PS 2018 Summer,3288235,Rick] Christophersen,
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 1,J,18,14,14,,13,Sold,3096920,6528770,5/17/2018 10:55,1,Subscription,PD ,588,PS 2018 Summer,3096920,Mr. Robert S. Maurer,
+PS120818,17650,12/8/2018 20:00,4156,Price B Box Circle,BOX CRC,B24,3,0,0,,13,Sold,91013,6872365,12/5/2018 15:45,4,Comp,PD ,590,PS 18-19 Classics,91013,Pso - Orchestra Members,Attended
+PS020919,17916,2/9/2019 20:00,3714,Price 2 Grand Tier,GRAND,F,527,68,,,0,Available,,,,,,AVL,597,PS 18-19 Specials,,,
+PS053119,17747,5/31/2019 20:00,3686,Price B Box Circle,BOX CRC,B20,2,164,164,,13,Sold,174265,6645225,9/10/2018 11:25,3,Single ,PD ,594,PS 18-19 Pops,174265,David and Victoria Collins Household,Attended
+PS111618,17641,11/16/2018 20:00,4158,Price 1 Orchestra,ORCH,G,115,116,121,,13,Sold,3057335,6657286,9/21/2018 11:25,3,Single ,PD ,590,PS 18-19 Classics,3057335,Ms. Lisa Baas,Attended
+PS110918,17737,11/9/2018 20:00,3714,Price 2 Grand Tier,GRAND,F,527,109,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS060619,17717,6/6/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,V,115,67.5,67.5,,13,Sold,2698108,6715439,10/22/2018 12:35,8,Flex,PD ,590,PS 18-19 Classics,2698108,Ms. Daveen Meyers,
+PS060919,17909,6/9/2019 15:00,4901,Price 4 Orchestra,ORCH,AA,122,25,35,,18,Available,,,,3,Single ,PD ,598,PS 18-19 Connections,,,
+PS102718N,18078,10/27/2018 11:30,2125,Price 1 Orch Terrace,ORCH T,V,19,36,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS022119,17689,2/21/2019 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,Y,126,26.5,26.5,,13,Sold,396459,6233483,3/28/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,396459,David and Lois Tingler Household,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 3,T,8,59,39,,13,Sold,2010347,6642307,9/6/2018 15:38,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS011219N,18088,1/12/2019 11:30,2136,Price 1 Accessible,ORCH,A,104,36,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS101218,17735,10/12/2018 20:00,3690,Price P Orchestra,ORCH,C,109,157,157,,13,Sold,154870,6406665,5/30/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,154870,Karly Brown,Attended
+PS120718,17649,12/7/2018 20:00,4181,Price 4 Orchestra,ORCH,F,119,33.25,33.25,,13,Sold,317451,6232648,3/28/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,317451,Ms. Louise L. Napoli,Attended
+PS022419,17985,2/24/2019 15:00,1181,Price 2 Loft,Loft,209,2,63,63,,13,Sold,2678360,6461063,5/8/2018 0:00,1,Subscription,PD ,601,PS 18-19 Chamber,2678360,Dwight Reilly and Carol Thurk Household,Attended
+PS051719,17713,5/17/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,W,111,0,0,,13,Sold,282445,7154045,5/10/2019 17:56,4,Comp,PD ,590,PS 18-19 Classics,282445,Lindbergh Elementary,Attended
+PS092718,17550,9/27/2018 20:00,4162,Price 1 Dress Circle Side,DRESS,B8,4,60,60,,13,Sold,2918308,6641431,9/5/2018 16:18,8,Flex,PD ,590,PS 18-19 Classics,2709691,Edward and Debra Gala Household,Attended
+PS041119,17699,4/11/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,W,114,0,0,,13,Sold,3449627,6926525,1/8/2019 11:54,4,Comp,PD ,590,PS 18-19 Classics,3449627,Elaine and James Cordes Household,Attended
+PS050419,17706,5/4/2019 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,X,6,0,0,,13,Sold,3422531,6958664,1/25/2019 15:28,4,Comp,PD ,590,PS 18-19 Classics,3422531,Ms. Cindy Morrone,Attended
+PS051819,17714,5/18/2019 20:00,4197,Price 4 Promenade Circle,PROM,D,430,0,0,,13,Sold,3507881,7165471,5/18/2019 19:19,4,Comp,PD ,590,PS 18-19 Classics,3507881,Ms. Yesenia Perez,Attended
+PS120818A,18082,12/8/2018 10:00,2131,Price 4 Prom Circle Side,PROM,AA,34,12,12,,13,Sold,2799853,6442743,3/28/2018 14:06,1,Subscription,PD ,607,PS 18-19 Family,2799853,Mrs. Deborah J. Taylor,Attended
+PS011219A,18087,1/12/2019 10:00,2133,Price 4 Grand Tier,GRAND,D,517,12,12,,13,Sold,3485062,6926568,1/8/2019 12:21,3,Single ,PD ,607,PS 18-19 Family,3485062,Mrs. Farahnaz Kabirizadeh,Attended
+PS050519,18802,5/5/2019 19:00,2618,Price 1 Orch D - R,ORCH,R,110,35,,,0,Available,,0,,,,AVL,623,PS 18-19 Organ,,,
+PS120818N,18083,12/8/2018 11:30,2125,Price 1 Orch Terrace,ORCH T,T,38,28.8,28.8,,13,Sold,3083097,6414002,5/7/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,3083097,Jeffrey Dym and Susan Park Household,Attended
+PS120818A,18082,12/8/2018 10:00,2128,Price 3 Choral T Behind Stage,CHORAL,A,210,0,0,,13,Sold,3236602,6857877,11/28/2018 11:39,4,Comp,PD ,607,PS 18-19 Family,3236602,Mrs. Jenny Hutzler,Attended
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 1,M,20,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS101218,17735,10/12/2018 20:00,3693,Price 1 Orchestra Terrace,ORCH T,Y,102,112,112,,13,Sold,328155,6406728,4/2/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,328155,Roger and Betty Otte Household,Attended
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 1,B,27,50,50,,13,Sold,116902,6835483,11/20/2018 10:54,3,Single ,PD ,597,PS 18-19 Specials,116902,Mr. Paulo Morales,
+PS011219N,18088,1/12/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,Z,119,28.8,28.8,,13,Sold,3083572,6934003,1/12/2019 9:43,1,Subscription,PD ,607,PS 18-19 Family,3083572,Mathieu and Kimberlee Streiff Household,Attended
+PS092818,17551,9/28/2018 20:00,4195,Price 2 Dress Circle,DRESS,C,338,20,20,,13,Sold,3435316,6669046,9/27/2018 9:58,3,Single ,PD ,590,PS 18-19 Classics,3435316,Mr. Mason Jennings,Attended
+PS120818,17650,12/8/2018 20:00,4158,Price 1 Orchestra,ORCH,P,108,10,10,,13,Sold,2878264,6871403,12/5/2018 9:51,3,Single ,PD ,590,PS 18-19 Classics,2878264,Matthew and Tanya Schweiger Household,
+PS120718,17649,12/7/2018 20:00,4178,Price 3 Orchestra,ORCH,B,105,55,55,,13,Sold,3402709,6233150,2/16/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3402709,"Toal Engineering, Inc.",Attended
+PS021519,17741,2/15/2019 20:00,3690,Price P Orchestra,ORCH,CC,105,169,179,,13,Sold,2654863,6960881,1/27/2019 7:39,3,Single ,PD ,594,PS 18-19 Pops,2654863,Kendall and Laurie Wagner Household,Attended
+PS051819,17714,5/18/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,U,106,40,40,,13,Sold,3080560,7128952,4/23/2019 20:47,3,Single ,PD ,590,PS 18-19 Classics,3080560,Mr. Daniel Kopti,Attended
+PS050419,17706,5/4/2019 20:00,4181,Price 4 Orchestra,ORCH,F,119,33.25,33.25,,13,Sold,2530994,6653975,9/18/2018 10:24,1,Subscription,PD ,590,PS 18-19 Classics,2530994,Dallas and Gloria Rabenstein Household,Attended
+PS111518,17639,11/15/2018 20:00,4172,Price 2 Orchestra Terr Left,ORCH T,X,11,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS020319,17908,2/3/2019 15:00,4893,Price 2 Dress Circle,DRESS,A,312,69,79,,13,Sold,351011,6955277,1/23/2019 15:39,3,Single ,PD ,598,PS 18-19 Connections,351011,James and Virginia Riley Household,Attended
+PS041319,17701,4/13/2019 20:00,4161,Price 1 Dress Circle,DRESS,A,314,0,0,,13,Sold,955085,7116152,4/12/2019 17:40,4,Comp,PD ,590,PS 18-19 Classics,955085,Pso Comps,
+PS011019,17653,1/10/2019 20:00,4156,Price B Box Circle,BOX CRC,B16,1,163.25,163.25,,13,Sold,201482,6233093,3/28/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,201482,John and Ruth Ann Evans Household,Attended
+PS070418,17439,7/4/2018 20:00,6525,Price 3,Sec 5,R,50,0,0,,13,Sold,2847218,6571262,6/28/2018 15:04,4,Comp,PD ,588,PS 2018 Summer,2847218,CASA,
+PS031519,17743,3/15/2019 20:00,3707,Price 4 Grand Tier,GRAND,B,545,36,36,,13,Sold,3310883,6717436,10/23/2018 14:38,3,Single ,PD ,594,PS 18-19 Pops,3310883,Infinity Tours and Events,Attended
+PS101218,17735,10/12/2018 20:00,3686,Price B Box Circle,BOX CRC,B20,4,195,195,,13,Sold,45419,6406617,4/20/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,45419,William and Linda Hughes Household,Attended
+PS050419,17706,5/4/2019 20:00,4195,Price 2 Dress Circle,DRESS,A,309,71.5,33.25,,13,Sold,3040494,7142579,5/3/2019 14:01,1,Subscription,PD ,590,PS 18-19 Classics,3040494,William Schultz Household,Attended
+PS070418,17439,7/4/2018 20:00,6527,Price 5,Sec 5,E,33,10.5,10.5,,13,Sold,3419891,6535219,5/21/2018 20:44,1,Subscription,PD ,588,PS 2018 Summer,3419891,Mr. Vince Venolia,
+PS051819,17714,5/18/2019 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,Y,10,25,25,,13,Sold,3172783,6233456,3/19/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3172783,Michael and Shiianne Young Household,Attended
+PS060819,17719,6/8/2019 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,W,12,25,25,,13,Sold,3492464,7008578,2/15/2019 22:04,3,Single ,PD ,590,PS 18-19 Classics,3492464,Ms. Caroline L. Bancroft,Attended
+PS020919N,18094,2/9/2019 11:30,2124,Price 1 Orch,ORCH,C,119,28.8,28.8,,13,Sold,2363411,6413953,4/18/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,2363411,Gary and Elaine Sinclair Household,Attended
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 4,Y,39,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS102718A,18047,10/27/2018 10:00,2133,Price 4 Grand Tier,GRAND,B,511,15,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS111718,17642,11/17/2018 20:00,4174,Price 2 Promenade Circle,PROM,B,409,60,27,,13,Sold,411285,6605358,8/9/2018 11:31,8,Flex,PD ,590,PS 18-19 Classics,411285,Ms. Djuna C. Watt,Attended
+PS120618,17645,12/6/2018 20:00,4174,Price 2 Promenade Circle,PROM,D,409,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS041319N,18100,4/13/2019 11:30,2133,Price 4 Grand Tier,GRAND,F,527,0,0,,13,Sold,2686860,7110183,4/9/2019 19:25,4,Comp,PD ,607,PS 18-19 Family,2686860,Savanna School District,Attended
+PS102818,17907,10/28/2018 15:00,4894,Price 2 Dress Circle Arm,DRESS,B3,3,57.25,57.25,,13,Sold,2676115,6659989,9/24/2018 16:46,1,Subscription,PD ,598,PS 18-19 Connections,2676115,Hiep Tran,Attended
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 4,B,18,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS031519,17743,3/15/2019 20:00,3690,Price P Orchestra,ORCH,E,103,169,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS060819,17719,6/8/2019 20:00,4156,Price B Box Circle,BOX CRC,B 5,3,0,0,,13,Sold,3502223,7097890,4/1/2019 12:03,4,Comp,PD ,590,PS 18-19 Classics,3502223,Xiao Zhou and Chong Luo Household,Attended
+PS081818,17442,8/18/2018 20:00,6525,Price 3,Sec 6,G,35,22,22,,13,Sold,3426001,6589563,7/25/2018 18:23,3,Single ,PD ,588,PS 2018 Summer,3426001,Ms. Jennifer Kawase,
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 1,C,6,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS053119,17747,5/31/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,ZZ,110,110.5,110.5,,13,Sold,420635,7142845,5/3/2019 16:09,1,Subscription,PD ,594,PS 18-19 Pops,420635,Priscilla Wolz Household,Attended
+PS050319,17705,5/3/2019 20:00,4158,Price 1 Orchestra,ORCH,N,115,40,40,,13,Sold,3505188,7129176,4/24/2019 6:38,3,Single ,PD ,590,PS 18-19 Classics,3505188,Mrs. Signe Keller,
+PS060719,17718,6/7/2019 20:00,4160,Price 1 Orchestra Terrace Left,ORCH T,V,1,96.5,96.5,,13,Sold,260595,7172187,5/24/2019 15:23,1,Subscription,PD ,590,PS 18-19 Classics,260595,Karl and Virginia Kawai Household,Attended
+PS032319,17696,3/23/2019 20:00,4158,Price 1 Orchestra,ORCH,H,107,0,0,,13,Sold,91006,7085442,3/22/2019 15:28,4,Comp,PD ,590,PS 18-19 Classics,91006,Pso - Artist Comps,Attended
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 3,R,23,16.5,16.5,,13,Sold,2861059,6588173,7/24/2018 15:11,3,Single ,PD ,588,PS 2018 Summer,2861059,CHRIS and CHERIE GUO Household,
+PS120818A,18082,12/8/2018 10:00,2126,Price 2 Dress Circle,DRESS,B,304,19.75,19.75,,13,Sold,156999,6717086,10/23/2018 11:46,1,Subscription,PD ,607,PS 18-19 Family,156999,Andrew and Marilyn Bumatay Household,Attended
+PS011219N,18088,1/12/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,X,1,36,,,0,Available,,0,,,,AVL,607,PS 18-19 Family,,,
+PS020219,17671,2/2/2019 20:00,4156,Price B Box Circle,BOX CRC,B 2,4,0,0,,13,Sold,2666400,6618994,8/21/2018 12:46,4,Comp,PD ,590,PS 18-19 Classics,2666400,Ms. Margaret Arnold,Attended
+PS013119,17669,1/31/2019 20:00,4162,Price 1 Dress Circle Side,DRESS,B 1,4,0,0,,13,Sold,91013,6964630,1/29/2019 12:38,4,Comp,PD ,590,PS 18-19 Classics,91013,Pso - Orchestra Members,
+PS032319,17696,3/23/2019 20:00,4158,Price 1 Orchestra,ORCH,Q,102,67.5,67.5,,13,Sold,2644569,6590065,7/26/2018 9:37,8,Flex,PD ,590,PS 18-19 Classics,2644569,Ms. Donna Feeney,Attended
+PS120818,17650,12/8/2018 20:00,4192,Price 3 Grand Tier,GRAND,C,538,66,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS032319,17696,3/23/2019 20:00,4181,Price 4 Orchestra,ORCH,F,119,33.25,33.25,,13,Sold,2530994,6653975,9/18/2018 10:24,1,Subscription,PD ,590,PS 18-19 Classics,2530994,Dallas and Gloria Rabenstein Household,Attended
+PS011019,17653,1/10/2019 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,Z,124,26.5,26.5,,13,Sold,2415339,6233528,3/2/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2415339,Mr. David Mattheiss,Attended
+PS013119,17669,1/31/2019 20:00,4197,Price 4 Promenade Circle,PROM,A,425,33,33,,13,Sold,2634579,6878725,12/9/2018 10:57,8,Flex,PD ,590,PS 18-19 Classics,2634579,Ms. Caroline B. Babott,Attended
+PS041219,17700,4/12/2019 20:00,4195,Price 2 Dress Circle,DRESS,A,301,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS022119,17689,2/21/2019 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,Y,8,20,20,,13,Sold,2868787,6390352,3/8/2018 17:27,1,Subscription,PD ,590,PS 18-19 Classics,2868787,Bryce and Ann Bardin Household,Attended
+PS011219A,18087,1/12/2019 10:00,2133,Price 4 Grand Tier,GRAND,A,509,12,12,,13,Sold,3429648,6620326,8/22/2018 11:01,1,Subscription,PD ,607,PS 18-19 Family,3429648,Ms. Wendy Trinh,Attended
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 6,N,30,20,20,,13,Sold,3174472,6605336,8/9/2018 11:17,3,Single ,PD ,588,PS 2018 Summer,3174472,Simon and Anna Liao Household,
+PS111518,17639,11/15/2018 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,Y,124,33.25,33.25,,13,Sold,261611,6233493,3/12/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,261611,Ms. Jean H. Keller,Attended
+PS060919,17909,6/9/2019 15:00,4882,Price 1 Orchestra Terr Center,ORCH T,W,119,89,,,0,Available,,,,,,AVL,598,PS 18-19 Connections,,,
+PS102718A,18047,10/27/2018 10:00,2126,Price 2 Dress Circle,DRESS,C,334,31,,,0,Available,,0,,,,AVL,607,PS 18-19 Family,,,
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 6,N,17,10,10,,13,Sold,3427775,6604361,8/8/2018 11:32,3,Single ,PD ,588,PS 2018 Summer,3427775,kristin Stout Household,
+PS120818,17650,12/8/2018 20:00,4184,Price 5 Orchestra,ORCH,CC,126,12.5,12.5,,13,Sold,2531986,6852541,11/26/2018 12:14,3,Single ,PD ,590,PS 18-19 Classics,2531986,Mr. Allon J. Biberman,Attended
+PS070418,17439,7/4/2018 20:00,6525,Price 3,Sec 7,T,26,44,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 4,Z,10,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS111718,17642,11/17/2018 20:00,4158,Price 1 Orchestra,ORCH,G,111,0,0,,13,Sold,3272072,6827105,11/16/2018 15:59,4,Comp,PD ,590,PS 18-19 Classics,3272072,Asian American Senior Services Center,Attended
+PS111018,17738,11/10/2018 20:00,3704,Price 4 Promenade Side,PROM,AA,5,35,35,,13,Sold,393460,6407021,4/5/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,393460,Ms. Janice E. Teraoka,Attended
+PS042719,17746,4/27/2019 20:00,3711,Price 1 Dress Circle,DRESS,B,329,75,75,,13,Sold,3326364,6975162,2/5/2019 11:52,8,Flex,PD ,594,PS 18-19 Pops,3326364,Ms. Sande Robert,Attended
+PS120818A,18082,12/8/2018 10:00,2129,Price 3 Dress CT Behind Stage,DRESS,CT,22,46,46,,13,Sold,3165902,6718560,10/24/2018 10:58,3,Single ,PD ,607,PS 18-19 Family,3165902,Mrs. Svetha M. Shryoc,Attended
+PS110918,17737,11/9/2018 20:00,3690,Price P Orchestra,ORCH,G,124,0,0,,13,Sold,375252,6734964,11/2/2018 11:45,4,Comp,PD ,594,PS 18-19 Pops,375252,Mrs. Keren Singer,Attended
+PS020219,17671,2/2/2019 20:00,4164,Price 1 Grand Tier,GRAND,F,509,25,25,,13,Sold,154205,6619444,8/21/2018 16:39,3,Single ,PD ,590,PS 18-19 Classics,154205,Ms. Annette Brower,Attended
+PS102818,17907,10/28/2018 15:00,4882,Price 1 Orchestra Terr Center,ORCH,P,106,25,25,,13,Sold,3351217,6630129,8/27/2018 16:53,3,Single ,PD ,598,PS 18-19 Connections,3351217,Ms. Bernice Ledbetter,Attended
+PS011119,17654,1/11/2019 20:00,4195,Price 2 Dress Circle,DRESS,B,338,20,20,,13,Sold,3128848,6926733,1/8/2019 13:50,3,Single ,PD ,590,PS 18-19 Classics,3128848,Chen Roger And Qi Zhang Household,Attended
+PS060119,17748,6/1/2019 20:00,3699,Price 2 Accessible Orch Terr,ORCH T,ZZ,104,85,85,,13,Sold,272626,6406993,5/2/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,272626,Mr. Emanuel La Torre,Attended
+PS020919,17916,2/9/2019 20:00,3707,Price 4 Grand Tier,GRAND,C,507,22,22.25,,13,Sold,3474330,6835949,11/20/2018 14:02,3,Single ,PD ,597,PS 18-19 Specials,3474330,Carolyn Cao,Attended
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 1,N,11,28,28,,13,Sold,93659,6109746,1/23/2018 0:00,1,Subscription,PD ,588,PS 2018 Summer,93659,Ms. Mary Jane Turner,
+PS060919,17909,6/9/2019 15:00,4887,Price 1 Promenade Circle,PROM,B,435,0,0,,13,Sold,2808731,7184991,6/4/2019 17:26,4,Comp,PD ,598,PS 18-19 Connections,2808731,Working Wardrobes,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 4,W,25,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS053119,17747,5/31/2019 20:00,3690,Price P Orchestra,ORCH,D,126,0,0,,13,Sold,3315515,7178575,5/30/2019 11:44,4,Comp,PD ,594,PS 18-19 Pops,3315515,Ms. Amanda Bistolfo,Attended
+PS032119,17694,3/21/2019 20:00,4182,Price 4 Orchestra Terrace,ORCH T,X,14,40,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS121418,17739,12/14/2018 20:00,3707,Price 4 Grand Tier,GRAND,C,507,45,46,,13,Sold,3338619,6835349,11/20/2018 10:15,3,Single ,PD ,594,PS 18-19 Pops,3338619,Dave Trattner,
+PS042619,17745,4/26/2019 20:00,3703,Price 3 Accessible Dress Side,DRESS,B7,2,59.25,89,,13,Sold,3499533,7069737,3/15/2019 16:24,3,Single ,PD ,594,PS 18-19 Pops,3499533,Cindy Karim,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 2,S,15,25,25,,13,Sold,2010347,6571109,6/28/2018 11:33,1,Subscription,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS051619,17709,5/16/2019 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,X,112,52.5,54.25,,13,Sold,2014224,7138057,4/30/2019 13:30,3,Single ,PD ,590,PS 18-19 Classics,2014224,Ms. Anne Woebken,Attended
+PS102518,17565,10/25/2018 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,U,114,96.5,96.5,,13,Sold,156886,6233082,3/7/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,156886,Ms. Sherry S. Bull,Attended
+PS020219,17671,2/2/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,W,104,0,0,,13,Sold,3076050,6937891,1/14/2019 14:24,4,Comp,PD ,590,PS 18-19 Classics,3076050,Dr. Herbert Jennings,
+PS011219A,18087,1/12/2019 10:00,2125,Price 1 Orch Terrace,ORCH T,V,26,28.8,28.8,,13,Sold,3069511,6902848,12/21/2018 13:47,1,Subscription,PD ,607,PS 18-19 Family,3069511,Robert Vos Household,Attended
+PS022119,17689,2/21/2019 20:00,4190,Price 2 Grand Tier,GRAND,A,535,75,33,,13,Sold,2661810,6833878,11/19/2018 14:27,8,Flex,PD ,590,PS 18-19 Classics,2661810,Ms. Daisy Hsye,Attended
+PS011119,17654,1/11/2019 20:00,4181,Price 4 Orchestra,ORCH,G,124,26.5,26.5,,13,Sold,2640622,6424736,3/21/2018 15:32,1,Subscription,PD ,590,PS 18-19 Classics,2640622,James and Lois Farr Household,Attended
+PS102618,17566,10/26/2018 20:00,4174,Price 2 Promenade Circle,PROM,D,405,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS121818,18796,12/18/2018 19:30,2624,Price 2 Grand Tier,GRAND,D,516,20,20,,13,Sold,2010347,6896089,12/18/2018 12:47,3,Single ,PD ,623,PS 18-19 Organ,2010347,Goldstar Events,Attended
+PS021519,17741,2/15/2019 20:00,3706,Price 4 Chorale Terrace,CHORAL,C,227,45,50,,13,Sold,3406382,6970177,2/1/2019 20:48,3,Single ,PD ,594,PS 18-19 Pops,3406382,Sunny Desai,Attended
+PS102518,17565,10/25/2018 20:00,4192,Price 3 Grand Tier,GRAND,F,534,66,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS060719,17718,6/7/2019 20:00,4162,Price 1 Dress Circle Side,DRESS,B4,2,0,0,,13,Sold,2686860,7188387,6/7/2019 13:23,4,Comp,PD ,590,PS 18-19 Classics,2686860,Savanna School District,
+PS031619,17744,3/16/2019 20:00,3692,Price 1 Orchestra,ORCH,K,101,110.5,110.5,,13,Sold,2797967,6407093,3/22/2018 17:58,1,Subscription,PD ,594,PS 18-19 Pops,2797967,Daniel Tremblay and Linda Kirchner Household,
+PS020919A,18091,2/9/2019 10:00,2126,Price 2 Dress Circle,DRESS,A,346,31,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS051919,17986,5/19/2019 15:00,1178,Price 1 Main Floor,Floor,116,1,80,80,,13,Sold,158558,6461032,5/15/2018 0:00,1,Subscription,PD ,601,PS 18-19 Chamber,158558,David and Linda Bush Household,Attended
+PS092918,17552,9/29/2018 20:00,4175,Price 2 Promenade Circle Side,PROM,AA,14,10,10,,13,Sold,3417133,6661454,9/25/2018 14:38,3,Single ,PD ,590,PS 18-19 Classics,3417133,Mrs. Angie Irahola,Attended
+PS081818,17442,8/18/2018 20:00,6527,Price 5,Sec 3,W,46,25,,,4,Held,,0,,,,AVL,588,PS 2018 Summer,,,
+PS053119,17747,5/31/2019 20:00,3686,Price B Box Circle,BOX CRC,B 4,2,0,0,,13,Sold,3484748,7178766,5/30/2019 14:08,4,Comp,PD ,594,PS 18-19 Pops,3484748,Mr. Craig M. Springer,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 1,K,19,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS032219,17695,3/22/2019 20:00,4156,Price B Box Circle,BOX CRC,B18,3,163.25,163.25,,13,Sold,3154411,6232773,4/10/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3154411,Richard and Pat McAuley Household,Attended
+PS032219,17695,3/22/2019 20:00,4183,Price 4 Chorale Terrace,CHORAL,A,211,25,25,,13,Sold,2510588,6740601,11/5/2018 11:07,3,Single ,PD ,590,PS 18-19 Classics,2510588,Highland High School,Attended
+PS021619,17742,2/16/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,U,111,110.5,110.5,,13,Sold,2516850,6407057,4/19/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2516850,Mervyn Kirshner and Andrea Paul Household,Attended
+PS032219,17695,3/22/2019 20:00,4156,Price B Box Circle,BOX CRC,B 9,4,0,0,,13,Sold,272049,7085368,3/22/2019 14:56,4,Comp,PD ,590,PS 18-19 Classics,272049,KUSC,Attended
+PS101218,17735,10/12/2018 20:00,3692,Price 1 Orchestra,ORCH,M,115,20,20,,13,Sold,2010347,6701127,10/12/2018 13:27,3,Single ,PD ,594,PS 18-19 Pops,2010347,Goldstar Events,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 1,A,50,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS120718,17649,12/7/2018 20:00,4156,Price B Box Circle,BOX CRC,B23,4,0,0,,13,Sold,3080718,6876369,12/7/2018 16:24,4,Comp,PD ,590,PS 18-19 Classics,3080718,Gary Good and Jacqueline Charnley Household,
+PS032419,18115,3/24/2019 19:00,3696,Price 2 Orchestra Terr Right,ORCH T,T,24,51,76,,13,Sold,2449833,6641023,9/5/2018 10:52,3,Single ,PD ,597,PS 18-19 Specials,2449833,Meshia Azad,Attended
+PS050319,17705,5/3/2019 20:00,4156,Price B Box Circle,BOX CRC,B19,4,163.25,163.25,,13,Sold,3149446,7132629,4/26/2019 13:46,1,Subscription,PD ,590,PS 18-19 Classics,3149446,Charles and Ling Zhang Household,Attended
+PS021519,17741,2/15/2019 20:00,3705,Price 4 Promenade Chorale Terr,PROM,CT,10,35,35,,13,Sold,2781682,6406839,4/26/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2781682,John and Therese Groth Household,Attended
+PS120618,17645,12/6/2018 20:00,4184,Price 5 Orchestra,ORCH,AA,117,0,0,,13,Sold,3361604,6872518,12/5/2018 16:23,4,Comp,PD ,590,PS 18-19 Classics,3361604,Veteran Tickets Foundation,
+PS070418,17439,7/4/2018 20:00,6524,Price 2,Sec 1,P,1,50,50,,13,Sold,319903,6109816,3/5/2018 0:00,1,Subscription,PD ,588,PS 2018 Summer,319903,Riley and Rebecca Newman Household,
+PS041119,17699,4/11/2019 20:00,4172,Price 2 Orchestra Terr Left,ORCH T,W,5,57,57,,13,Sold,328482,6233502,3/13/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,328482,William and Linda Owen Household,Attended
+PS042719,17746,4/27/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,Z,116,67.5,67.5,,13,Sold,2412586,6591216,7/27/2018 9:50,8,Flex,PD ,594,PS 18-19 Pops,2412586,Mr. Mark Ewing,Attended
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 1,Q,69,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS060919,17909,6/9/2019 15:00,4902,Price 4 Dress Circle,DRESS,A,346,22,22,,13,Sold,3349013,6514144,5/8/2018 13:09,1,Subscription,PD ,598,PS 18-19 Connections,3349013,Suh Kang,Attended
+PS092918,17552,9/29/2018 20:00,4164,Price 1 Grand Tier,GRAND,D,520,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS101318,17736,10/13/2018 20:00,3686,Price B Box Circle,BOX CRC,B11,3,195,195,,13,Sold,45320,6406905,5/2/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,45320,Melvin and Betty Hoeffliger Household,Attended
+PS042619,17745,4/26/2019 20:00,3692,Price 1 Orchestra,ORCH,H,107,110.5,110.5,,13,Sold,2423729,6406783,5/4/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2423729,Robert and Wendy Gorelick Household,Attended
+PS111018,17738,11/10/2018 20:00,3711,Price 1 Dress Circle,DRESS,A,332,110.5,110.5,,13,Sold,116632,6406931,4/6/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,116632,Herbert and Darlene Miller Household,Attended
+PS120818A,18082,12/8/2018 10:00,2123,Price B Box Circle,BOX CRC,B10,1,36.8,36.8,,13,Sold,412855,6614739,8/17/2018 22:23,1,Subscription,PD ,607,PS 18-19 Family,412855,Thomas and Penny Weismuller Household,Attended
+PS081818,17442,8/18/2018 20:00,6523,Price 1,Circle,BB,22,99,99,,13,Sold,3414550,6483073,4/18/2018 22:45,3,Single ,PD ,588,PS 2018 Summer,3414550,Mr. Joshua Herndon,
+PS120818N,18083,12/8/2018 11:30,2123,Price B Box Circle,BOX CRC,B28,1,36.8,36.8,,13,Sold,113161,6413933,4/19/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,113161,David and Michelle Horowitz Household,
+PS021519,17741,2/15/2019 20:00,3697,Price 2 Dress Circle,DRESS,A,342,85,85,,13,Sold,3041339,6497229,4/27/2018 12:58,1,Subscription,PD ,594,PS 18-19 Pops,3041339,Mark and Shana Conzelman Household,Attended
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 5,N,36,22,22,,13,Sold,2010347,6642307,9/6/2018 15:38,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS092818,17551,9/28/2018 20:00,4172,Price 2 Orchestra Terr Left,ORCH T,U,9,72.5,72.5,,13,Sold,2667763,6617801,8/20/2018 14:52,1,Subscription,PD ,590,PS 18-19 Classics,2667763,Thomas and Edith Van Huss Household,Attended
+PS120918,17892,12/9/2018 15:00,4193,Price 4 Orchestra Terr Center,ORCH T,X,118,32,32,,13,Sold,3206910,6551057,6/6/2018 10:57,3,Single ,PD ,597,PS 18-19 Specials,3206910,Peter Rasla Household,Attended
+PS020919N,18094,2/9/2019 11:30,2133,Price 4 Grand Tier,GRAND,D,516,0,0,,13,Sold,3133262,6976259,2/5/2019 19:15,4,Comp,PD ,607,PS 18-19 Family,3133262,Santa Ana Unified School District,Attended
+PS020319,17908,2/3/2019 15:00,4900,Price 3 Accessible Orchestra,ORCH,B,101,49,55,,13,Sold,2480686,6943092,1/17/2019 11:12,3,Single ,PD ,598,PS 18-19 Connections,2480686,joan camera,Attended
+PS111618,17641,11/16/2018 20:00,4184,Price 5 Orchestra,ORCH,CC,122,25,25,,13,Sold,3382370,6545908,5/31/2018 14:36,1,Subscription,PD ,590,PS 18-19 Classics,110822,Rainer and Ursula Feldt Household,Attended
+PS041619,18189,4/16/2019 20:00,4192,Price 3 Grand Tier,GRAND,D,539,66,25,,13,Sold,3503915,7116536,4/12/2019 22:07,3,Single ,PD ,597,PS 18-19 Specials,3503915,Ms. Arline B. Lanin,Attended
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 5,T,7,0,0,,13,Sold,2879324,6623246,8/23/2018 17:11,4,Comp,PD ,588,PS 2018 Summer,2879324,Girls Inc. of Orange County,
+PS081818,17442,8/18/2018 20:00,6523,Price 1,Circle,DD,35,84,84,,13,Sold,2845621,6110000,1/24/2018 0:00,1,Subscription,PD ,588,PS 2018 Summer,2845621,Laurie Jacobsen,
+PS070418,17439,7/4/2018 20:00,6525,Price 3,Sec 7,M,18,44,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS060819,17719,6/8/2019 20:00,4158,Price 1 Orchestra,ORCH,G,105,77,77,,13,Sold,213014,6371268,2/27/2018 16:35,1,Subscription,PD ,590,PS 18-19 Classics,213014,Michael and Cynthia Lynn Furst Household,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,C,58,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 4,R,31,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS121418,17739,12/14/2018 20:00,3712,Price 3 Grand Tier,GRAND,A,524,30,30,,13,Sold,3425612,6868361,12/3/2018 15:37,8,Flex,PD ,594,PS 18-19 Pops,3425612,Mrs. Hilary Rue,Attended
+PS120918,17892,12/9/2018 15:00,4183,Price 4 Chorale Terrace,CHORAL,D,203,40,42,,13,Sold,3311347,6729228,10/31/2018 9:58,3,Single ,PD ,597,PS 18-19 Specials,3311347,Audrey and Brian Rees Household,Attended
+PS020219,17671,2/2/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,T,116,96.5,96.5,,13,Sold,2480576,6232898,3/21/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2480576,Mr. Fredrick Borges,Attended
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 5,Q,41,20,20,,13,Sold,2010347,6642307,9/6/2018 15:38,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS102718,17567,10/27/2018 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,X,125,32,28,,13,Sold,3440832,6721388,10/26/2018 8:41,3,Single ,PD ,590,PS 18-19 Classics,3440832,Mr. Matt Girardet,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,P,42,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS032319,17696,3/23/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,U,117,58,58,,13,Sold,2743738,6842740,11/23/2018 9:32,3,Single ,PD ,590,PS 18-19 Classics,2743738,Mr. David A. Marks,
+PS011119,17654,1/11/2019 20:00,4171,Price 2 Orchestra,ORCH,M,119,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS102718A,18047,10/27/2018 10:00,2127,Price 2 Dress Circle Side,DRESS,B12,3,31,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS050219,17704,5/2/2019 20:00,4164,Price 1 Grand Tier,GRAND,G,505,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS053119,17747,5/31/2019 20:00,3711,Price 1 Dress Circle,DRESS,B,328,110.5,110.5,,13,Sold,271180,6406710,4/11/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,271180,John and Paula Kruse Household,Attended
+PS020919N,18094,2/9/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,T,21,28.8,28.8,,13,Sold,3050128,6413996,7/19/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,3050128,Jennifer Fairchild,
+PS020919N,18094,2/9/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,Y,102,28.5,28.5,,13,Sold,3441575,6728435,10/30/2018 16:44,3,Single ,PD ,607,PS 18-19 Family,3441575,Ms. Ana Rudolf,Attended
+PS060919,17909,6/9/2019 15:00,4901,Price 4 Orchestra,ORCH,CC,119,22,33.25,,13,Sold,2750875,6916399,1/2/2019 9:28,1,Subscription,PD ,598,PS 18-19 Connections,2750875,Joseph and Karen Tison Household,
+PS111618,17641,11/16/2018 20:00,4181,Price 4 Orchestra,ORCH,G,120,33.25,33.25,,13,Sold,2732996,6232716,3/15/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2732996,Michael and Michael Block Household,Attended
+PS020919N,18094,2/9/2019 11:30,2130,Price 3 Prom Circle,PROM,B,436,0,0,,13,Sold,2852603,6976231,2/5/2019 19:03,4,Comp,PD ,607,PS 18-19 Family,2852603,TACA,
+PS120818N,18083,12/8/2018 11:30,2124,Price 1 Orch,ORCH,G,103,0,0,,13,Sold,93938,6413931,7/25/2018 0:00,4,Comp,PD ,607,PS 18-19 Family,93938,Mr. Henry Walker,Attended
+PS060719,17718,6/7/2019 20:00,4184,Price 5 Orchestra,ORCH,BB,114,25,25,,13,Sold,2740721,6232718,3/2/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2740721,Mrs. Katheryn Enders,Attended
+PS053119,17747,5/31/2019 20:00,3707,Price 4 Grand Tier,GRAND,C,537,36,36,,13,Sold,3043543,6642210,9/6/2018 14:44,3,Single ,PD ,594,PS 18-19 Pops,3043543,Brightspark Travel,Attended
+PS081818,17442,8/18/2018 20:00,6525,Price 3,Sec 5,S,23,0,0,,13,Sold,3239035,6611033,8/14/2018 11:49,4,Comp,PD ,588,PS 2018 Summer,3239035,Mrs. Carrie Villanueva,
+PS041619,18189,4/16/2019 20:00,4185,Price 5 Promenade Circle,PROM,A,442,25,25,,13,Sold,3490216,6975480,2/5/2019 13:30,3,Single ,PD ,597,PS 18-19 Specials,3490216,Ms. Solange Foley,Attended
+PS070418,17439,7/4/2018 20:00,6524,Price 2,Sec 2,T,56,50,50,,13,Sold,107627,6109753,11/14/2017 0:00,1,Subscription,PD ,588,PS 2018 Summer,107627,Ms. Edith Birken,
+PS050419,17706,5/4/2019 20:00,4182,Price 4 Orchestra Terrace,ORCH T,W,20,40,40,,13,Sold,2825453,7126702,4/22/2019 11:52,3,Single ,PD ,590,PS 18-19 Classics,2825453,Fred and Helen Forbes Household,Attended
+PS020319,17908,2/3/2019 15:00,4882,Price 1 Orchestra Terr Center,ORCH,J,110,74.75,74.75,,13,Sold,2853731,6384121,3/6/2018 15:42,1,Subscription,PD ,598,PS 18-19 Connections,2853731,Roger and E Grable Household,
+PS020219,17671,2/2/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,T,118,96.5,96.5,,13,Sold,2800731,6232931,3/28/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2800731,Christopher and Tracy Keys Household,
+PS021619,17742,2/16/2019 20:00,3716,Price 3 Orchestra Terr Right,ORCH T,V,24,64.5,64.5,,13,Sold,3417636,6615943,8/19/2018 11:29,8,Flex,PD ,594,PS 18-19 Pops,3417636,Ms. Laura Olson,Attended
+PS013119,17669,1/31/2019 20:00,4185,Price 5 Promenade Circle,PROM,C,442,25,25,,13,Sold,2806342,6954979,1/23/2019 12:47,3,Single ,PD ,590,PS 18-19 Classics,2806342,Nadja and Larry Dvorkin Household,Attended
+PS060619,17717,6/6/2019 20:00,4173,Price 2 Orchestra Terr Right,ORCH T,T,34,71.5,71.5,,13,Sold,301128,6233123,3/8/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,301128,Ms. Anne McInnis,Attended
+PS020919,17916,2/9/2019 20:00,3692,Price 1 Orchestra,ORCH,M,108,88,98,,13,Sold,3490738,6980205,2/7/2019 20:49,3,Single ,PD ,597,PS 18-19 Specials,3490738,Ms. Nancy Xie,Attended
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 4,F,32,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS070418,17439,7/4/2018 20:00,6523,Price 1,Sec 2,J,28,84,84,,13,Sold,2868791,6110016,11/15/2017 0:00,1,Subscription,PD ,588,PS 2018 Summer,2868791,Mr. Brian West,
+PS120818N,18083,12/8/2018 11:30,2124,Price 1 Orch,ORCH,P,102,56,70,,13,Sold,3473067,6825562,11/16/2018 10:18,3,Single ,PD ,607,PS 18-19 Family,3473067,Mr. Brian Park,Attended
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 8,L,7,33,33,,13,Sold,3431602,6636302,8/31/2018 21:54,3,Single ,PD ,588,PS 2018 Summer,3431602,Sheky Key,
+PS032219,17695,3/22/2019 20:00,4158,Price 1 Orchestra,ORCH,Q,104,67.5,67.5,,13,Sold,2707075,6602326,8/6/2018 11:25,8,Flex,PD ,590,PS 18-19 Classics,2707075,Ms. Barbara S. Lloyd,
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 7,P,33,0,0,,13,Sold,230012,6109788,3/22/2018 0:00,4,Comp,PD ,588,PS 2018 Summer,230012,Mr. Billy C. Hall,
+PS102718,17567,10/27/2018 20:00,4176,Price 4 Dress Chorale Terr,DRESS,CT,26,40,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS060919,17909,6/9/2019 15:00,4891,Price 2 Orchestra Terr Center,ORCH T,V,109,57.25,57.25,,13,Sold,3086344,6255801,3/20/2018 0:00,1,Subscription,PD ,598,PS 18-19 Connections,3086344,S and Eileen Rizzacasa Household,Attended
+PS020919N,18094,2/9/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,T,32,28.8,28.8,,13,Sold,2867997,6413981,4/10/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,2867997,Joe and Suzanne Pulice Household,Attended
+PS102518,17565,10/25/2018 20:00,4177,Price 2 Promenade Chorale Terr,PROM,CT,2,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS022119,17689,2/21/2019 20:00,4160,Price 1 Orchestra Terrace Left,ORCH T,U,33,116,116,,13,Sold,3252844,6654007,9/18/2018 10:51,3,Single ,PD ,590,PS 18-19 Classics,3252844,Joan Petersen,Attended
+PS051719,17713,5/17/2019 20:00,4156,Price B Box Circle,BOX CRC,B 1,3,0,0,,13,Sold,91006,7160607,5/15/2019 18:10,4,Comp,PD ,590,PS 18-19 Classics,91006,Pso - Artist Comps,Attended
+PS121818,18796,12/18/2018 19:30,2618,Price 1 Orch D - R,ORCH,L,121,50,50,,13,Sold,3441799,6730515,11/1/2018 7:32,3,Single ,PD ,623,PS 18-19 Organ,3441799,Pamela Kravitz,Attended
+PS120718,17649,12/7/2018 20:00,4181,Price 4 Orchestra,ORCH,D,126,0,0,,13,Sold,3043039,6678868,10/1/2018 16:09,4,Comp,PD ,590,PS 18-19 Classics,3043039,Geoffrey Tomlinson,Attended
+PS102518,17565,10/25/2018 20:00,4156,Price B Box Circle,BOX CRC,B29,3,0,0,,13,Sold,91006,6720437,10/25/2018 14:10,4,Comp,PD ,590,PS 18-19 Classics,91006,Pso - Artist Comps,Attended
+PS060919,17909,6/9/2019 15:00,4882,Price 1 Orchestra Terr Center,ORCH T,Y,113,20,20,,13,Sold,2848275,7178715,5/30/2019 13:31,3,Single ,PD ,598,PS 18-19 Connections,2848275,Jennifer Ramirez,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 2,V,10,59,59,,13,Sold,3295082,6555617,6/12/2018 9:42,3,Single ,PD ,588,PS 2018 Summer,3295082,Mr. Allan Cassel,
+PS101318,17736,10/13/2018 20:00,3700,Price 2 Dress Circle Side,DRESS,B11,3,85,85,,13,Sold,2855768,6407106,4/10/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2855768,Mr. Gregory Walters,Attended
+PS081818,17442,8/18/2018 20:00,6522,Boxes,Bx5,1,3,0,0,,13,Sold,955085,6613255,8/16/2018 16:40,4,Comp,PD ,588,PS 2018 Summer,955085,Pso Comps,
+PS120718,17649,12/7/2018 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,X,112,66,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS120618,17645,12/6/2018 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,T,104,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS041119,17699,4/11/2019 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,X,111,55,55,,13,Sold,268650,6233495,3/13/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,268650,Janice Kolodny Household,Attended
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 6,S,43,0,0,,13,Sold,2879324,6606173,8/9/2018 15:48,4,Comp,PD ,588,PS 2018 Summer,2879324,Girls Inc. of Orange County,
+PS022419,17985,2/24/2019 15:00,1181,Price 2 Loft,Loft,212,4,70,70,,13,Sold,351011,6955210,1/23/2019 15:07,3,Single ,PD ,601,PS 18-19 Chamber,351011,James and Virginia Riley Household,Attended
+PS101218,17735,10/12/2018 20:00,3690,Price P Orchestra,ORCH,A,115,157,157,,13,Sold,2458943,6406796,3/22/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2458943,Mr. Kevin A. Pezzolla,Attended
+PS032319,17696,3/23/2019 20:00,4178,Price 3 Orchestra,ORCH,C,103,55,55,,13,Sold,3298567,7081797,3/21/2019 9:29,1,Subscription,PD ,590,PS 18-19 Classics,3298567,Shmuel and Geula Ben-Shmuel Household,
+PS011219N,18088,1/12/2019 11:30,2131,Price 4 Prom Circle Side,PROM,AA,7,12,12,,13,Sold,3075061,6621993,8/22/2018 23:09,1,Subscription,PD ,607,PS 18-19 Family,3075061,Nicholas and Susanne Salcido Household,Attended
+PS041219,17700,4/12/2019 20:00,4158,Price 1 Orchestra,ORCH,D,106,116,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS060619,17717,6/6/2019 20:00,4169,Price 4 Accessible Orchestra,ORCH,A,104,40,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS011019,17653,1/10/2019 20:00,4162,Price 1 Dress Circle Side,DRESS,B12,1,96.5,96.5,,13,Sold,2795790,6233203,3/23/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2795790,David and Lois Erikson Household,Attended
+PS060619,17717,6/6/2019 20:00,4161,Price 1 Dress Circle,DRESS,B,325,20,20,,13,Sold,2878264,7184694,6/4/2019 15:13,3,Single ,PD ,590,PS 18-19 Classics,2878264,Matthew and Tanya Schweiger Household,
+PS051819,17714,5/18/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,T,114,0,0,,13,Sold,3503413,7126747,4/22/2019 12:18,4,Comp,PD ,590,PS 18-19 Classics,3503413,John Huang and Joy Kongkitisupchai Household,Attended
+PS101318,17736,10/13/2018 20:00,3690,Price P Orchestra,ORCH,BB,111,157,157,,13,Sold,281155,6406997,4/17/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,281155,Randall and Janell Lewis Household,Attended
+PS120818,17650,12/8/2018 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,Y,125,35,35,,13,Sold,302416,6489962,4/23/2018 9:55,8,Flex,PD ,590,PS 18-19 Classics,302416,Ms. Karen McNamara,Attended
+PS032319,17696,3/23/2019 20:00,4171,Price 2 Orchestra,ORCH,J,120,86,86,,13,Sold,3475499,6966440,1/30/2019 15:47,3,Single ,PD ,590,PS 18-19 Classics,3475499,Ms. Arlette Althaus,Attended
+PS111018,17738,11/10/2018 20:00,3707,Price 4 Grand Tier,GRAND,A,517,35,35,,13,Sold,3031742,6545323,5/30/2018 21:05,8,Flex,PD ,594,PS 18-19 Pops,3031742,Michael Burgess and Barry Barnhill Household,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,P,33,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,N,49,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS051719,17713,5/17/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,V,111,96.5,96.5,,13,Sold,120449,6233364,3/21/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,120449,Gerald and Neena Smith Household,Attended
+PS020919A,18091,2/9/2019 10:00,2130,Price 3 Prom Circle,PROM,C,402,0,0,,13,Sold,3427967,6976228,2/5/2019 19:02,4,Comp,PD ,607,PS 18-19 Family,3427967,New Hope Presbyterian,
+PS041319A,18097,4/13/2019 10:00,2139,Price 4 Accessible,PROM,AA,45,15,15,,13,Sold,3283898,7025016,2/25/2019 9:56,3,Single ,PD ,607,PS 18-19 Family,3283898,Ms. Amber Schuman,Attended
+PS092918,17552,9/29/2018 20:00,4176,Price 4 Dress Chorale Terr,DRESS,CT,34,33.75,33.75,,13,Sold,267350,6613119,8/16/2018 15:43,1,Subscription,PD ,590,PS 18-19 Classics,267350,Douglas and Angela Knechtel Household,Attended
+PS011219N,18088,1/12/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,Z,6,36,,,0,Available,,0,,,,AVL,607,PS 18-19 Family,,,
+PS051719,17713,5/17/2019 20:00,4178,Price 3 Orchestra,ORCH,A,120,75,75,,13,Sold,374226,7122974,4/18/2019 10:56,8,Flex,PD ,590,PS 18-19 Classics,374226,Stuart and Liz Silverman Household,Attended
+PS102818,17907,10/28/2018 15:00,4889,Price 1 Grand Tier,GRAND,C,506,89,,,0,Available,,,,,,AVL,598,PS 18-19 Connections,,,
+PS020919,17916,2/9/2019 20:00,3702,Price 3 Dress Choral Terr,DRESS,CT,22,38,38.25,,13,Sold,2359243,6868534,12/3/2018 16:31,3,Single ,PD ,597,PS 18-19 Specials,3149446,Charles and Ling Zhang Household,Attended
+PS022119,17689,2/21/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,V,109,116,147,,13,Sold,263526,7014312,2/19/2019 14:14,3,Single ,PD ,590,PS 18-19 Classics,263526,Melissa and Bill Keye Household,Attended
+PS060919,17909,6/9/2019 15:00,4887,Price 1 Promenade Circle,PROM,D,420,89,,,0,Available,,,,,,AVL,598,PS 18-19 Connections,,,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Circle,CC,56,33,,,4,Held,,0,,,,AVL,588,PS 2018 Summer,,,
+PS092918,17552,9/29/2018 20:00,4195,Price 2 Dress Circle,DRESS,B,345,73.5,73.5,,13,Sold,202443,6646809,9/11/2018 15:31,1,Subscription,PD ,590,PS 18-19 Classics,202443,Dr. David R. Falconer,Attended
+PS042619,17745,4/26/2019 20:00,3690,Price P Orchestra,ORCH,F,116,157,157,,13,Sold,392829,6406745,4/30/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,392829,William and Gisela Taylor Household,Attended
+PS120718,17649,12/7/2018 20:00,4156,Price B Box Circle,BOX CRC,B15,1,0,0,,13,Sold,67927,6853035,11/26/2018 12:30,4,Comp,PD ,590,PS 18-19 Classics,67927,Michelle Rohé Household,
+PS050419,17706,5/4/2019 20:00,4182,Price 4 Orchestra Terrace,ORCH T,W,24,33.25,33.25,,13,Sold,3462271,6232834,2/21/2018 13:28,1,Subscription,PD ,590,PS 18-19 Classics,3454652,Don and  Farmer Household,Attended
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 7,W,1,25,25,,13,Sold,3291448,6515992,5/9/2018 13:37,3,Single ,PD ,588,PS 2018 Summer,3291448,lili Rossel Household,
+PS060119,17748,6/1/2019 20:00,3717,Price 3 Promenade Circle,PROM,B,426,59.25,59.25,,13,Sold,3011693,6616410,8/19/2018 15:21,3,Single ,PD ,594,PS 18-19 Pops,3011693,Michael and Margaret Loya Household,Attended
+PS120618,17645,12/6/2018 20:00,4158,Price 1 Orchestra,ORCH,E,112,77,77,,13,Sold,213014,6678385,10/1/2018 14:09,1,Subscription,PD ,590,PS 18-19 Classics,213014,Michael and Cynthia Lynn Furst Household,
+PS102718A,18047,10/27/2018 10:00,2124,Price 1 Orch,ORCH,A,120,28.8,28.8,,13,Sold,3408440,6645670,9/10/2018 16:20,1,Subscription,PD ,607,PS 18-19 Family,3408440,Raina Spalek,Attended
+PS120918,17892,12/9/2018 15:00,4160,Price 1 Orchestra Terrace Left,ORCH T,T,37,0,0,,13,Sold,118400,6876479,12/7/2018 17:17,4,Comp,PD ,597,PS 18-19 Specials,118400,Pso - Ops.,
+PS053119,17747,5/31/2019 20:00,3696,Price 2 Orchestra Terr Right,ORCH T,T,40,85,85,,13,Sold,174396,6406675,5/7/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,174396,Lawrence and Sandra Collier Household,Attended
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 6,M,35,0,0,,13,Sold,3279278,6607436,8/10/2018 16:49,4,Comp,PD ,588,PS 2018 Summer,3279278,Ms. Sue Vansomphone,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 1,Q,70,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS032319,17696,3/23/2019 20:00,4158,Price 1 Orchestra,ORCH,F,114,116,116,,13,Sold,3385865,6958376,1/25/2019 12:48,3,Single ,PD ,590,PS 18-19 Classics,3385865,Kaihan Zhang,Attended
+PS042719,17746,4/27/2019 20:00,3703,Price 3 Accessible Dress Side,DRESS,B8,1,59.25,81,,13,Sold,2873473,7063956,3/13/2019 11:16,1,Subscription,PD ,594,PS 18-19 Pops,2873473,Jerome and Lynne Jones Household,Attended
+PS060719,17718,6/7/2019 20:00,4197,Price 4 Promenade Circle,PROM,A,426,40,35,,13,Sold,3479411,7150391,5/8/2019 15:44,3,Single ,PD ,590,PS 18-19 Classics,3479411,Yvonne Johnson,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 6,T,38,0,0,,13,Sold,2005858,6612108,8/15/2018 14:05,4,Comp,PD ,588,PS 2018 Summer,2005858,Huntington Beach Band,
+PS051619,17709,5/16/2019 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,Y,6,20,20,,13,Sold,2868787,6390352,3/8/2018 17:27,1,Subscription,PD ,590,PS 18-19 Classics,2868787,Bryce and Ann Bardin Household,Attended
+PS102518,17565,10/25/2018 20:00,4192,Price 3 Grand Tier,GRAND,B,551,66,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 4,X,29,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS031619,17744,3/16/2019 20:00,3706,Price 4 Chorale Terrace,CHORAL,D,213,45,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 4,J,28,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS090818,17445,9/8/2018 20:00,6523,Price 1,Sec 2,M,25,0,0,,13,Sold,3289358,6528981,5/17/2018 12:56,4,Comp,PD ,588,PS 2018 Summer,3289358,Mark Tomaino and Diana Martin Household,
+PS101218,17735,10/12/2018 20:00,3706,Price 4 Chorale Terrace,CHORAL,A,233,45,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS011019,17653,1/10/2019 20:00,4158,Price 1 Orchestra,ORCH,K,107,96.5,96.5,,13,Sold,383489,6233144,3/28/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,383489,Barry and Carole Steele Household,Attended
+PS120918,17892,12/9/2018 15:00,4197,Price 4 Promenade Circle,PROM,B,429,30,30,,13,Sold,380737,6620963,8/22/2018 14:00,3,Single ,PD ,597,PS 18-19 Specials,380737,Ms. Susanne Spangler,Attended
+PS041619,18189,4/16/2019 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,X,2,25,25,,13,Sold,3488697,6961452,1/27/2019 13:05,3,Single ,PD ,597,PS 18-19 Specials,3488697,Howard Altman,Attended
+PS042719,17746,4/27/2019 20:00,3711,Price 1 Dress Circle,DRESS,A,330,110.5,110.5,,13,Sold,94709,6406913,4/13/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,94709,Elaine Zax Household,Attended
+PS090818,17445,9/8/2018 20:00,6523,Price 1,Circle,CC,14,42,42,,13,Sold,3420849,6544954,5/30/2018 14:39,1,Subscription,PD ,588,PS 2018 Summer,3420849,Mr. Richard Bassett,
+PS041319A,18097,4/13/2019 10:00,2125,Price 1 Orch Terrace,ORCH T,U,12,28.8,28.8,,13,Sold,3474359,6895766,12/18/2018 10:36,1,Subscription,PD ,607,PS 18-19 Family,3474359,Carol Shier,Attended
+PS041119,17699,4/11/2019 20:00,4161,Price 1 Dress Circle,DRESS,C,327,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS120718,17649,12/7/2018 20:00,4184,Price 5 Orchestra,ORCH,AA,103,25,28,,13,Sold,3477749,6867313,12/3/2018 10:14,3,Single ,PD ,590,PS 18-19 Classics,3477749,Ms. Carina L. Santos,Attended
+PS081818,17442,8/18/2018 20:00,6527,Price 5,Sec 7,K,33,25,25,,13,Sold,3426414,6593960,7/30/2018 10:04,3,Single ,PD ,588,PS 2018 Summer,3426414,Ms. Maria C. Sanford,
+PS021519,17741,2/15/2019 20:00,3690,Price P Orchestra,ORCH,D,108,157,157,,13,Sold,3052935,6406857,4/10/2018 17:35,1,Subscription,PD ,594,PS 18-19 Pops,3052935,Brenda Lynn-Wall Household,Attended
+PS051919,17986,5/19/2019 15:00,1178,Price 1 Main Floor,Floor,114,1,80,80,,13,Sold,56622,6461019,5/4/2018 0:00,1,Subscription,PD ,601,PS 18-19 Chamber,56622,Charles and Martha Purcell Household,
+PS081818,17442,8/18/2018 20:00,6523,Price 1,Sec 2,D,37,0,0,,13,Sold,955085,6613255,8/16/2018 16:40,4,Comp,PD ,588,PS 2018 Summer,955085,Pso Comps,
+PS060619,17717,6/6/2019 20:00,4158,Price 1 Orchestra,ORCH,D,108,96.5,96.5,,13,Sold,3282946,7160038,5/15/2019 12:51,1,Subscription,PD ,590,PS 18-19 Classics,3282946,Steve and Rona Gromet Household,Attended
+PS102818,17907,10/28/2018 15:00,4896,Price 3 Orchestra,ORCH,C,105,39.75,39.75,,13,Sold,2381555,6255724,3/29/2018 0:00,1,Subscription,PD ,598,PS 18-19 Connections,2381555,Ms. Ying Wei Lin,Attended
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 7,T,7,44,44,,13,Sold,3431003,6631872,8/28/2018 19:55,3,Single ,PD ,588,PS 2018 Summer,3431003,Mr. Andrew Laurence,
+PS021519,17741,2/15/2019 20:00,3690,Price P Orchestra,ORCH,G,112,75,143,,13,Sold,3433767,6726930,10/30/2018 8:18,8,Flex,PD ,594,PS 18-19 Pops,3433767,Ms. Merry Keller,Attended
+PS031619,17744,3/16/2019 20:00,3692,Price 1 Orchestra,ORCH,M,109,110.5,110.5,,13,Sold,2845997,6893800,12/17/2018 10:42,1,Subscription,PD ,594,PS 18-19 Pops,2845997,Mr. Robert Woo,Attended
+PS121518,17740,12/15/2018 20:00,3690,Price P Orchestra,ORCH,B,121,157,174,,13,Sold,2941411,6846715,11/24/2018 14:25,3,Single ,PD ,594,PS 18-19 Pops,316252,Bruce and Alicia Mutter Household,
+PS102518,17565,10/25/2018 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,ZZ,120,55,55,,13,Sold,113128,6233049,3/15/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,113128,Richard and Carol Hoppe Household,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 1,E,43,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS022119,17689,2/21/2019 20:00,4158,Price 1 Orchestra,ORCH,D,102,96.5,96.5,,13,Sold,3157738,6233566,4/4/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3157738,Edward Hepner and Joan Jackson Household,Attended
+PS070418,17439,7/4/2018 20:00,6527,Price 5,Sec 3,W,33,25,25,,13,Sold,3422749,6559594,6/16/2018 11:28,3,Single ,PD ,588,PS 2018 Summer,3422749,Ms. Chris Buehner,
+PS011019,17653,1/10/2019 20:00,4178,Price 3 Orchestra,ORCH,B,106,55,55,,13,Sold,373696,6255709,3/7/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,373696,Harry and Mary Siemonsma Household,Attended
+PS120818A,18082,12/8/2018 10:00,2131,Price 4 Prom Circle Side,PROM,AA,8,35,45,,13,Sold,3476610,6858692,11/28/2018 17:11,3,Single ,PD ,607,PS 18-19 Family,3476610,Mrs. Jordan Floriani,Attended
+PS011219,17655,1/12/2019 20:00,4185,Price 5 Promenade Circle,PROM,A,401,25,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS070418,17439,7/4/2018 20:00,6524,Price 2,Sec 6,V,49,0,0,,13,Sold,2808731,6571294,6/28/2018 15:26,4,Comp,PD ,588,PS 2018 Summer,2808731,Working Wardrobes,
+PS120818,17650,12/8/2018 20:00,4156,Price B Box Circle,BOX CRC,B20,1,163.25,163.25,,13,Sold,252373,6232841,4/26/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,252373,Donna Janes Household,
+PS031719,18799,3/17/2019 15:00,2619,Price 1 Orch Terr Center,ORCH T,ZZ,115,0,0,,13,Sold,3066064,7069653,3/15/2019 15:51,4,Comp,PD ,623,PS 18-19 Organ,3066064,Age Well Senior Services,
+PS092718,17550,9/27/2018 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,W,116,116,92.5,,13,Sold,2393242,6666817,9/26/2018 16:32,3,Single ,PD ,590,PS 18-19 Classics,2393242,Long Shung and Anne Shih Household,Attended
+PS060119,17748,6/1/2019 20:00,3704,Price 4 Promenade Side,PROM,AA,10,35,35,,13,Sold,2751677,6407086,4/17/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2751677,Stephen Grande and Barbara Cepinko Household,Attended
+PS022319,17691,2/23/2019 20:00,4164,Price 1 Grand Tier,GRAND,F,512,116,148,,13,Sold,2646876,7009600,2/16/2019 14:05,3,Single ,PD ,590,PS 18-19 Classics,2646876,Mr. Manjit M. Daniel,Attended
+PS011219N,18088,1/12/2019 11:30,2122,Price B Orch Terr  Box,ORCH T,B 2,4,46,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 6,M,20,59,,,4,Held,,0,,,,AVL,588,PS 2018 Summer,,,
+PS022119,17689,2/21/2019 20:00,4167,Price 2 Accessible Prom Side,PROM,AA,48,71.5,33.25,,13,Sold,2873451,7007315,2/15/2019 12:51,1,Subscription,PD ,590,PS 18-19 Classics,2873451,Mrs. Nancy W. Ypma,
+PS070418,17439,7/4/2018 20:00,6527,Price 5,Sec 5,F,30,10.5,10.5,,13,Sold,154194,6560719,6/18/2018 10:37,1,Subscription,PD ,588,PS 2018 Summer,154194,Mr. Robert Brover,
+PS051919,17986,5/19/2019 15:00,1178,Price 1 Main Floor,Floor,131,4,80,80,,13,Sold,121348,6461027,5/22/2018 13:15,1,Subscription,PD ,601,PS 18-19 Chamber,121348,Richard and Mary Tengdin Household,Attended
+PS060819,17719,6/8/2019 20:00,4184,Price 5 Orchestra,ORCH,BB,119,25,25,,13,Sold,316281,6232857,2/16/2018 21:04,1,Subscription,PD ,590,PS 18-19 Classics,316281,Mr. Kenneth S. Muzzy,
+PS121818,18796,12/18/2018 19:30,2624,Price 2 Grand Tier,GRAND,D,540,20,20,,13,Sold,2010347,6896089,12/18/2018 12:47,3,Single ,PD ,623,PS 18-19 Organ,2010347,Goldstar Events,Attended
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 4,B,24,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 1,S,19,33,33,,13,Sold,2841720,6556229,6/12/2018 21:46,3,Single ,PD ,588,PS 2018 Summer,2841720,Alana and Alana Glade Household,
+PS041619,18189,4/16/2019 20:00,4184,Price 5 Orchestra,ORCH,C,123,25,25,,13,Sold,2637519,6725853,10/29/2018 13:01,3,Single ,PD ,597,PS 18-19 Specials,2637519,Ms. Kris Campbell,Attended
+PS020219,17671,2/2/2019 20:00,4173,Price 2 Orchestra Terr Right,ORCH T,U,8,71.5,71.5,,13,Sold,3179387,6233459,3/26/2018 15:16,1,Subscription,PD ,590,PS 18-19 Classics,3179387,Karen Vesely-Schenden and Thomas Schenden Household,Attended
+PS031719,18799,3/17/2019 15:00,2619,Price 1 Orch Terr Center,ORCH T,U,108,35,35,,13,Sold,3422046,6955496,1/23/2019 17:39,3,Single ,PD ,623,PS 18-19 Organ,3422046,Mr. Richard M. Boothe,
+PS060119,17748,6/1/2019 20:00,3697,Price 2 Dress Circle,DRESS,C,308,40,40,,13,Sold,279471,7129821,4/24/2019 13:12,3,Single ,PD ,594,PS 18-19 Pops,279471,Stephen and Leigh Lentz Household,Attended
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 1,H,22,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 6,N,7,22.5,22.5,,13,Sold,3273304,6629266,8/27/2018 10:24,3,Single ,PD ,588,PS 2018 Summer,3273304,Anne Braden,
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 1,J,46,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS120618,17645,12/6/2018 20:00,4195,Price 2 Dress Circle,DRESS,C,337,86,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS081818,17442,8/18/2018 20:00,6525,Price 3,Sec 5,W,40,44,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS121518,17740,12/15/2018 20:00,3693,Price 1 Orchestra Terrace,ORCH T,W,106,111,111,,13,Sold,169785,6718467,10/24/2018 10:25,3,Single ,PD ,594,PS 18-19 Pops,169785,James and Karen Christensen Household,Attended
+PS031719,18799,3/17/2019 15:00,2624,Price 2 Grand Tier,GRAND,C,507,25,,,0,Available,,,,,,AVL,623,PS 18-19 Organ,,,
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 3,J,14,33,,,4,Held,,0,,,,AVL,588,PS 2018 Summer,,,
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 6,S,16,22.5,22.5,,13,Sold,2734202,6635160,8/31/2018 9:47,3,Single ,PD ,588,PS 2018 Summer,2734202,Eun and Chang Im Household,
+PS020119,17670,2/1/2019 20:00,4184,Price 5 Orchestra,ORCH,BB,101,20,20,,13,Sold,349771,6232653,3/8/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,349771,Mrs. Winnie A. Rice,Attended
+PS031519,17743,3/15/2019 20:00,3692,Price 1 Orchestra,ORCH,R,103,0,0,,13,Sold,2558658,7069331,3/15/2019 14:11,4,Comp,PD ,594,PS 18-19 Pops,3343718,Clay and Brenda Hardwig Household,
+PS022619,17690,2/26/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,V,111,96.5,96.5,,13,Sold,120449,6233364,3/21/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,120449,Gerald and Neena Smith Household,Attended
+PS021519,17741,2/15/2019 20:00,3704,Price 4 Promenade Side,PROM,AA,13,35,35,,13,Sold,343118,6406733,5/1/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,343118,Mr. Santo Puzzo,Attended
+PS041219,17700,4/12/2019 20:00,4158,Price 1 Orchestra,ORCH,E,105,0,0,,13,Sold,955085,7115913,4/12/2019 15:47,4,Comp,PD ,590,PS 18-19 Classics,955085,Pso Comps,Attended
+PS070418,17439,7/4/2018 20:00,6523,Price 1,Sec 2,F,21,0,0,,13,Sold,316236,6570959,6/28/2018 9:15,4,Comp,PD ,588,PS 2018 Summer,316236,Rick and Nancy Muth Household,
+PS101218,17735,10/12/2018 20:00,3694,Price 1 Accessible Orchestra,ORCH,A,132,139,,,0,Available,,0,,,,AVL,594,PS 18-19 Pops,,,
+PS020919,17916,2/9/2019 20:00,3716,Price 3 Orchestra Terr Right,ORCH T,Z,4,38,38.25,,13,Sold,2784093,6964547,1/29/2019 12:03,3,Single ,PD ,597,PS 18-19 Specials,2784093,Ms. Florence Huang,Attended
+PS041619,18189,4/16/2019 20:00,4192,Price 3 Grand Tier,GRAND,F,536,66,25,,13,Sold,3503749,7114836,4/11/2019 21:28,3,Single ,PD ,597,PS 18-19 Specials,3503749,Ms. Christine A. Cawelti,Attended
+PS090818,17445,9/8/2018 20:00,6527,Price 5,Sec 5,C,9,21,21,,13,Sold,3125634,6110095,11/17/2017 0:00,1,Subscription,PD ,588,PS 2018 Summer,3125634,Ms. Betsy Sprecher,
+PS101218,17735,10/12/2018 20:00,3700,Price 2 Dress Circle Side,DRESS,B9,2,85,85,,13,Sold,187815,6406678,3/22/2018 11:19,1,Subscription,PD ,594,PS 18-19 Pops,187815,Mrs. Ruth E. DeNault,Attended
+PS031719,18799,3/17/2019 15:00,2624,Price 2 Grand Tier,GRAND,D,534,0,0,,13,Sold,2847218,7069765,3/15/2019 16:32,4,Comp,PD ,623,PS 18-19 Organ,2847218,CASA,Attended
+PS121418,17739,12/14/2018 20:00,3693,Price 1 Orchestra Terrace,ORCH T,T,108,110.5,110.5,,13,Sold,2806322,6406844,5/2/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2806322,Douglas and Joanne Newcomb Household,Attended
+PS092718,17550,9/27/2018 20:00,4190,Price 2 Grand Tier,GRAND,E,503,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS101218,17735,10/12/2018 20:00,3708,Price 4 Accessible Dress Side,DRESS,B6,1,45,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS111718,17642,11/17/2018 20:00,4176,Price 4 Dress Chorale Terr,DRESS,CT,17,40,47,,13,Sold,2998314,6708426,10/17/2018 10:06,3,Single ,PD ,590,PS 18-19 Classics,2852651,Edward Surman and Rita Chenoweth Household,Attended
+PS111718,17642,11/17/2018 20:00,4195,Price 2 Dress Circle,DRESS,A,307,71.5,71.5,,13,Sold,2381947,6233692,3/15/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2381947,Gordon & Christine Mc Laren,
+PS020919,17916,2/9/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,X,103,70,70.25,,13,Sold,3472132,6817682,11/13/2018 14:32,3,Single ,PD ,597,PS 18-19 Specials,3472132,Elena Pu,Attended
+PS111018,17738,11/10/2018 20:00,3701,Price 4 Promenade Circle,PROM,A,405,35,35,,13,Sold,3359820,6438512,3/26/2018 23:15,1,Subscription,PD ,594,PS 18-19 Pops,3359820,Dalyn Miller-Geiser and Norm Geiser Household,Attended
+PS120818,17650,12/8/2018 20:00,4162,Price 1 Dress Circle Side,DRESS,B9,4,96.5,96.5,,13,Sold,2534252,6232904,4/9/2018 10:39,1,Subscription,PD ,590,PS 18-19 Classics,2534252,Richard Pattis and Ellen Olshansky Household,Attended
+PS102618,17566,10/26/2018 20:00,4156,Price B Box Circle,BOX CRC,B15,3,0,0,,13,Sold,208999,6717690,10/23/2018 16:51,4,Comp,PD ,590,PS 18-19 Classics,208999,John Forsyte and Michele Moe-Forsyte Household,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 1,T,8,59,59,,13,Sold,3430071,6624206,8/24/2018 13:17,3,Single ,PD ,588,PS 2018 Summer,3430071,Dan Q. Pham,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 4,S,22,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS031519,17743,3/15/2019 20:00,3714,Price 2 Grand Tier,GRAND,E,515,75,33,,13,Sold,2731127,6710236,10/18/2018 13:34,8,Flex,PD ,594,PS 18-19 Pops,2731127,Ms. Gail Hunt,Attended
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 8,E,22,0,0,,13,Sold,3261316,6623190,8/23/2018 16:43,4,Comp,PD ,588,PS 2018 Summer,3261316,Academy Of Music For The Blind,
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 3,F,9,59,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 1,S,13,28,28,,13,Sold,3205410,6483923,4/19/2018 14:46,1,Subscription,PD ,588,PS 2018 Summer,3205410,Kimiko Taoyama and Yumiko Ikeda Household,
+PS022619,17690,2/26/2019 20:00,4197,Price 4 Promenade Circle,PROM,A,435,40,45,,13,Sold,3117832,7019125,2/22/2019 11:37,3,Single ,PD ,590,PS 18-19 Classics,3117832,Mr. Jon N. Weinberg,Attended
+PS042619,17745,4/26/2019 20:00,3695,Price 2 Orchestra Terr Left,ORCH T,U,43,85,85,,13,Sold,117086,6406642,3/29/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,117086,Joyce Murphy Household,Attended
+PS050519,18802,5/5/2019 19:00,2618,Price 1 Orch D - R,ORCH,D,124,35,,,0,Available,,0,,,,AVL,623,PS 18-19 Organ,,,
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 8,K,27,0,0,,13,Sold,2686860,6606348,8/9/2018 17:44,4,Comp,PD ,588,PS 2018 Summer,2686860,Savanna School District,
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 3,N,22,33,33,,13,Sold,3427112,6598839,8/2/2018 20:38,3,Single ,PD ,588,PS 2018 Summer,3427112,Ms. Suzanne Ross,
+PS031719,18799,3/17/2019 15:00,2619,Price 1 Orch Terr Center,ORCH T,W,104,28,28,,13,Sold,2010347,7069547,3/15/2019 15:23,3,Single ,PD ,623,PS 18-19 Organ,2010347,Goldstar Events,Attended
+PS053119,17747,5/31/2019 20:00,3701,Price 4 Promenade Circle,PROM,C,405,45,45,,13,Sold,2894606,7133859,4/27/2019 10:28,3,Single ,PD ,594,PS 18-19 Pops,2894606,Joel and Rhonda Covelman Household,Attended
+PS101318,17736,10/13/2018 20:00,3701,Price 4 Promenade Circle,PROM,B,437,35,35,,13,Sold,2782778,6407091,3/26/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2782778,Susan MacPhee and Cindy Crisp Household,Attended
+PS102818,17907,10/28/2018 15:00,4903,Price 4 Accessible Orchestra,ORCH,A,130,22,22,,13,Sold,3135787,6377922,3/3/2018 10:31,1,Subscription,PD ,598,PS 18-19 Connections,3135787,Ms. Lucinda Miedema,
+PS041319A,18097,4/13/2019 10:00,2124,Price 1 Orch,ORCH,H,122,28.8,28.8,,13,Sold,3307106,6979447,2/7/2019 14:23,1,Subscription,PD ,607,PS 18-19 Family,3307106,Mrs. Emily Egkan,Attended
+PS050419,17706,5/4/2019 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,X,106,0,0,,13,Sold,3383772,6999844,2/13/2019 10:02,4,Comp,PD ,590,PS 18-19 Classics,3383772,Mrs. Tuesday D. Steele,Attended
+PS032119,17694,3/21/2019 20:00,4195,Price 2 Dress Circle,DRESS,A,343,86,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS101218,17735,10/12/2018 20:00,3692,Price 1 Orchestra,ORCH,K,117,89,89,,13,Sold,111364,6551479,6/6/2018 17:11,1,Subscription,PD ,594,PS 18-19 Pops,111364,Dr. James Furcolow,Attended
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 1,G,13,16.5,16.5,,13,Sold,2010347,6573402,7/2/2018 14:29,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS120618,17645,12/6/2018 20:00,4180,Price 3 Promenade Circle,PROM,A,416,67.5,30,,13,Sold,3349567,6612193,8/15/2018 15:20,8,Flex,PD ,590,PS 18-19 Classics,3349567,Ms. Claudia Walker,
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 4,E,1,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS111618,17641,11/16/2018 20:00,4195,Price 2 Dress Circle,DRESS,B,340,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS070418,17439,7/4/2018 20:00,6523,Price 1,Sec 2,G,43,99,39,,13,Sold,2010347,6573402,7/2/2018 14:29,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS093018,17905,9/30/2018 15:00,4889,Price 1 Grand Tier,GRAND,G,509,89,,,0,Available,,,,,,AVL,598,PS 18-19 Connections,,,
+PS021519,17741,2/15/2019 20:00,3707,Price 4 Grand Tier,GRAND,C,504,45,46,,13,Sold,3480613,6889632,12/15/2018 10:24,3,Single ,PD ,594,PS 18-19 Pops,3480613,Ms. Jess Gardiner,Attended
+PS102818,17907,10/28/2018 15:00,4882,Price 1 Orchestra Terr Center,ORCH T,ZZ,112,89,109,,13,Sold,2899962,6683571,10/3/2018 15:15,3,Single ,PD ,598,PS 18-19 Connections,130726,John and Frances Applegate Household,Attended
+PS111718,17642,11/17/2018 20:00,4160,Price 1 Orchestra Terrace Left,ORCH T,W,3,96.5,96.5,,13,Sold,260595,6748534,11/9/2018 12:31,1,Subscription,PD ,590,PS 18-19 Classics,260595,Karl and Virginia Kawai Household,Attended
+PS120918,17892,12/9/2018 15:00,4190,Price 2 Grand Tier,GRAND,E,527,86,,,0,Available,,,,,,AVL,597,PS 18-19 Specials,,,
+PS070418,17439,7/4/2018 20:00,6523,Price 1,Circle,CC,32,84,84,,13,Sold,3260613,6217444,1/14/2018 19:39,1,Subscription,PD ,588,PS 2018 Summer,3260613,Elton Siu and Vincy Fung Household,
+PS013119,17669,1/31/2019 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,X,118,33.25,33.25,,13,Sold,83222,6233030,3/21/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,83222,Daniel and Charlotta Butler Household,Attended
+PS102718,17567,10/27/2018 20:00,4171,Price 2 Orchestra,ORCH,J,120,64.5,72,,13,Sold,420783,6621486,8/22/2018 17:36,3,Single ,PD ,590,PS 18-19 Classics,420783,Edward and Susan Wong Household,Attended
+PS120818N,18083,12/8/2018 11:30,2124,Price 1 Orch,ORCH,G,108,28.8,28.8,,13,Sold,3378775,6641012,9/5/2018 10:47,1,Subscription,PD ,607,PS 18-19 Family,3378775,Ms. Farinaz Raissi,Attended
+PS120618,17645,12/6/2018 20:00,4169,Price 4 Accessible Orchestra,ORCH,B,101,26.5,26.5,,13,Sold,283978,6233497,2/23/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,283978,Albert and Diana LoSchiavo Household,
+PS022119,17689,2/21/2019 20:00,4162,Price 1 Dress Circle Side,DRESS,B4,1,96.5,96.5,,13,Sold,3223746,6233336,3/19/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3223746,Dr. Michael Buchbinder,Attended
+PS041119,17699,4/11/2019 20:00,4158,Price 1 Orchestra,ORCH,F,112,96.5,96.5,,13,Sold,26401,6233020,3/16/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,26401,William and Valerie Lawler Household,Attended
+PS031619,17744,3/16/2019 20:00,3714,Price 2 Grand Tier,GRAND,G,519,109,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS092918,17552,9/29/2018 20:00,4184,Price 5 Orchestra,ORCH,CC,111,25,25,,13,Sold,2781058,6232924,3/19/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2781058,Philip and Marilyn Kunde Household,Attended
+PS051819,17714,5/18/2019 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,X,113,55,55,,13,Sold,3305314,6233008,3/7/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3305314,Ms. Lisa Rapp,Attended
+PS050219,17704,5/2/2019 20:00,4162,Price 1 Dress Circle Side,DRESS,B4,2,116,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS051719,17713,5/17/2019 20:00,4185,Price 5 Promenade Circle,PROM,A,406,25,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS121518,17740,12/15/2018 20:00,3693,Price 1 Orchestra Terrace,ORCH T,X,122,75,75,,13,Sold,266200,6631274,8/28/2018 13:59,8,Flex,PD ,594,PS 18-19 Pops,266200,Mr. Norman Kislig,Attended
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 1,Q,29,0,0,,13,Sold,3009379,6571286,6/28/2018 15:20,4,Comp,PD ,588,PS 2018 Summer,3009379,Oc Rescue Mission,
+PS060919,17909,6/9/2019 15:00,4901,Price 4 Orchestra,ORCH,AA,118,22,22,,13,Sold,3356812,6389332,3/8/2018 11:26,1,Subscription,PD ,598,PS 18-19 Connections,3356812,Noah Paul Household,
+PS111018,17738,11/10/2018 20:00,3714,Price 2 Grand Tier,GRAND,G,513,109,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS120818N,18083,12/8/2018 11:30,2130,Price 3 Prom Circle,PROM,B,434,46,46,,13,Sold,2874596,6624020,8/24/2018 11:39,3,Single ,PD ,607,PS 18-19 Family,2874596,Ryan Vance,Attended
+PS051919,17986,5/19/2019 15:00,1178,Price 1 Main Floor,Floor,143,1,80,80,,13,Sold,2420441,6461058,5/2/2018 0:00,1,Subscription,PD ,601,PS 18-19 Chamber,2420441,Elaine Sarkaria Household,Attended
+PS031619,17744,3/16/2019 20:00,3696,Price 2 Orchestra Terr Right,ORCH T,T,2,85,85,,13,Sold,118897,6406940,5/4/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,118897,Carl and Mary Jo Rinaldi Household,Attended
+PS021619,17742,2/16/2019 20:00,3700,Price 2 Dress Circle Side,DRESS,B4,1,85,109,,13,Sold,3201067,6677892,10/1/2018 11:44,3,Single ,PD ,594,PS 18-19 Pops,3201067,Jerome Lehrman,Attended
+PS020319,17908,2/3/2019 15:00,4887,Price 1 Promenade Circle,PROM,D,401,89,,,0,Available,,,,,,AVL,598,PS 18-19 Connections,,,
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,H,30,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS101418,17984,10/14/2018 15:00,1178,Price 1 Main Floor,Floor,154,4,80,80,,13,Sold,2675621,6461062,5/4/2018 0:00,1,Subscription,PD ,601,PS 18-19 Chamber,2675621,Richard and Dot Nelson Household,Attended
+PS101218,17735,10/12/2018 20:00,3714,Price 2 Grand Tier,GRAND,G,520,109,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS081818,17442,8/18/2018 20:00,6525,Price 3,Sec 5,R,7,25,25,,13,Sold,3416463,6497289,4/27/2018 13:22,3,Single ,PD ,588,PS 2018 Summer,3416463,Justin Cabuhat,
+PS110918,17737,11/9/2018 20:00,3717,Price 3 Promenade Circle,PROM,A,427,79,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 4,F,29,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS053119,17747,5/31/2019 20:00,3704,Price 4 Promenade Side,PROM,AA,1,35,35,,13,Sold,2418190,6406782,4/5/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,2418190,Ms. Margie Bolsinger,
+PS120718,17649,12/7/2018 20:00,4180,Price 3 Promenade Circle,PROM,B,421,75,33,,13,Sold,221483,6860013,11/29/2018 11:55,8,Flex,PD ,590,PS 18-19 Classics,221483,Irving and Stephanie Golper Household,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 3,H,4,50,50,,13,Sold,400888,6109840,11/15/2017 0:00,1,Subscription,PD ,588,PS 2018 Summer,400888,William Turpit and Rex Allen Household,
+PS013119,17669,1/31/2019 20:00,4185,Price 5 Promenade Circle,PROM,B,437,25,29,,13,Sold,3382995,6833279,11/19/2018 11:17,3,Single ,PD ,590,PS 18-19 Classics,3382995,Ms. Ahyoung Lee,Attended
+PS020919A,18091,2/9/2019 10:00,2124,Price 1 Orch,ORCH,L,116,0,0,,13,Sold,3366071,6873390,12/6/2018 9:06,4,Comp,PD ,607,PS 18-19 Family,3366071,Cathy Rink Household,Attended
+PS011019,17653,1/10/2019 20:00,4184,Price 5 Orchestra,ORCH,BB,130,25,25,,13,Sold,3423232,6564784,6/20/2018 22:39,8,Flex,PD ,590,PS 18-19 Classics,3423232,Mrs. Theresa M. Blower,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 3,V,9,0,0,,13,Sold,2417652,6623220,8/23/2018 16:49,4,Comp,PD ,588,PS 2018 Summer,2417652,Big Brothers Big Sisters of Orange County,
+PS102518,17565,10/25/2018 20:00,4158,Price 1 Orchestra,ORCH,F,116,60,60,,13,Sold,2894855,6707694,10/16/2018 15:50,8,Flex,PD ,590,PS 18-19 Classics,2894855,Ruth Merkel Household,Attended
+PS121418,17739,12/14/2018 20:00,3706,Price 4 Chorale Terrace,CHORAL,D,223,45,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS060619,17717,6/6/2019 20:00,4184,Price 5 Orchestra,ORCH,BB,117,25,25,,13,Sold,286416,6233120,3/26/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,286416,Mr. Tony L. Lowe,Attended
+PS022619,17690,2/26/2019 20:00,4162,Price 1 Dress Circle Side,DRESS,B 1,5,116,116,,13,Sold,3067878,6654282,9/18/2018 12:29,3,Single ,PD ,590,PS 18-19 Classics,3067878,Mrs. Donna L. Stevens,Attended
+PS041219,17700,4/12/2019 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,Y,114,44,44,,13,Sold,200400,6233599,3/6/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,200400,Ms. Tatiana S. Erohina,Attended
+PS031619,17744,3/16/2019 20:00,3690,Price P Orchestra,ORCH,BB,115,157,157,,13,Sold,281155,6406997,4/17/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,281155,Randall and Janell Lewis Household,Attended
+PS120818N,18083,12/8/2018 11:30,2123,Price B Box Circle,BOX CRC,B20,3,36.8,36.8,,13,Sold,3330034,6700926,10/12/2018 11:56,1,Subscription,PD ,607,PS 18-19 Family,3330034,Dr. Almaas A. Shaikh,Attended
+PS050519,18802,5/5/2019 19:00,2625,Price 3 Dress Circle,DRESS,A,349,15,,,0,Available,,,,,,AVL,623,PS 18-19 Organ,,,
+PS042619,17745,4/26/2019 20:00,3692,Price 1 Orchestra,ORCH,H,119,119.5,119.5,,13,Sold,3420382,6540162,5/25/2018 11:30,8,Flex,PD ,594,PS 18-19 Pops,3420382,Ms. Janis Perry,
+PS081818,17442,8/18/2018 20:00,6523,Price 1,Circle,DD,47,84,84,,13,Sold,121348,6109764,11/16/2017 0:00,1,Subscription,PD ,588,PS 2018 Summer,121348,Richard and Mary Tengdin Household,
+PS120918,17892,12/9/2018 15:00,4195,Price 2 Dress Circle,DRESS,C,309,86,89,,13,Sold,3186026,6741725,11/5/2018 19:31,3,Single ,PD ,597,PS 18-19 Specials,3186026,Mrs. Linda Latham,Attended
+PS031719,18799,3/17/2019 15:00,2620,Price 2 Orch Terr Left,ORCH T,V,5,25,25,,13,Sold,3494685,7027081,2/25/2019 19:29,3,Single ,PD ,623,PS 18-19 Organ,3494685,William J. Brundage,Attended
+PS102718,17567,10/27/2018 20:00,4185,Price 5 Promenade Circle,PROM,C,437,25,35,,13,Sold,3439738,6711988,10/19/2018 16:08,3,Single ,PD ,590,PS 18-19 Classics,3439738,Mr. Yalin Zhou,Attended
+PS041319A,18097,4/13/2019 10:00,2125,Price 1 Orch Terrace,ORCH T,X,8,0,0,,13,Sold,2002622,7114157,4/11/2019 14:59,4,Comp,PD ,607,PS 18-19 Family,2002622,Education Dept.  PSO,
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 4,T,32,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS031619,17744,3/16/2019 20:00,3698,Price 2 Accessible Orchestra,ORCH,B,132,109,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS011219N,18088,1/12/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,V,27,0,0,,13,Sold,91006,6932966,1/11/2019 16:41,4,Comp,PD ,607,PS 18-19 Family,91006,Pso - Artist Comps,Attended
+PS102718A,18047,10/27/2018 10:00,2137,Price 2 Accessible,DRESS,B6,4,31,,,0,Available,,0,,,,AVL,607,PS 18-19 Family,,,
+PS041319N,18100,4/13/2019 11:30,2125,Price 1 Orch Terrace,ORCH T,V,41,28.8,28.8,,13,Sold,3417762,6630820,8/28/2018 10:02,1,Subscription,PD ,607,PS 18-19 Family,3417762,Mrs. Vanessa Jia,
+PS120818N,18083,12/8/2018 11:30,2125,Price 1 Orch Terrace,ORCH T,V,37,28.8,28.8,,13,Sold,3417762,6630820,8/28/2018 10:02,1,Subscription,PD ,607,PS 18-19 Family,3417762,Mrs. Vanessa Jia,Attended
+PS041619,18189,4/16/2019 20:00,4173,Price 2 Orchestra Terr Right,ORCH T,U,6,86,86,,13,Sold,3090549,7008930,2/16/2019 9:40,3,Single ,PD ,597,PS 18-19 Specials,3150085,Ben and Judy Rubin Household,Attended
+PS060919,17909,6/9/2019 15:00,4902,Price 4 Dress Circle,DRESS,B,302,22,22,,13,Sold,3404002,6381858,3/5/2018 14:08,1,Subscription,PD ,598,PS 18-19 Connections,3404002,Sharon Bowen Household,
+PS121418,17739,12/14/2018 20:00,3686,Price B Box Circle,BOX CRC,B14,2,195,195,,13,Sold,406905,6406748,4/30/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,406905,Paul and Stacey Von Berg Household,Attended
+PS050319,17705,5/3/2019 20:00,4162,Price 1 Dress Circle Side,DRESS,B2,3,0,0,,13,Sold,416426,6927974,1/9/2019 10:27,4,Comp,PD ,590,PS 18-19 Classics,416426,Mr. Ronald E. Wiksell,Attended
+PS022119,17689,2/21/2019 20:00,4184,Price 5 Orchestra,ORCH,CC,115,20,20,,13,Sold,3256115,6233254,3/2/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3256115,Ms. Sara Ellison,Attended
+PS022319,17691,2/23/2019 20:00,4171,Price 2 Orchestra,ORCH,R,112,86,99,,13,Sold,3061424,6984806,2/9/2019 23:03,3,Single ,PD ,590,PS 18-19 Classics,3061424,Mrs. Ofelia Braceros,Attended
+PS120918,17892,12/9/2018 15:00,4184,Price 5 Orchestra,ORCH,CC,108,18.75,18.75,,13,Sold,3073782,6615492,8/19/2018 2:12,3,Single ,PD ,597,PS 18-19 Specials,3073782,Mrs. Andrea Sokoloff,Attended
+PS070418,17439,7/4/2018 20:00,6525,Price 3,Sec 5,R,25,22,22,,13,Sold,2010347,6573402,7/2/2018 14:29,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 3,C,7,25,25,,13,Sold,3419887,6535093,5/21/2018 18:56,1,Subscription,PD ,588,PS 2018 Summer,3419887,Maureen Moreland,
+PS020119,17670,2/1/2019 20:00,4164,Price 1 Grand Tier,GRAND,B,513,116,25,,13,Sold,2010347,6969703,2/1/2019 15:27,3,Single ,PD ,590,PS 18-19 Classics,2010347,Goldstar Events,Attended
+PS042619,17745,4/26/2019 20:00,3716,Price 3 Orchestra Terr Right,ORCH T,V,12,63,63,,13,Sold,2449833,6641023,9/5/2018 10:52,3,Single ,PD ,594,PS 18-19 Pops,2449833,Meshia Azad,Attended
+PS041219,17700,4/12/2019 20:00,4195,Price 2 Dress Circle,DRESS,A,307,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS121518,17740,12/15/2018 20:00,3690,Price P Orchestra,ORCH,BB,110,157,157,,13,Sold,3015223,6615450,8/19/2018 0:04,3,Single ,PD ,594,PS 18-19 Pops,3015223,Mr. Michael Ferguson,Attended
+PS020219,17671,2/2/2019 20:00,4178,Price 3 Orchestra,ORCH,B,106,55,55,,13,Sold,2778027,6967328,1/31/2019 9:22,1,Subscription,PD ,590,PS 18-19 Classics,2778027,Albert Barnett and Ann Kuklierus Household,Attended
+PS021519,17741,2/15/2019 20:00,3717,Price 3 Promenade Circle,PROM,C,421,59.25,59.25,,13,Sold,121955,6406657,4/11/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,121955,Mrs. Candace L. Veith,Attended
+PS031519,17743,3/15/2019 20:00,3691,Price P Accessible Box Circle,BOX CRC,B22,4,0,0,,13,Sold,937178,7069794,3/15/2019 16:38,4,Comp,PD ,594,PS 18-19 Pops,937178,SCFTA - Staff,Attended
+PS110918,17737,11/9/2018 20:00,3693,Price 1 Orchestra Terrace,ORCH T,U,106,110.5,110.5,,13,Sold,201503,6406684,4/9/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,201503,Larry and Lorraine Evans Household,Attended
+PS090818,17445,9/8/2018 20:00,6523,Price 1,Sec 2,M,34,0,0,,13,Sold,91006,6109731,3/22/2018 0:00,4,Comp,PD ,588,PS 2018 Summer,91006,Pso - Artist Comps,
+PS041619,18189,4/16/2019 20:00,4195,Price 2 Dress Circle,DRESS,C,341,86,89,,13,Sold,3498148,7057614,3/11/2019 11:37,3,Single ,PD ,597,PS 18-19 Specials,3498148,Judith Leff,Attended
+PS102618,17566,10/26/2018 20:00,4158,Price 1 Orchestra,ORCH,R,104,96.5,96.5,,13,Sold,86929,6701429,10/12/2018 15:31,1,Subscription,PD ,590,PS 18-19 Classics,86929,Koichi and Patricia Hosokawa Household,Attended
+PS011019,17653,1/10/2019 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,ZZ,111,66,71,,13,Sold,3339350,6923040,1/6/2019 11:32,3,Single ,PD ,590,PS 18-19 Classics,3339350,Ms. Laura Monahan,Attended
+PS081818,17442,8/18/2018 20:00,6523,Price 1,Sec 6,A,46,0,0,,13,Sold,3427553,6602696,8/6/2018 15:06,4,Comp,PD ,588,PS 2018 Summer,3427553,Mr. Anthony Martinez,
+PS020219,17671,2/2/2019 20:00,4156,Price B Box Circle,BOX CRC,B30,4,0,0,,13,Sold,266803,6882193,12/11/2018 9:41,4,Comp,PD ,590,PS 18-19 Classics,266803,William and Carolyn Klein Household,Attended
+PS120818,17650,12/8/2018 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,X,125,0,0,,13,Sold,3137522,6876410,12/7/2018 16:40,4,Comp,PD ,590,PS 18-19 Classics,3137522,Ruby Goldman,
+PS102818,17907,10/28/2018 15:00,4908,Price 3 Orchestra Terr Right,ORCH T,V,30,39.75,39.75,,13,Sold,3194006,6610824,8/14/2018 9:39,1,Subscription,PD ,598,PS 18-19 Connections,3194006,Mr. John Hsiao,Attended
+PS011219A,18087,1/12/2019 10:00,2137,Price 2 Accessible,DRESS,B5,3,31,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS070418,17439,7/4/2018 20:00,6525,Price 3,Sec 7,W,54,44,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS050519,18802,5/5/2019 19:00,2631,Price 4 Orch AA - CC,ORCH,AA,110,10,10,,13,Sold,3501233,7088990,3/25/2019 0:11,3,Single ,PD ,623,PS 18-19 Organ,3501233,Mr. Marc Perkins,Attended
+PS011219A,18087,1/12/2019 10:00,2124,Price 1 Orch,ORCH,D,111,28.8,28.8,,13,Sold,2703747,6661148,9/25/2018 11:04,1,Subscription,PD ,607,PS 18-19 Family,2703747,Ms. Debbie Knox,Attended
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,Q,10,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS060619,17717,6/6/2019 20:00,4197,Price 4 Promenade Circle,PROM,C,423,0,0,,13,Sold,113789,7186774,6/6/2019 9:22,4,Comp,PD ,590,PS 18-19 Classics,113789,Mr. Victor C. Jones,
+PS120818A,18082,12/8/2018 10:00,2124,Price 1 Orch,ORCH,G,111,28.8,28.8,,13,Sold,3212335,6413874,5/14/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,3212335,Leann Lundberg Household,Attended
+PS031719,18799,3/17/2019 15:00,2619,Price 1 Orch Terr Center,ORCH T,U,109,33,34.5,,13,Sold,2732789,6671202,9/28/2018 10:35,1,Subscription,PD ,623,PS 18-19 Organ,2732789,James and Susan Staub Household,Attended
+PS053119,17747,5/31/2019 20:00,3714,Price 2 Grand Tier,GRAND,G,521,20,20,,13,Sold,2010347,7171068,5/23/2019 18:32,3,Single ,PD ,594,PS 18-19 Pops,2010347,Goldstar Events,Attended
+PS121418,17739,12/14/2018 20:00,3711,Price 1 Dress Circle,DRESS,C,322,119.5,119.5,,13,Sold,3164324,6534883,5/21/2018 16:05,8,Flex,PD ,594,PS 18-19 Pops,3164324,Gary and lLinda Wheaton Household,Attended
+PS060619,17717,6/6/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,U,118,0,0,,13,Sold,376369,6233142,5/15/2018 0:00,4,Comp,PD ,590,PS 18-19 Classics,376369,Ms. Pauline R. Sloan,
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 6,X,56,0,0,,13,Sold,91013,6109732,3/22/2018 0:00,4,Comp,PD ,588,PS 2018 Summer,91013,Pso - Orchestra Members,
+PS020219,17671,2/2/2019 20:00,4173,Price 2 Orchestra Terr Right,ORCH T,U,6,71.5,71.5,,13,Sold,3179387,6233459,3/26/2018 15:16,1,Subscription,PD ,590,PS 18-19 Classics,3179387,Karen Vesely-Schenden and Thomas Schenden Household,Attended
+PS060819,17719,6/8/2019 20:00,4184,Price 5 Orchestra,ORCH,AA,101,25,25,,13,Sold,168654,7159867,5/15/2019 11:02,1,Subscription,PD ,590,PS 18-19 Classics,168654,Christ and Isle-Lore Chialtas Household,
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 8,W,43,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS020119,17670,2/1/2019 20:00,4158,Price 1 Orchestra,ORCH,E,103,0,0,,13,Sold,955085,6969665,2/1/2019 15:11,4,Comp,PD ,590,PS 18-19 Classics,955085,Pso Comps,
+PS102818,17907,10/28/2018 15:00,4881,Price 1 Orchestra,ORCH,F,122,74.75,74.75,,13,Sold,112392,6255636,3/21/2018 0:00,1,Subscription,PD ,598,PS 18-19 Connections,112392,Joel and Paula Handler Household,Attended
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 7,N,31,0,0,,13,Sold,66979,6109698,3/22/2018 0:00,4,Comp,PD ,588,PS 2018 Summer,66979,The Orange County Register,
+PS041219,17700,4/12/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,U,104,96.5,96.5,,13,Sold,110806,6232587,3/19/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,110806,Chuck and Hadassah Feingold Household,
+PS050219,17704,5/2/2019 20:00,4158,Price 1 Orchestra,ORCH,K,105,0,0,,13,Sold,146942,6732224,11/1/2018 13:41,4,Comp,PD ,590,PS 18-19 Classics,146942,Ms. Leslie D. Blesener,Attended
+PS120718,17649,12/7/2018 20:00,4158,Price 1 Orchestra,ORCH,F,101,96.5,96.5,,13,Sold,366111,6232656,3/28/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,366111,Robert and Jean Schrimmer Household,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 1,R,49,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS092718,17550,9/27/2018 20:00,4158,Price 1 Orchestra,ORCH,F,112,98.5,98.5,,13,Sold,26401,6233020,3/16/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,26401,William and Valerie Lawler Household,Attended
+PS102718A,18047,10/27/2018 10:00,2133,Price 4 Grand Tier,GRAND,C,510,15,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,B,45,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS011019,17653,1/10/2019 20:00,4158,Price 1 Orchestra,ORCH,D,112,116,25,,13,Sold,2010347,6930217,1/10/2019 13:35,3,Single ,PD ,590,PS 18-19 Classics,2010347,Goldstar Events,Attended
+PS032319,17696,3/23/2019 20:00,4190,Price 2 Grand Tier,GRAND,B,536,0,0,,13,Sold,3009379,7077519,3/19/2019 14:58,4,Comp,PD ,590,PS 18-19 Classics,3009379,Oc Rescue Mission,Attended
+PS042719,17746,4/27/2019 20:00,3686,Price B Box Circle,BOX CRC,B 4,1,0,0,,13,Sold,316236,7043457,3/5/2019 15:35,4,Comp,PD ,594,PS 18-19 Pops,316236,Rick and Nancy Muth Household,Attended
+PS020919,17916,2/9/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,X,117,70,70.25,,13,Sold,3472132,6817682,11/13/2018 14:32,3,Single ,PD ,597,PS 18-19 Specials,3472132,Elena Pu,Attended
+PS041119,17699,4/11/2019 20:00,4182,Price 4 Orchestra Terrace,ORCH T,V,32,40,35,,13,Sold,2804236,7105628,4/6/2019 12:43,3,Single ,PD ,590,PS 18-19 Classics,2804236,Mr. Mark Corcoran,Attended
+PS120818,17650,12/8/2018 20:00,4164,Price 1 Grand Tier,GRAND,E,521,0,0,,13,Sold,3093484,6868815,12/3/2018 18:52,4,Comp,PD ,590,PS 18-19 Classics,3093484,The Center For Autism And Neurodevelopment Disr,Attended
+PS041119,17699,4/11/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,V,119,0,0,,13,Sold,376369,7093336,3/28/2019 10:48,4,Comp,PD ,590,PS 18-19 Classics,376369,Ms. Pauline R. Sloan,
+PS060819,17719,6/8/2019 20:00,4174,Price 2 Promenade Circle,PROM,B,408,67.5,30,,13,Sold,273779,6602466,8/6/2018 12:50,8,Flex,PD ,590,PS 18-19 Classics,273779,Robbie Lambiase and Martha Johnson Household,Attended
+PS041619,18189,4/16/2019 20:00,4156,Price B Box Circle,BOX CRC,B15,4,156.5,170.25,,13,Sold,36611,7120662,4/16/2019 12:53,3,Single ,PD ,597,PS 18-19 Specials,36611,Henry and Janet Siegel Household,
+PS102618,17566,10/26/2018 20:00,4181,Price 4 Orchestra,ORCH,J,121,32,34.25,,13,Sold,2011774,6679183,10/1/2018 18:15,3,Single ,PD ,590,PS 18-19 Classics,2011774,Ms. Sonia Appell,Attended
+PS102718N,18078,10/27/2018 11:30,2125,Price 1 Orch Terrace,ORCH T,Z,110,36,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS032419,18115,3/24/2019 19:00,3701,Price 4 Promenade Circle,PROM,D,401,35,45,,13,Sold,3490927,6982515,2/8/2019 19:13,3,Single ,PD ,597,PS 18-19 Specials,3490927,Farah Wittmann,Attended
+PS032319,17696,3/23/2019 20:00,4178,Price 3 Orchestra,ORCH,A,117,55,33.25,,13,Sold,2458618,6442224,3/28/2018 10:27,1,Subscription,PD ,590,PS 18-19 Classics,2458618,Mr. Barret Weekes,
+PS060819,17719,6/8/2019 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,X,2,18.75,26.25,,13,Sold,3224867,6618228,8/20/2018 19:26,3,Single ,PD ,590,PS 18-19 Classics,3224867,Robert Rivera,Attended
+PS032419,18115,3/24/2019 19:00,3717,Price 3 Promenade Circle,PROM,A,435,47,65,,13,Sold,2744106,6956897,1/24/2019 12:54,3,Single ,PD ,597,PS 18-19 Specials,2744106,Ms. Nika Imani,Attended
+PS041119,17699,4/11/2019 20:00,4164,Price 1 Grand Tier,GRAND,D,522,25,25,,13,Sold,3166180,7013863,2/19/2019 10:44,3,Single ,PD ,590,PS 18-19 Classics,3166180,Mr. David Lawrenson,Attended
+PS050419,17706,5/4/2019 20:00,4190,Price 2 Grand Tier,GRAND,D,535,71.5,676,,13,Sold,3196633,7130994,4/25/2019 10:35,1,Subscription,PD ,590,PS 18-19 Classics,3196633,Kari Kerr Household,
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Circle,BB,47,50,50,,13,Sold,3405558,6110205,1/11/2018 11:10,1,Subscription,PD ,588,PS 2018 Summer,3405558,David and Sharon Cook Household,
+PS051919,17986,5/19/2019 15:00,1178,Price 1 Main Floor,Floor,123,2,80,80,,13,Sold,3052362,6461089,5/2/2018 0:00,1,Subscription,PD ,601,PS 18-19 Chamber,3052362,P C Gray,Attended
+PS093018,17905,9/30/2018 15:00,4889,Price 1 Grand Tier,GRAND,B,537,89,,,0,Available,,,,,,AVL,598,PS 18-19 Connections,,,
+PS121418,17739,12/14/2018 20:00,3692,Price 1 Orchestra,ORCH,P,114,110.5,110.5,,13,Sold,3067432,6406862,5/4/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,3067432,Jan Salkeld Household,Attended
+PS032419,18115,3/24/2019 19:00,3706,Price 4 Chorale Terrace,CHORAL,C,217,35,65,,13,Sold,3496185,7039962,3/4/2019 13:16,3,Single ,PD ,597,PS 18-19 Specials,3496185,Dr. Mona Karimpour,Attended
+PS110918,17737,11/9/2018 20:00,3697,Price 2 Dress Circle,DRESS,A,301,109,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS032419,18115,3/24/2019 19:00,3690,Price P Orchestra,ORCH,E,111,80,80,,13,Sold,2419321,6595478,7/31/2018 14:11,3,Single ,PD ,597,PS 18-19 Specials,2419321,Dr. Jo Ellen Chatham,Attended
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 8,Q,24,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS093018,17905,9/30/2018 15:00,4889,Price 1 Grand Tier,GRAND,D,506,89,,,0,Available,,,,,,AVL,598,PS 18-19 Connections,,,
+PS060719,17718,6/7/2019 20:00,4171,Price 2 Orchestra,ORCH,K,118,0,0,,13,Sold,3507379,7151901,5/9/2019 14:37,4,Comp,PD ,590,PS 18-19 Classics,3507379,Patrick McCreedie,Attended
+PS090818,17445,9/8/2018 20:00,6526,Price 4,Sec 4,T,8,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS121818,18796,12/18/2018 19:30,2616,Price B Box Circle,BOX CRC,B15,3,0,0,,13,Sold,91006,6894718,12/17/2018 17:51,4,Comp,PD ,623,PS 18-19 Organ,91006,Pso - Artist Comps,
+PS102618,17566,10/26/2018 20:00,4161,Price 1 Dress Circle,DRESS,A,329,116,,,0,Available,,0,,,,AVL,590,PS 18-19 Classics,,,
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 2,Q,17,50,50,,13,Sold,3361377,6413185,3/16/2018 16:56,1,Subscription,PD ,588,PS 2018 Summer,3361377,Ms. Aihong Zhang,
+PS070418,17439,7/4/2018 20:00,6524,Price 2,Sec 2,V,28,59,59,,13,Sold,3343244,6506533,5/2/2018 18:06,3,Single ,PD ,588,PS 2018 Summer,3343244,Ms. Rosemary Dascola,
+PS060819,17719,6/8/2019 20:00,4156,Price B Box Circle,BOX CRC,B 4,1,163.25,163.25,,13,Sold,2703660,7157458,5/13/2019 14:36,1,Subscription,PD ,590,PS 18-19 Classics,2703660,Bill and Ginny Davies Household,Attended
+PS102618,17566,10/26/2018 20:00,4161,Price 1 Dress Circle,DRESS,B,311,100,100,,13,Sold,113049,6469137,4/10/2018 16:51,8,Flex,PD ,590,PS 18-19 Classics,113049,John and Barbara Holcomb Household,Attended
+PS111018,17738,11/10/2018 20:00,3712,Price 3 Grand Tier,GRAND,D,526,79,,,0,Available,,0,,,,AVL,594,PS 18-19 Pops,,,
+PS070418,17439,7/4/2018 20:00,6525,Price 3,Sec 6,D,40,37,37,,13,Sold,266109,6109798,11/15/2017 0:00,1,Subscription,PD ,588,PS 2018 Summer,266109,John and Dona Kirsten Household,
+PS020119,17670,2/1/2019 20:00,4158,Price 1 Orchestra,ORCH,N,112,0,0,,13,Sold,3432963,6952319,1/22/2019 15:14,4,Comp,PD ,590,PS 18-19 Classics,3432963,Dennis Kim,Attended
+PS111718,17642,11/17/2018 20:00,4184,Price 5 Orchestra,ORCH,BB,122,20,20,,13,Sold,3132754,6232969,4/9/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3132753,Dan Medeiros and Curtis Lane Household,Attended
+PS081818,17442,8/18/2018 20:00,6525,Price 3,Sec 7,T,53,0,0,,13,Sold,2852603,6606273,8/9/2018 16:47,4,Comp,PD ,588,PS 2018 Summer,2852603,TACA,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 3,X,29,33,33,,13,Sold,3417150,6511207,5/5/2018 14:17,3,Single ,PD ,588,PS 2018 Summer,3417150,Mrs. Michelle E. Sanchez,
+PS011219,17655,1/12/2019 20:00,4164,Price 1 Grand Tier,GRAND,F,516,116,25,,13,Sold,2010347,6933090,1/11/2019 17:31,3,Single ,PD ,590,PS 18-19 Classics,2010347,Goldstar Events,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 2,S,51,0,0,,13,Sold,119831,6552741,6/8/2018 10:27,4,Comp,PD ,588,PS 2018 Summer,119831,Ms. Susan Scott,
+PS011019,17653,1/10/2019 20:00,4159,Price 1 Orchestra Terr Center,ORCH T,W,109,116,25,,13,Sold,2010347,6930217,1/10/2019 13:35,3,Single ,PD ,590,PS 18-19 Classics,2010347,Goldstar Events,Attended
+PS120918,17892,12/9/2018 15:00,4181,Price 4 Orchestra,ORCH,L,120,40,42,,13,Sold,2524300,6752293,11/11/2018 10:20,3,Single ,PD ,597,PS 18-19 Specials,2524300,Ms. Sue Thornton,Attended
+PS121418,17739,12/14/2018 20:00,3690,Price P Orchestra,ORCH,B,113,157,157,,13,Sold,47368,6659402,9/24/2018 10:15,1,Subscription,PD ,594,PS 18-19 Pops,47368,Joseph and Karen Perricone Household,
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 5,Q,36,20,20,,13,Sold,2010347,6642307,9/6/2018 15:38,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS120718,17649,12/7/2018 20:00,4171,Price 2 Orchestra,ORCH,L,118,0,0,,13,Sold,955085,6876085,12/7/2018 14:22,4,Comp,PD ,590,PS 18-19 Classics,955085,Pso Comps,
+PS121418,17739,12/14/2018 20:00,3690,Price P Orchestra,ORCH,D,107,157,157,,13,Sold,3052935,6406857,4/10/2018 17:35,1,Subscription,PD ,594,PS 18-19 Pops,3052935,Brenda Lynn-Wall Household,Attended
+PS090818,17445,9/8/2018 20:00,6525,Price 3,Sec 5,Q,34,20,20,,13,Sold,2010347,6642307,9/6/2018 15:38,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS092818,17551,9/28/2018 20:00,4179,Price 3 Orchestra Terr Left,ORCH T,V,23,55,55,,13,Sold,2000690,6233619,3/6/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2000690,Ms. Carol Frankel,Attended
+PS111518,17639,11/15/2018 20:00,4197,Price 4 Promenade Circle,PROM,A,433,33.25,33.25,,13,Sold,57889,6818093,11/13/2018 16:30,1,Subscription,PD ,590,PS 18-19 Classics,57889,Sonnet Technologies,Attended
+PS051619,17709,5/16/2019 20:00,4158,Price 1 Orchestra,ORCH,K,106,116,106,,13,Sold,3507911,7156925,5/13/2019 10:36,3,Single ,PD ,590,PS 18-19 Classics,3507911,Angelina Wang,Attended
+PS032119,17694,3/21/2019 20:00,4171,Price 2 Orchestra,ORCH,H,120,86,86,,13,Sold,373627,7081186,3/20/2019 21:15,3,Single ,PD ,590,PS 18-19 Classics,373627,Mrs. Roxanne E. Siegel,Attended
+PS121418,17739,12/14/2018 20:00,3690,Price P Orchestra,ORCH,D,130,169,169,,13,Sold,2940983,6673987,9/30/2018 8:00,3,Single ,PD ,594,PS 18-19 Pops,314042,Richard and Karen Motske Household,Attended
+PS081818,17442,8/18/2018 20:00,6523,Price 1,Circle,EE,44,49.5,49.5,,13,Sold,3427951,6606071,8/9/2018 15:19,3,Single ,PD ,588,PS 2018 Summer,3427951,Ms. Leanne Nguyen,
+PS111518,17639,11/15/2018 20:00,4171,Price 2 Orchestra,ORCH,J,118,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS041619,18189,4/16/2019 20:00,4182,Price 4 Orchestra Terrace,ORCH T,V,24,40,40,,13,Sold,3198681,6954600,1/23/2019 9:15,3,Single ,PD ,597,PS 18-19 Specials,3198681,Jaime and Karin Altonaga Household,Attended
+PS032219,17695,3/22/2019 20:00,4195,Price 2 Dress Circle,DRESS,A,349,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 8,V,40,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS120618,17645,12/6/2018 20:00,4173,Price 2 Orchestra Terr Right,ORCH T,V,2,0,0,,13,Sold,2558658,6872247,12/5/2018 15:04,4,Comp,PD ,590,PS 18-19 Classics,3343718,Clay and Brenda Hardwig Household,Attended
+PS020919A,18091,2/9/2019 10:00,2133,Price 4 Grand Tier,GRAND,B,540,12,12,,13,Sold,3141389,6680569,10/2/2018 12:18,3,Single ,PD ,607,PS 18-19 Family,3141389,Julie Knechtel,
+PS020219,17671,2/2/2019 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,ZZ,112,55,55,,13,Sold,110742,6232811,3/27/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,110742,Ernest and Herta Fankhauser Household,
+PS090818,17445,9/8/2018 20:00,6523,Price 1,Sec 2,M,1,0,0,,13,Sold,955085,6643354,9/7/2018 16:30,4,Comp,PD ,588,PS 2018 Summer,955085,Pso Comps,
+PS053119,17747,5/31/2019 20:00,3690,Price P Orchestra,ORCH,CC,114,157,157,,13,Sold,2010347,7171068,5/23/2019 18:32,1,Subscription,PD ,594,PS 18-19 Pops,2010347,Goldstar Events,Attended
+PS102818,17907,10/28/2018 15:00,4887,Price 1 Promenade Circle,PROM,B,436,0,0,,13,Sold,91013,6720183,10/25/2018 12:02,4,Comp,PD ,598,PS 18-19 Connections,91013,Pso - Orchestra Members,Attended
+PS102618,17566,10/26/2018 20:00,4179,Price 3 Orchestra Terr Left,ORCH T,U,25,55,55,,13,Sold,3218523,6717049,10/23/2018 11:26,1,Subscription,PD ,590,PS 18-19 Classics,3218523,Howard and Ellen Mirowitz Household,Attended
+PS042719,17746,4/27/2019 20:00,3716,Price 3 Orchestra Terr Right,ORCH T,X,12,63,64.75,,13,Sold,2014323,6870624,12/4/2018 16:43,3,Single ,PD ,594,PS 18-19 Pops,2014323,Ms. Bonnie J. Carlson,Attended
+PS020219,17671,2/2/2019 20:00,4195,Price 2 Dress Circle,DRESS,C,308,10,10,,13,Sold,3489465,6968070,1/31/2019 15:44,3,Single ,PD ,590,PS 18-19 Classics,3489465,Ms. Maya Salem,Attended
+PS120818A,18082,12/8/2018 10:00,2133,Price 4 Grand Tier,GRAND,C,525,35,35,,13,Sold,3198129,6642701,9/6/2018 20:59,3,Single ,PD ,607,PS 18-19 Family,3198129,Ms. Sharon Mexal,Attended
+PS101218,17735,10/12/2018 20:00,3697,Price 2 Dress Circle,DRESS,A,343,85,85,,13,Sold,3041339,6497229,4/27/2018 12:58,1,Subscription,PD ,594,PS 18-19 Pops,3041339,Mark and Shana Conzelman Household,Attended
+PS042719,17746,4/27/2019 20:00,3692,Price 1 Orchestra,ORCH,K,103,139,139,,13,Sold,3286270,6610283,8/13/2018 14:50,3,Single ,PD ,594,PS 18-19 Pops,3286270,Ms. Debra Bonnefin,
+PS032319,17696,3/23/2019 20:00,4195,Price 2 Dress Circle,DRESS,B,336,86,86,,13,Sold,2890495,7069269,3/15/2019 13:49,3,Single ,PD ,590,PS 18-19 Classics,2890495,Kathleen Montgomery and Robert Russell Household,Attended
+PS120818A,18082,12/8/2018 10:00,2125,Price 1 Orch Terrace,ORCH T,V,2,28.8,28.8,,13,Sold,3378997,6611888,8/15/2018 10:52,1,Subscription,PD ,607,PS 18-19 Family,3378997,Ms. Stephanie Ayala,Attended
+PS070418,17439,7/4/2018 20:00,6523,Price 1,Sec 2,M,11,99,39,,13,Sold,2010347,6573402,7/2/2018 14:29,3,Single ,PD ,588,PS 2018 Summer,2010347,Goldstar Events,
+PS041219,17700,4/12/2019 20:00,4164,Price 1 Grand Tier,GRAND,B,523,116,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS041619,18189,4/16/2019 20:00,4175,Price 2 Promenade Circle Side,PROM,AA,10,68.5,36,,13,Sold,2555291,7093815,3/28/2019 16:10,3,Single ,PD ,597,PS 18-19 Specials,2555291,Ms. Carol Lechich-Le Mar,Attended
+PS102718,17567,10/27/2018 20:00,4158,Price 1 Orchestra,ORCH,Q,102,96.5,96.5,,13,Sold,335954,6711374,10/19/2018 10:46,1,Subscription,PD ,590,PS 18-19 Classics,335954,Michael Brandman and Pamela Cosby Brandman Household,Attended
+PS011219N,18088,1/12/2019 11:30,2124,Price 1 Orch,ORCH,K,118,18,18,,13,Sold,3221415,6842515,11/23/2018 8:43,3,Single ,PD ,607,PS 18-19 Family,3221415,Mark Yao and Caoting Zhang Household,Attended
+PS090818,17445,9/8/2018 20:00,6523,Price 1,Circle,AA,42,49.5,49.5,,13,Sold,3426875,6596338,8/1/2018 10:12,3,Single ,PD ,588,PS 2018 Summer,3426875,Todd Spitzer,
+PS011219,17655,1/12/2019 20:00,4156,Price B Box Circle,BOX CRC,B26,3,0,0,,13,Sold,3483762,6928580,1/9/2019 14:51,4,Comp,PD ,590,PS 18-19 Classics,3483762,Ms. Elizabeth Kurila,
+PS060619,17717,6/6/2019 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,Z,108,55,55,,13,Sold,3078980,6544833,5/30/2018 13:28,1,Subscription,PD ,590,PS 18-19 Classics,3078980,Carol Cotton Household,Attended
+PS102518,17565,10/25/2018 20:00,4175,Price 2 Promenade Circle Side,PROM,AA,12,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS051819,17714,5/18/2019 20:00,4197,Price 4 Promenade Circle,PROM,A,429,33,33,,13,Sold,2389943,7136317,4/29/2019 11:40,8,Flex,PD ,590,PS 18-19 Classics,2389943,Danielle Gutfinger,Attended
+PS090818,17445,9/8/2018 20:00,6524,Price 2,Sec 3,P,1,50,50,,13,Sold,122085,6109765,3/12/2018 0:00,1,Subscription,PD ,588,PS 2018 Summer,122085,Mr. Mark A. Wadsworth,
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 4,S,40,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS070418,17439,7/4/2018 20:00,6524,Price 2,Sec 2,T,27,59,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS081818,17442,8/18/2018 20:00,6524,Price 2,Sec 6,Y,49,0,0,,13,Sold,3427967,6606243,8/9/2018 16:35,4,Comp,PD ,588,PS 2018 Summer,3427967,New Hope Presbyterian,
+PS092718,17550,9/27/2018 20:00,4164,Price 1 Grand Tier,GRAND,D,527,0,0,,13,Sold,91013,6666676,9/26/2018 16:09,4,Comp,PD ,590,PS 18-19 Classics,91013,Pso - Orchestra Members,Attended
+PS031719,18799,3/17/2019 15:00,2624,Price 2 Grand Tier,GRAND,C,521,0,0,,13,Sold,2686860,7069749,3/15/2019 16:26,4,Comp,PD ,623,PS 18-19 Organ,2686860,Savanna School District,
+PS020919A,18091,2/9/2019 10:00,2124,Price 1 Orch,ORCH,G,123,28.8,28.8,,13,Sold,3135169,6413858,4/17/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,3135169,Ms. Waiki Vicky Chan,Attended
+PS011019,17653,1/10/2019 20:00,4184,Price 5 Orchestra,ORCH,CC,109,25,25,,13,Sold,3016987,6233220,3/26/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,3016987,Ms. Carole Duncan,Attended
+PS050419,17706,5/4/2019 20:00,4160,Price 1 Orchestra Terrace Left,ORCH T,T,31,0,0,,13,Sold,372782,7142805,5/3/2019 15:55,4,Comp,PD ,590,PS 18-19 Classics,372782,Stanley and Linda Sholik Household,Attended
+PS032219,17695,3/22/2019 20:00,4175,Price 2 Promenade Circle Side,PROM,AA,24,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS102618,17566,10/26/2018 20:00,4194,Price 5 Orchestra Terr Right,ORCH T,W,12,25,25,,13,Sold,3440450,6717998,10/23/2018 20:42,3,Single ,PD ,590,PS 18-19 Classics,3440450,Ms. Cheryl Dilbeck,Attended
+PS090818,17445,9/8/2018 20:00,6522,Boxes,Bx1,3,11,0,0,,13,Sold,955085,6642498,9/6/2018 17:55,4,Comp,PD ,588,PS 2018 Summer,955085,Pso Comps,
+PS011219N,18088,1/12/2019 11:30,2124,Price 1 Orch,ORCH,F,114,28.8,28.8,,13,Sold,2001501,6413950,4/10/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,2001501,Mr. Joey Chen,Attended
+PS051819,17714,5/18/2019 20:00,4184,Price 5 Orchestra,ORCH,AA,119,25,25,,13,Sold,3117832,7060024,3/11/2019 21:34,3,Single ,PD ,590,PS 18-19 Classics,3117832,Mr. Jon N. Weinberg,
+PS070418,17439,7/4/2018 20:00,6527,Price 5,Sec 5,F,32,25,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS020219,17671,2/2/2019 20:00,4195,Price 2 Dress Circle,DRESS,A,334,71.5,71.5,,13,Sold,3337964,6233012,2/25/2018 7:33,1,Subscription,PD ,590,PS 18-19 Classics,3337964,Joe Schiffman,Attended
+PS011219A,18087,1/12/2019 10:00,2125,Price 1 Orch Terrace,ORCH T,T,8,28.8,28.8,,13,Sold,3084588,6413844,5/4/2018 0:00,1,Subscription,PD ,607,PS 18-19 Family,3084588,Elizabeth and Rudolph Fuchs Household,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,R,25,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS031519,17743,3/15/2019 20:00,3707,Price 4 Grand Tier,GRAND,A,518,45,49,,13,Sold,3489420,6967584,1/31/2019 12:01,3,Single ,PD ,594,PS 18-19 Pops,3489420,Paula Hines,Attended
+PS070418,17439,7/4/2018 20:00,6526,Price 4,Sec 8,K,31,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 1,O,61,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS121518,17740,12/15/2018 20:00,3695,Price 2 Orchestra Terr Left,ORCH T,T,39,109,109,,13,Sold,2708395,6711384,10/19/2018 10:41,3,Single ,PD ,594,PS 18-19 Pops,2708395,Russell and Susan Leatherby Household,Attended
+PS041219,17700,4/12/2019 20:00,4158,Price 1 Orchestra,ORCH,F,101,96.5,96.5,,13,Sold,366111,6232656,3/28/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,366111,Robert and Jean Schrimmer Household,Attended
+PS011019,17653,1/10/2019 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,X,119,33.25,33.25,,18,Available,,,,1,Subscription,PD ,590,PS 18-19 Classics,,,
+PS120818N,18083,12/8/2018 11:30,2130,Price 3 Prom Circle,PROM,D,418,46,46,,13,Sold,3432847,6645810,9/10/2018 18:44,3,Single ,PD ,607,PS 18-19 Family,3432847,Kevin Rolfe,
+PS022319,17691,2/23/2019 20:00,4158,Price 1 Orchestra,ORCH,K,105,96.5,96.5,,13,Sold,2833456,6433157,3/25/2018 10:16,1,Subscription,PD ,590,PS 18-19 Classics,2833456,Paul and Ellen Lee Household,Attended
+PS020219,17671,2/2/2019 20:00,4180,Price 3 Promenade Circle,PROM,C,421,60,27,,13,Sold,2784093,6664392,9/26/2018 12:32,8,Flex,PD ,590,PS 18-19 Classics,2784093,Ms. Florence Huang,Attended
+PS042719,17746,4/27/2019 20:00,3686,Price B Box Circle,BOX CRC,B19,1,195,195,,13,Sold,266812,6406992,4/3/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,266812,Robert Kleist Household,Attended
+PS011219,17655,1/12/2019 20:00,4158,Price 1 Orchestra,ORCH,D,116,96.5,96.5,,13,Sold,141926,6232826,3/15/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,141926,Sally Bender Household,Attended
+PS013119,17669,1/31/2019 20:00,4162,Price 1 Dress Circle Side,DRESS,B2,6,96.5,96.5,,13,Sold,2003532,6233161,3/7/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2003532,Jim and Jane Driscoll Household,Attended
+PS101318,17736,10/13/2018 20:00,3695,Price 2 Orchestra Terr Left,ORCH T,X,5,85,85,,13,Sold,3301914,6699508,10/11/2018 14:16,1,Subscription,PD ,594,PS 18-19 Pops,3301914,Brenton Martignoni and Chiu Cho Household,Attended
+PS111018,17738,11/10/2018 20:00,3711,Price 1 Dress Circle,DRESS,C,321,139,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,H,74,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS031619,17744,3/16/2019 20:00,3693,Price 1 Orchestra Terrace,ORCH T,Z,121,139,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS102718,17567,10/27/2018 20:00,4158,Price 1 Orchestra,ORCH,L,112,67.5,67.5,,13,Sold,2785258,6622967,8/23/2018 14:49,8,Flex,PD ,590,PS 18-19 Classics,2785258,Arthur and Karen Sayles Household,Attended
+PS021619,17742,2/16/2019 20:00,3715,Price 3 Orchestra Terr Left,ORCH T,U,9,59.25,59.25,,13,Sold,272626,6406993,5/2/2018 0:00,1,Subscription,PD ,594,PS 18-19 Pops,272626,Mr. Emanuel La Torre,Attended
+PS19FMGV,19686,6/21/2019 20:00,1321,General Admission,Orch 2,G,65,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS041319N,18100,4/13/2019 11:30,2126,Price 2 Dress Circle,DRESS,B,337,24.8,24.8,,13,Sold,3378737,6520519,5/11/2018 11:52,1,Subscription,PD ,607,PS 18-19 Family,3378737,Ms. Kerry Boulian,Attended
+PS031719,18799,3/17/2019 15:00,2622,Price 2 Prom Circle,PROM,C,405,0,0,,13,Sold,3009379,7061268,3/12/2019 12:58,4,Comp,PD ,623,PS 18-19 Organ,3009379,Oc Rescue Mission,Attended
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,R,22,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS041319,17701,4/13/2019 20:00,4160,Price 1 Orchestra Terrace Left,ORCH T,X,3,67.5,67.5,,13,Sold,3134932,6618046,8/20/2018 16:57,8,Flex,PD ,590,PS 18-19 Classics,3134932,Mrs. Suzana Corritori,Attended
+PS120918,17892,12/9/2018 15:00,4159,Price 1 Orchestra Terr Center,ORCH T,T,101,0,0,,13,Sold,955085,6879143,12/9/2018 14:36,4,Comp,PD ,597,PS 18-19 Specials,955085,Pso Comps,Attended
+PS120918,17892,12/9/2018 15:00,4180,Price 3 Promenade Circle,PROM,C,413,66,76,,13,Sold,2978803,6834331,11/19/2018 17:41,3,Single ,PD ,597,PS 18-19 Specials,2687332,Jerry Tustaniwskyi and Lydia Chapelsky Household,Attended
+PS102718N,18078,10/27/2018 11:30,2123,Price B Box Circle,BOX CRC,B27,3,36.8,36.8,,18,Available,,,,1,Subscription,PD ,607,PS 18-19 Family,,,
+PS19GV01,19646,6/20/2019 20:00,1321,General Admission,Orch 2,D,39,,,,0,Available,,0,,,,AVL,597,PS 18-19 Specials,,,
+PS081818,17442,8/18/2018 20:00,6526,Price 4,Sec 4,Y,31,33,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS102518,17565,10/25/2018 20:00,4175,Price 2 Promenade Circle Side,PROM,AA,16,86,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS102618,17566,10/26/2018 20:00,4191,Price 3 Orchestra Terr Center,ORCH T,ZZ,119,66,,,0,Available,,,,,,AVL,590,PS 18-19 Classics,,,
+PS022319,17691,2/23/2019 20:00,4171,Price 2 Orchestra,ORCH,L,119,0,0,,13,Sold,91006,7016362,2/20/2019 18:08,4,Comp,PD ,590,PS 18-19 Classics,91006,Pso - Artist Comps,
+PS051719,17713,5/17/2019 20:00,4193,Price 4 Orchestra Terr Center,ORCH T,Z,121,33.25,33.25,,13,Sold,2367140,6233167,4/13/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,2367140,Donald and Betsy Tarbell Household,Attended
+PS102618,17566,10/26/2018 20:00,4178,Price 3 Orchestra,ORCH,C,109,55,55,,13,Sold,108566,6232585,3/12/2018 0:00,1,Subscription,PD ,590,PS 18-19 Classics,108566,Dr. Thomas C. Campbell,Attended
+PS070418,17439,7/4/2018 20:00,6525,Price 3,Sec 7,S,40,44,,,4,Held,,,,,,AVL,588,PS 2018 Summer,,,
+PS011219,17655,1/12/2019 20:00,4173,Price 2 Orchestra Terr Right,ORCH T,T,22,71.5,55,,13,Sold,3133247,6426882,3/22/2018 12:59,1,Subscription,PD ,590,PS 18-19 Classics,3133247,Mr. James M. Schnepp,Attended
+PS031519,17743,3/15/2019 20:00,3690,Price P Orchestra,ORCH,A,110,0,0,,13,Sold,937178,7069794,3/15/2019 16:38,4,Comp,PD ,594,PS 18-19 Pops,937178,SCFTA - Staff,Attended
+PS020919A,18091,2/9/2019 10:00,2133,Price 4 Grand Tier,GRAND,G,514,15,,,0,Available,,,,,,AVL,607,PS 18-19 Family,,,
+PS121418,17739,12/14/2018 20:00,3714,Price 2 Grand Tier,GRAND,G,526,109,,,0,Available,,,,,,AVL,594,PS 18-19 Pops,,,
+PS041619,18189,4/16/2019 20:00,4161,Price 1 Dress Circle,DRESS,A,330,116,116,,13,Sold,3488577,6960101,1/26/2019 15:02,3,Single ,PD ,597,PS 18-19 Specials,3488577,Fred Forster,Attended
+PS102818,17907,10/28/2018 15:00,4896,Price 3 Orchestra,ORCH,M,117,49,49,,13,Sold,205760,6713233,10/20/2018 17:25,3,Single ,PD ,598,PS 18-19 Connections,205760,Michael and Ellen Fine Household,Attended

@@ -25,6 +25,9 @@ class ImportData:
             },
             'mode_of_sale': {
                 'strategy': ModeOfSaleImportStrategy
+            },
+            'attribute': {
+                'strategy': AttributeImportStrategy
             }
         }
 
@@ -83,4 +86,14 @@ class ModeOfSaleImportStrategy:
     def get_data(self, fys, qtr, path=None, dtype=None):
         fp = path or '../../data/mode_of_sale/'
         data = pd.read_csv(f'{fp}q{qtr}_{fys}.csv')
+        return data
+
+
+class AttributeImportStrategy:
+    '''Strategy for importing attribute data'''
+    def get_data(self, file_name=None, path=None, *args, **kwargs):
+        fp = path or '../../data/attribute/'
+        file = file_name or 'capacity_rating.csv'
+        data = pd.read_csv(fp + file, skiprows=7)[['customer_no', 'key_value']]
+
         return data

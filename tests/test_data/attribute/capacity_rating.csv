@@ -1,0 +1,12 @@
+﻿ParameterValues,,,,,,,,,,,,,,,,,
+Attribute: GG+A Gift Capacity Rating,,,,,,,,,,,,,,,,,
+Attribute Value: (None),,,,,,,,,,,,,,,,,
+Created By: (None),,,,,,,,,,,,,,,,,
+Last Updated By: (None),,,,,,,,,,,,,,,,,
+List No: PS General Records (active),,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+customer_no,fname,mname,lname,street1,street2,city,state,postal_code,phone1,phone2,ps_email,attribute,key_value,created_by,create_dt,last_updated_by,last_update_dt
+2016287,Eric,, Brendel,1445 Catalina Ave,,Seal Beach,CA,90740-5704,(562) 594-9730,,,GG+A Gift Capacity Rating,"5 - $25,000 to $99,999",mmalone ,4/11/2019 12:57,mmalone ,4/11/2019 12:57
+3161676,Anthony,D, Carpenter,2747 Cibola Ave.,,Costa Mesa,CA,92626,(714) 357-1754,(714) 546-2194,dalecarpenter@ca.rr.com,GG+A Gift Capacity Rating,5 - $25 000 to $99 999,sfarma  ,6/8/2016 15:22,dbo     ,11/3/2017 8:51
+3069071,Adolfo,l, Gomez,4891 Van Buren St.,,Yorba Linda,CA,92886,(714) 524-2782,,audio82000@yahoo.com,GG+A Gift Capacity Rating,6 - $10 000 to $24 999,dbo     ,11/3/2017 8:52,dbo     ,11/3/2017 8:52
+3059347,Karen,K., Gray, 1714 Shipley Street,,Huntington Beach,CA,92648,,,kaykaygray@socal.rr.com,GG+A Gift Capacity Rating,5 - $25 000 to $99 999,dbo     ,11/3/2017 8:52,dbo     ,11/3/2017 8:52

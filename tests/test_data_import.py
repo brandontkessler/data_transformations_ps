@@ -22,15 +22,15 @@ class TestImportData(unittest.TestCase):
     def test_send_data(self):
         tdata20 = self.importer.send_data(type='ticket', fys=20,
             path=self.fp_ticket)
-        self.assertEqual(len(tdata20), 67)
+        self.assertEqual(len(tdata20), 1000)
 
         tdata_all = self.importer.send_data(type='ticket', fys=[19, 20],
             path=self.fp_ticket)
-        self.assertEqual(len(tdata_all), 111)
+        self.assertEqual(len(tdata_all), 1800)
 
         ddata = self.importer.send_data(type='donor', fys=13,
             path=self.fp_donor)
-        self.assertEqual(len(ddata), 128)
+        self.assertEqual(len(ddata), 1000)
 
         sdata20 = self.importer.send_data(type='subscriber', fys=20,
             path=self.fp_subscriber)
@@ -54,17 +54,17 @@ class TestTicketImportStrategy(unittest.TestCase):
 
     def test_get_data(self):
         t20 = self.ticket.get_data(fys=20, path=self.fp, dtype=ticketing_dtype)
-        self.assertEqual(len(t20), 67)
+        self.assertEqual(len(t20), 1000)
 
         t19 = self.ticket.get_data(fys=19, path=self.fp, dtype=ticketing_dtype)
-        self.assertEqual(len(t19), 44)
+        self.assertEqual(len(t19), 800)
 
         all = self.ticket.get_data(fys=[19, 20], path=self.fp, dtype=ticketing_dtype)
-        self.assertEqual(len(all), 111)
+        self.assertEqual(len(all), 1800)
 
     def test_import_data(self):
         t20 = self.ticket.import_file(fy=20, dtype=ticketing_dtype, path=self.fp)
-        self.assertEqual(len(t20), 67)
+        self.assertEqual(len(t20), 1000)
 
 
 class TestDonorImportStrategy(unittest.TestCase):
@@ -77,10 +77,10 @@ class TestDonorImportStrategy(unittest.TestCase):
 
     def test_get_data(self):
         data = self.donor.get_data(fys='13', path=self.fp, dtype=donor_dtype)
-        self.assertEqual(len(data), 128)
+        self.assertEqual(len(data), 1000)
 
         data2 = self.donor.get_data(fys=13, path=self.fp, dtype=donor_dtype)
-        self.assertEqual(len(data2), 128)
+        self.assertEqual(len(data2), 1000)
 
 
 class TestSubscriberImportStrategy(unittest.TestCase):

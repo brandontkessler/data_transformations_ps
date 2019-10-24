@@ -10,7 +10,7 @@ class TierAnalysis:
         self.tier_counts = None
         self.tier_revenue = None
 
-    def tier_analysis(self, data, fy, mapper=None):
+    def execute(self, data, fy, mapper=None):
         """This function will calculate the number of retained customers across a\
         given time frame and within provided ranges (ex. annual giving levels\
         between $10,000 and $50,000).
@@ -25,6 +25,7 @@ class TierAnalysis:
                   default: donor_tier_mapper
 
         """
+        data = data.copy()
         if mapper is None:
             mapper = donor_tier_mapper
 
@@ -57,7 +58,7 @@ class TierAnalysis:
 
         self.plot.plot_tier_counts(self.tier_counts)
         self.plot.plot_tier_revenue(self.tier_revenue)
-        return
+        return agg
 
 
     @staticmethod
