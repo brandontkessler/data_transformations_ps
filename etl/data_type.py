@@ -1,7 +1,7 @@
 from .exception import UnexpectedDataType
 from .data_import import ImportData
 from .data_prep import PrepDataFactory
-from .analysis import TierAnalysis
+from .analysis import TierAnalysis, PreConcertSegmentation
 from .plot import PlotFactory
 from . import filter, transform
 
@@ -82,7 +82,7 @@ class Ticket:
         self.transform = {
             'price_type_group': transform.transform_price_type_group
         }
-
+        self.pre_concert = PreConcertSegmentation
 
 class Donor:
     def __init__(self):

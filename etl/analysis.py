@@ -1,5 +1,6 @@
 import math
 import pandas as pd
+import numpy as np
 from .helpers import donor_tier_mapper
 from . import filter, aggregator
 from .plot import PlotFactory
@@ -114,3 +115,136 @@ class TierAnalysis:
         })
 
         return py_data
+
+
+class PreConcertSegmentation:
+    '''
+    concert_dates --
+    '''
+
+    def __init__(self, ticket_data, donor_data, fy, concert_dates):
+        self.raw_tdata = ticket_data.copy()
+        self.raw_ddata = donor_data.copy()
+        self.fy = fy
+        self.concert_dates = concert_dates
+
+    def execute(self):
+        tdata = filter.filter_paid_only(self.raw_tdata, 'paid_amt')
+        subs = self.get_current_subs()
+        donor_hist = self.donor_hist()
+
+        segment_data = self.prep_segmentation_data(tdata)
+        min_t, low_t, avg_t, high_t, max_t = self.segmentation_breakouts(segment_data, 'transactions')
+        min_p, low_p, avg_p, high_p, max_p = self.segmentation_breakouts(segment_data, 'avg_paid')
+
+        segment_data = self.get_segmentation(segment_data, self.segmentation_algo,
+                              low_t, avg_t, high_t, low_p, avg_p, high_p)
+
+        segment_data = segment_data.merge(subs, on='summary_cust_id', how='left')
+        segment_data = segment_data.merge(donor_hist, on='summary_cust_id', how='left')
+        segment_data = segment_data.fillna(0)
+        segment_data = segment_data[['summary_cust_id', 'segment', 'subs', 'donor_5yr_history']]
+
+        concerts = (self.get_concert_by_date(date) for date in self.concert_dates)
+        solicitor = self.get_solicitor_info()
+
+        for concert, date in zip(concerts, self.concert_dates):
+            customers = pd.DataFrame(concert['summary_cust_id'].drop_duplicates()).reset_index(drop=True)
+            concert_info = customers.merge(segment_data, on='summary_cust_id', how='left')
+            seat_finder = self.setup_seating(concert)
+            seat_finder = seat_finder.merge(solicitor, on='summary_cust_id', how='left')
+
+            yield concert_info, seat_finder, date
+
+
+    @staticmethod
+    def prep_segmentation_data(data):
+        data = data.copy()
+        data = data.groupby(['summary_cust_id']).agg({
+            'perf_dt': 'nunique',
+            'paid_amt': lambda x: sum(x) / len(x)
+        }).reset_index()
+
+        data.columns = ['summary_cust_id', 'transactions', 'avg_paid']
+        return data
+
+    @staticmethod
+    def segmentation_breakouts(data, column):
+        highest = max(data[column])
+        lowest = min(data[column])
+        avg = np.mean(data[column])
+        high = (highest + avg) / 2
+        low = (lowest + avg) / 2
+        return  lowest, low, avg, high, highest
+
+
+    @staticmethod
+    def segmentation_algo(transactions, avg_paid_amt, low_t, avg_t, high_t, low_p, avg_p, high_p):
+        if transactions > high_t and avg_paid_amt > high_p:
+            return 'group 1'
+        elif (transactions > high_t and avg_paid_amt >= avg_p) |\
+             (transactions >= avg_t and avg_paid_amt > high_p):
+            return 'group 2'
+        elif (transactions > low_t and avg_paid_amt > high_p) |\
+             (transactions >= avg_t and avg_paid_amt >= avg_p) |\
+             (transactions > high_t and avg_paid_amt > low_p):
+            return 'group 3'
+        else:
+            return 'group 4'
+
+
+    @staticmethod
+    def get_segmentation(data, algo, low_t, avg_t, high_t, low_p, avg_p, high_p):
+        data = data.copy()
+        group_list = [
+            algo(freq, amt, low_t, avg_t, high_t, low_p, avg_p, high_p)
+            for freq, amt in zip(data['transactions'], data['avg_paid'])
+        ]
+        data['segment'] = group_list
+        return data
+
+
+    def get_current_subs(self):
+        data = self.raw_tdata.copy()
+        data = filter.filter_fys(data=data, fys=[self.fy])
+        data = filter.filter_subs(data)
+        current_subs = data['summary_cust_id'].drop_duplicates()
+        current_subs = pd.DataFrame(current_subs).reset_index(drop=True)
+        current_subs['subs'] = 'subscriber'
+        return current_subs
+
+    def donor_hist(self):
+        data = self.raw_ddata.copy()
+        data = filter.filter_fys(data=data, fys=[fy for fy in range(self.fy-4, self.fy+1)])
+        data = data.groupby('summary_cust_id').agg({'gift_plus_pledge': 'sum'}).reset_index()
+        data.columns = ['summary_cust_id', 'donor_5yr_history']
+        return data
+
+    def get_concert_by_date(self, date):
+        data = self.raw_tdata.copy()
+        data['perf_dt_date'] = data['perf_dt'].map(lambda x: x.strftime('%Y-%m-%d'))
+        mask = data['perf_dt_date'] == pd.to_datetime(date).strftime('%Y-%m-%d')
+        data = data.loc[mask]
+        return data
+
+    @staticmethod
+    def setup_seating(concert_data):
+        data = concert_data.copy()
+        data['seating'] = data['section'] + ' ' + data['row'] + ' ' + data['seat'].map(str)
+        data = data[['summary_cust_id', 'summary_cust_name', 'seating']]
+        return data
+
+
+    def get_solicitor_info(self):
+        data = self.raw_ddata.copy()
+        data = data.sort_values('trn_dt', ascending=False)[['summary_cust_id', 'ps_sol']].reset_index(drop=True)
+
+        d = {}
+        for sid, pssol in zip(data['summary_cust_id'], data['ps_sol']):
+            if sid in d.keys():
+                pass
+            else:
+                d.update({sid: pssol})
+
+        solicitor = pd.DataFrame({'summary_cust_id': list(d.keys()), 'solicitor': list(d.values())})
+        return solicitor

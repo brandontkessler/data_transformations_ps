@@ -68,8 +68,23 @@ def filter_non_subs(data):
     return result
 
 
+def filter_subs(data):
+    current_subs = data.loc[
+        (data['price_type_group'] == 'Subscription') |\
+        (data['price_type_group'] == 'Flex')
+    ]
+    current_subs = set(current_subs['summary_cust_id'])
+
+    result = data.loc[data['summary_cust_id'].isin(current_subs)]
+    return result
+
+
 def filter_before_date(data, col, to_date):
     result = data.loc[data[col] <= to_date]
+    return result
+
+def filter_by_date(data, col, date):
+    result = data.loc[data[col] == to_date]
     return result
 
 
