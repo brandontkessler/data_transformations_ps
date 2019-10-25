@@ -1,6 +1,12 @@
 import numpy as np
 import math
 
+date_columns = {
+    'ticket': ['perf_dt', 'order_dt'],
+    'donor': ['cont_dt', 'trn_dt'],
+    'subscriber': ['order_dt']
+}
+
 ticketing_dtype = {
     'perf_code': object,
     'perf_no': np.int64,
@@ -27,6 +33,7 @@ ticketing_dtype = {
     'summary_cust_name': object,
     'attended': object
 }
+
 
 donor_dtype = {
     'trn_count': np.dtype('int64'),
@@ -265,4 +272,39 @@ concert_mapper_fy20 = {
     '6/11/2020 20:00': 'Symphony of a Thousand',
     '6/12/2020 20:00': 'Symphony of a Thousand',
     '6/13/2020 20:00': 'Symphony of a Thousand'
+}
+
+
+cached_dtypes = {
+    'ticket': {
+        'perf_code':               object,
+        'perf_no':               np.int64,
+        'perf_dt':                 object,
+        'zone_no':               np.int64,
+        'zone_desc':               object,
+        'section':                 object,
+        'row':                     object,
+        'seat':                  np.int64,
+        'home_price':          np.float64,
+        'paid_amt':            np.float64,
+        'fee_amt':             np.float64,
+        'seat_status':           np.int64,
+        'seat_status_desc':        object,
+        'customer_no':         np.float64,
+        'order_no':            np.float64,
+        'order_dt':                object,
+        'price_type_group_id': np.float64,
+        'price_type_group':        object,
+        'pd_up':                   object,
+        'season':                np.int64,
+        'season_desc':             object,
+        'summary_cust_id':     np.float64,
+        'summary_cust_name':       object,
+        'attended':                object,
+        'dow':                     object,
+        'series':                  object,
+        'fy':                    np.int64,
+        'price_zone':              object,
+    },
+    'donor': {}
 }

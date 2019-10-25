@@ -1,7 +1,8 @@
 import pandas as pd
 
-from .helpers import ticketing_dtype, donor_dtype
+from .helpers import ticketing_dtype, donor_dtype, date_columns
 from .decorators import check_fys_is_int
+from . import transform
 
 class ImportData:
     '''Imports data required from data types
@@ -50,7 +51,7 @@ class TicketImportStrategy:
 
     def import_file(self, fy, path, dtype=None):
         file = path + f'fy{str(fy)}_all.csv'
-        df = pd.read_csv(file, dtype=dtype, skiprows=3)
+        df = pd.read_csv(file, dtype=dtype, skiprows=3, parse_dates=date_columns.get('ticket'))
         return df
 
 
@@ -63,7 +64,9 @@ class DonorImportStrategy:
         '''
         fp = path or '../../data/donor/'
         file = f"donors_fy{fys}-present.csv"
-        data = pd.read_csv(fp + file, encoding='ISO-8859-1', dtype=dtype)
+        data = pd.read_csv(fp + file, encoding='ISO-8859-1', dtype=dtype,
+            parse_dates=date_columns.get('donor'), date_parser=transform.date_convert)
+
         return data
 
 
@@ -77,7 +80,8 @@ class SubscriberImportStrategy:
         return data
 
     def import_file(self, fy, path):
-        data = pd.read_csv(path + f'fy{fy}.csv', encoding='ISO-8859-1')
+        data = pd.read_csv(path + f'fy{fy}.csv', encoding='ISO-8859-1',
+            parse_dates=date_columns.get('subscriber'))
         return data
 
 

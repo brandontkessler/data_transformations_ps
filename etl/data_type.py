@@ -62,7 +62,7 @@ class PSData:
         args:
             full -> Boolean. Use True for full prep
         '''
-        return self.preparer.prepare_data(data, full)
+        return self.preparer.prepare_data(data, full, type=self.type._type)
 
 
 

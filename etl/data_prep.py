@@ -1,6 +1,7 @@
 import pandas as pd
 from . import transform
 from .helpers import internal_ids
+from .decorators import cache_working_data, check_working_cache, timer
 
 
 class PrepDataFactory:
@@ -18,7 +19,10 @@ class PrepDataFactory:
 
 
 class PrepTicketData:
-    def prepare_data(self, dataframe, full):
+    @timer
+    @check_working_cache
+    @cache_working_data
+    def prepare_data(self, dataframe, full, type):
         '''Prepares the ticketing data for analysis
 
         args:
@@ -27,8 +31,6 @@ class PrepTicketData:
         '''
         data = dataframe.copy()
 
-        data['perf_dt'] = data['perf_dt'].map(transform.date_convert)
-        data['order_dt'] = data['order_dt'].map(transform.date_convert)
         data['dow'] = transform.add_dow(data['perf_dt'])
         data['series'] = self.add_series_name(data['season_desc'])
         data['fy'] = data['perf_dt'].map(transform.convert_to_fy)
@@ -60,9 +62,11 @@ class PrepTicketData:
 
 
 class PrepDonorData:
-    def prepare_data(self, dataframe, full):
+    @timer
+    @check_working_cache
+    @cache_working_data
+    def prepare_data(self, dataframe, full, type):
         data = dataframe.copy()
-        data['cont_dt'] = data['cont_dt'].map(transform.date_convert)
 
         if full:
             data['fy'] = data['campaign'].str[6:8]
@@ -94,10 +98,12 @@ class PrepDonorData:
 
 
 class PrepSubscriberData:
-    def prepare_data(self, dataframe, full):
+    @timer
+    @check_working_cache
+    @cache_working_data
+    def prepare_data(self, dataframe, full, type):
         data = dataframe.copy()
         data['fy'] = data['season_desc'].map(self.parse_fy)
-        data['order_dt'] = data['order_dt'].map(transform.date_convert)
 
         return data
 
@@ -111,7 +117,10 @@ class PrepSubscriberData:
 
 
 class PrepModeOfSaleData:
-    def prepare_data(self, dataframe, full):
+    @timer
+    @check_working_cache
+    @cache_working_data
+    def prepare_data(self, dataframe, full, type):
         data = dataframe.copy()
         data['season'] = [season.split(' ')[2] for season in data['season']]
         data['ordered'] = data['ps_num_ord'] + data['cs_num_ord']
@@ -136,6 +145,9 @@ class PrepModeOfSaleData:
         return data
 
 class PrepAttributeData:
-    def prepare_data(self, dataframe, full):
+    @timer
+    @check_working_cache
+    @cache_working_data
+    def prepare_data(self, dataframe, full, type):
         data = dataframe.copy()
         return data
