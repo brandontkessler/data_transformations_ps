@@ -2,7 +2,7 @@ import math
 import pandas as pd
 import numpy as np
 from .helpers import donor_tier_mapper
-from . import filter, aggregator
+from . import filter, aggregator, transform
 from .plot import PlotFactory
 
 class TierAnalysis:
@@ -248,3 +248,20 @@ class PreConcertSegmentation:
 
         solicitor = pd.DataFrame({'summary_cust_id': list(d.keys()), 'solicitor': list(d.values())})
         return solicitor
+
+class DonorWeekly:
+    def __init__(self):
+        self.plot = PlotFactory('donor_weekly').plotter
+
+    def execute(self, data):
+        data['week_dt'] = data['cont_dt'].map(transform.donor_convert_cont_dt_to_monday)
+
+        grouped = data.groupby(['campaign', 'week_dt']).agg({
+                    'gift_plus_pledge': 'sum'
+                  }).reset_index()
+
+        pivoted = grouped.pivot(index='week_dt', columns='campaign', values='gift_plus_pledge').fillna(0)
+
+        cumulative = pivoted.cumsum()
+
+        self.plot.plot_all_campaigns(cumulative)

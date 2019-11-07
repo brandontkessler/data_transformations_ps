@@ -1,5 +1,5 @@
 import pandas as pd
-from . import transform
+from . import transform, filter
 from .helpers import internal_ids
 from .decorators import cache_working_data, check_working_cache, timer
 
@@ -99,12 +99,10 @@ class PrepDonorData:
 
 class PrepSubscriberData:
     @timer
-    @check_working_cache
-    @cache_working_data
     def prepare_data(self, dataframe, full, type):
         data = dataframe.copy()
         data['fy'] = data['season_desc'].map(self.parse_fy)
-
+        data = filter.filter_paid_only(data, 'tot_due_amt')
         return data
 
     @staticmethod

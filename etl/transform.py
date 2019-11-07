@@ -1,4 +1,5 @@
 import pandas as pd
+import datetime as dt
 
 from .helpers import concert_mapper_fy20, price_type_group_mapper
 
@@ -52,3 +53,11 @@ def transform_price_type_group(data):
     data = data.copy()
     data['price_type_group'] = data['price_type_group'].map(price_type_group_mapper)
     return data
+
+
+
+def donor_convert_cont_dt_to_monday(date):
+    date = pd.to_datetime(date)
+    if date < pd.to_datetime('7/1/2019'):
+        date = pd.to_datetime('7/1/2019')
+    return date - dt.timedelta(date.weekday())

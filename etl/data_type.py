@@ -1,7 +1,7 @@
 from .exception import UnexpectedDataType
 from .data_import import ImportData
 from .data_prep import PrepDataFactory
-from .analysis import TierAnalysis, PreConcertSegmentation
+from .analysis import TierAnalysis, PreConcertSegmentation, DonorWeekly
 from .plot import PlotFactory
 from . import filter, transform
 
@@ -76,7 +76,9 @@ class Ticket:
             'paid': filter.filter_paid_only,
             'series': filter.filter_by_series,
             'non_subs': filter.filter_non_subs,
+            'single_sales': filter.filter_single_sales_only,
             'before_date': filter.filter_before_date,
+            'ntf': filter.filter_new_to_file,
             'min_transactions': filter.filter_by_minimum_transactions
         }
         self.transform = {
@@ -88,6 +90,7 @@ class Donor:
     def __init__(self):
         self._type = 'donor'
         self.tier_analysis = TierAnalysis()
+        self.donor_weekly = DonorWeekly()
         self.filters = {
             'fys': filter.filter_fys
         }
@@ -111,8 +114,8 @@ class Donor:
 
         return list(set(box['summary_cust_id']))
 
-    @staticmethod
-    def get_high_cap_prospects(data, fy, attribute_data_path=None):
+
+    def get_high_cap_prospects(self, data, fy, attribute_data_path=None):
         '''Categorizes prospects that are NOT current donors
 
         Capacity Ratings:
@@ -175,6 +178,8 @@ class ModeOfSale:
     def __init__(self):
         self._type = 'mode_of_sale'
         self._qtr = None
+        self.mos_plots = PlotFactory('mos_plots').plotter()
+
 
 class Attribute:
     def __init__(self):
